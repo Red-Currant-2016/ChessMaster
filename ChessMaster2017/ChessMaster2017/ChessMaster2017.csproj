@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackEnd\Board.cs" />
-    <Compile Include="BackEnd\pieces\PieceColor.cs" />
-    <Compile Include="BackEnd\Pieces.cs" />
-    <Compile Include="BackEnd\pieces\Bishop.cs" />
-    <Compile Include="BackEnd\pieces\King.cs" />
-    <Compile Include="BackEnd\pieces\Knight.cs" />
-    <Compile Include="BackEnd\pieces\Pawn.cs" />
-    <Compile Include="BackEnd\pieces\Queen.cs" />
-    <Compile Include="BackEnd\pieces\PieceType.cs" />
-    <Compile Include="BackEnd\pieces\Rook.cs" />
-    <Compile Include="BackEnd\Square.cs" />
+    <Compile Include="backend\Board.cs" />
+    <Compile Include="backend\pieces\PieceColor.cs" />
+    <Compile Include="backend\Pieces.cs" />
+    <Compile Include="backend\pieces\Bishop.cs" />
+    <Compile Include="backend\pieces\King.cs" />
+    <Compile Include="backend\pieces\Knight.cs" />
+    <Compile Include="backend\pieces\Pawn.cs" />
+    <Compile Include="backend\pieces\Queen.cs" />
+    <Compile Include="backend\pieces\PieceType.cs" />
+    <Compile Include="backend\pieces\Rook.cs" />
+    <Compile Include="backend\Square.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

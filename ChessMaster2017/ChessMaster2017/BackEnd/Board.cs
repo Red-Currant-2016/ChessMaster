@@ -10,10 +10,6 @@ namespace ChessMaster2017.BackEnd
     {
         private Pieces[,] board;
 
-        /// <summary>
-        /// Test
-        /// </summary>
-
         public Board()
         {
             board = new Pieces[8, 8]; // 0 - 7 indexses

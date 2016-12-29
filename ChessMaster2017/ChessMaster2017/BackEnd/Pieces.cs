@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
+    /// <summary>
+    /// Basic pieceses functionalities
+    /// </summary>
     interface Pieces
     {
     }
