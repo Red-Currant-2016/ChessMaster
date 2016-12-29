@@ -10,7 +10,9 @@ namespace ChessMaster2017.BackEnd
     {
         private Pieces[,] board;
 
-
+        /// <summary>
+        /// Test
+        /// </summary>
 
         public Board()
         {
