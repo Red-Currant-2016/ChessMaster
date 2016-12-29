@@ -56,13 +56,13 @@
     <Compile Include="backend\pieces\Queen.cs" />
     <Compile Include="backend\pieces\PieceType.cs" />
     <Compile Include="backend\pieces\Rook.cs" />
-    <Compile Include="backend\Square.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="backend\Movement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
