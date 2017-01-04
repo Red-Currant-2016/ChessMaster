@@ -16,7 +16,7 @@ namespace ChessMaster2017.BackEnd
             //implement new game setup board
             board[0, 0] = new Rook();
             board[0, 1] = new Knight();
-
+            //gjhgkgj
 
             board[1, 1] = board[0, 1];//movement example
             board[0, 1] = null;
