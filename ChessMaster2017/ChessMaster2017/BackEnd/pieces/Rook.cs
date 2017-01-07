@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    class Rook: Pieces
+    class Rook : ChessPiece
     {
-        PieceColor color;
-
-        int positionX;
-        int postionY;
-
-
+        public Rook(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        {
+        }
     }
 }

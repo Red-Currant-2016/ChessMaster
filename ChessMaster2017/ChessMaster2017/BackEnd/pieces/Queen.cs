@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    class Queen : Pieces
+    class Queen : ChessPiece
     {
+        public Queen(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        {
+        }
     }
 }

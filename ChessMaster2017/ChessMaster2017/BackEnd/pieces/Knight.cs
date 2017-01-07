@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace ChessMaster2017.BackEnd
 
 {
-    class Knight: Pieces
+    class Knight : ChessPiece
     {
+        public Knight(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        {
+        }
     }
 }

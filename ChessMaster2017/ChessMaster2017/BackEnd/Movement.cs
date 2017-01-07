@@ -11,9 +11,8 @@ namespace ChessMaster2017
     /// </summary>
     interface Movement
     {
+        //TODO
        //attack/Move
-
-        //pawn are diffect need seperet method for move
-       
+       //pawn are diffect need seperet method for move
     }
 }

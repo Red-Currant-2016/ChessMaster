@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    class Bishop : Pieces
+    class Bishop : ChessPiece
     {
+        public Bishop(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        {
+        }
     }
 }

@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    enum PieceType
+    public enum ChessPieceColor
     {
-        Pawn,
-        Rook,
-        Bishop,
-        Knight,
-        Queen,
-        King
+        White,
+        Black
     }
 }
