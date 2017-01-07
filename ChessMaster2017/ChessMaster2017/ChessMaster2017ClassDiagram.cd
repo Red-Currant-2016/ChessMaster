@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChessMaster2017.BackEnd.Board" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAABAAAAIQIAAEAgAIAIAABCAAAAAAAAAQQ=</HashCode>
+      <FileName>backend\Board.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.ChessPiece" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAEAAAAAAgCAAQAAgAAAAAA=</HashCode>
+      <FileName>backend\ChessPieces.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.Bishop" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\Bishop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.King" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\King.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.Knight" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\Knight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.Pawn" Collapsed="true">
+    <Position X="19.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\Pawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.Queen" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\Queen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.BackEnd.Rook" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\pieces\Rook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ChessMaster2017.Movement" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\Movement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ChessMaster2017.BackEnd.ChessPieceColor" Collapsed="true">
+    <Position X="21.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\ChessPieceColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ChessMaster2017.BackEnd.ChessPieceType" Collapsed="true">
+    <Position X="23.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAEggAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>backend\ChessPieceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
