@@ -76,6 +76,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ChessMaster2017ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
@@ -90,6 +91,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\chess_black_pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_bishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_queen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\black_rook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_bishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_queen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\white_rook.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

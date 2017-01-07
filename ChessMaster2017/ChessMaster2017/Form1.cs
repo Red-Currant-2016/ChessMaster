@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessMaster2017.BackEnd;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,8 +16,10 @@ namespace ChessMaster2017
         public MainForm()
         {
             InitializeComponent();
-        }
 
-        
+
+            
+            Board testBoard = new Board();
+        }
     }
 }

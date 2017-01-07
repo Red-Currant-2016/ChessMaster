@@ -95,6 +95,7 @@ namespace ChessMaster2017.BackEnd
         {
             chessBoard[x, y] = chessPiecePrefab[chessPieceIndex];
         }
+
         /// <summary>
         /// When starting a new game place all chess pieces on chessBoard using SpawnChessPiece()
         /// All of the chess pieces get moved to activeChessPieces List;
