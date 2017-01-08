@@ -33,7 +33,7 @@ namespace ChessMaster2017.BackEnd
             CurrentY = y;
         }
 
-        public virtual bool[,] PosibleMove()
+        public virtual bool[,] PossibleMove(ChessPiece[,] currentBoard)
         {
             return new bool[8, 8];
         }
