@@ -12,7 +12,7 @@ namespace ChessMaster2017.BackEnd
         {
         }
 
-        
+       
 
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
         {
@@ -22,8 +22,7 @@ namespace ChessMaster2017.BackEnd
             bool[,] bishopMoves = new bool[8, 8];
             ChessPieceColor BishopColor = this.Color;
 
-            if (BishopColor == ChessPieceColor.White)
-            {
+            
                 // left up diagonal
 
                 bool exitCycle = false;
@@ -32,13 +31,13 @@ namespace ChessMaster2017.BackEnd
                 {
                     for (int movesY = bishopY; movesY < 8; movesY++)
                     {
-                        if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == ChessPieceColor.White)
+                        if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                         {
                             bishopMoves[movesX, movesY] = false;
                             exitCycle = true;
                             break;
                         }
-                        else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == ChessPieceColor.Black)
+                        else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
                         {
                             bishopMoves[movesX, movesY] = true;
                             exitCycle = true;
@@ -58,12 +57,38 @@ namespace ChessMaster2017.BackEnd
                         
                     }
                 }
-            }
-            else
+
+            // left right diagonal
+            for (int movesX = bishopX; movesX < 8; movesX++)
             {
+                for (int movesY = bishopY; movesY < 8; movesY--)
+                {
+                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
+                    {
+                        bishopMoves[movesX, movesY] = false;
+                        exitCycle = true;
+                        break;
+                    }
+                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
+                    {
+                        bishopMoves[movesX, movesY] = true;
+                        exitCycle = true;
+                        break;
+                    }
 
+                    else
+                    {
+                        bishopMoves[movesX, movesY] = true;
+                    }
+
+                }
+                if (exitCycle)
+                {
+                    exitCycle = false;
+                    break;
+
+                }
             }
-
 
             ChessPieceColor PieceColor =  currentBoard[1, 1].Color;
 
