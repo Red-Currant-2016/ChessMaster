@@ -112,12 +112,12 @@ namespace ChessMaster2017.BackEnd
 
         public bool SelectChessPiece(int x, int y) 
         {
-            if (selectedChessPiece == null)
+            if (chessBoard[x, y] == null)
             {
-                selectedChessPiece = chessBoard[x, y];
-                return true;
+                return false;
             }
-            return false;
+            selectedChessPiece = chessBoard[x, y];
+            return true;
         }
 
         public void MoveSelectedChessPiece(int x, int y)

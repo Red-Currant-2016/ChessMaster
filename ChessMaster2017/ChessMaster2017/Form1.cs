@@ -16,6 +16,8 @@ namespace ChessMaster2017
     {
         bool Action = false;
         Board testBoard = new Board();
+        PictureBox oldControl = null;
+        Color oldColor = default(Color);
         public MainForm()
         {
             InitializeComponent();
@@ -25,15 +27,10 @@ namespace ChessMaster2017
             e7.Image = null;
             b2.Image = e5.Image;*/
         }
-        PictureBox oldControl = null;
+        
 
         private void Selector(object sender, EventArgs e)
         {
-            
-            if (!Action)
-            {
-                oldControl = (PictureBox)sender;
-            }
             PictureBox control = (PictureBox)sender;
             string cordinates = control.Name;
             int y = cordinates[0] - 'a';
@@ -61,6 +58,9 @@ namespace ChessMaster2017
                 if (isSelected)
                 {
                     Action = true;
+                    oldControl = (PictureBox)sender;
+                    oldColor = oldControl.BackColor;
+                    oldControl.BackColor = Color.Aqua;
                 }
                 //control.BackColor = Color.Aqua;
             }
@@ -72,6 +72,7 @@ namespace ChessMaster2017
                 newFigure = oldControl.Image;
                 testBoard.selectedChessPiece = null;
                 oldControl.Image = null;
+                oldControl.BackColor = oldColor;
                 secondControl.Image = newFigure;
                 Action = false;
             }
