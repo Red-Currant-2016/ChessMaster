@@ -162,7 +162,7 @@ namespace ChessMaster2017.BackEnd
                 }
                 else
                 {
-                    if (highlightChessPieceMoves[x, y] == false)
+                    if (highlightChessPieceMoves[x, y] == true)
                     {
                         chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
                         chessBoard[x, y] = selectedChessPiece; //move
