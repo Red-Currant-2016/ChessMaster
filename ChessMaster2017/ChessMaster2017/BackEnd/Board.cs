@@ -135,14 +135,9 @@ namespace ChessMaster2017.BackEnd
             return highlightChessPieceMoves;
         }
 
-        public void MoveChessPiece(int x, int y)
+        private void changePlayerTurn()
         {
             
-            chessBoard[x, y] = selectedChessPiece;
-            if (chessBoard[x, y] != null)
-            {
-                chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null;
-            }
             if (playerTurn == ChessPieceColor.White)
             {
                 playerTurn = ChessPieceColor.Black;
@@ -151,19 +146,44 @@ namespace ChessMaster2017.BackEnd
             {
                 playerTurn = ChessPieceColor.White;
             }
-            
+        }
 
-            /*if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
+
+        public bool MoveChessPiece(int x, int y)
+        {
+
+            if (selectedChessPiece != null && selectedChessPiece.Color == playerTurn)// chess piece is selected and is current player turn
             {
-                if(true)
+                if (selectedChessPiece.CurrentX != x && selectedChessPiece.CurrentY != y)
                 {
-                    chessBoard[x,y] = selectedChessPiece
+                    if (highlightChessPieceMoves[x, y] == true)
+                    {
+                        chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
+                        chessBoard[x, y] = selectedChessPiece; //move
+                        selectedChessPiece = null; //de-select
+                        changePlayerTurn();// next turn
+
+                        return true;
+                    }
+                    else
+                    {
+                        selectedChessPiece = null;
+
+                        return false;
+                    }
                 }
                 else
                 {
-                    selectedChessPiece = null;// deselect chess piece
+                    selectedChessPiece = null;
+
+                    return false;
                 }
-            }*/
+            }
+            else
+            {
+                Console.WriteLine("something went horraybly wrong");
+                return false;// case something goes horrably wrong;
+            }
         }
 
     }
