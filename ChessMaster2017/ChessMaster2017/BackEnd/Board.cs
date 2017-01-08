@@ -21,7 +21,7 @@ namespace ChessMaster2017.BackEnd
         private List<ChessPiece> activeChessPieces;
         private List<ChessPiece> capturedChessPieces;
 
-        //private bool[,] availableMoves = new bool[BOARD_SIZE, BOARD_SIZE];
+        private bool[,] availableMoves = new bool[BOARD_SIZE, BOARD_SIZE];
 
         public Board()
         {

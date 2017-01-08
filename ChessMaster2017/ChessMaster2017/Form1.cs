@@ -16,9 +16,7 @@ namespace ChessMaster2017
         public MainForm()
         {
             InitializeComponent();
-
-
-            
+                       
             Board testBoard = new Board();
         }
     }

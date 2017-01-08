@@ -32,5 +32,10 @@ namespace ChessMaster2017.BackEnd
             CurrentX = x;
             CurrentY = y;
         }
+
+        public virtual bool[,] PosibleMove()
+        {
+            return new bool[8, 8];
+        }
     }
 }
