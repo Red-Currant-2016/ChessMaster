@@ -185,6 +185,7 @@
             // 
             this.WhitePlayerTurn.AutoCheck = false;
             this.WhitePlayerTurn.AutoSize = true;
+            this.WhitePlayerTurn.Checked = true;
             this.WhitePlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WhitePlayerTurn.Location = new System.Drawing.Point(3, 3);
             this.WhitePlayerTurn.Name = "WhitePlayerTurn";

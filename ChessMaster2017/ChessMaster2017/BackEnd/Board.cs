@@ -164,9 +164,15 @@ namespace ChessMaster2017.BackEnd
 
             if (selectedChessPiece != null && selectedChessPiece.Color == playerTurn)// chess piece is selected and is current player turn
             {
-                if (selectedChessPiece.CurrentX != x && selectedChessPiece.CurrentY != y)
+                if (selectedChessPiece.CurrentX == x && selectedChessPiece.CurrentY == y)
                 {
-                    if (highlightChessPieceMoves[x, y] == true)
+                    selectedChessPiece = null;
+
+                    return false;
+                }
+                else
+                {
+                    if (highlightChessPieceMoves[x, y] == false)
                     {
                         chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
                         chessBoard[x, y] = selectedChessPiece; //move
@@ -181,12 +187,8 @@ namespace ChessMaster2017.BackEnd
 
                         return false;
                     }
-                }
-                else
-                {
-                    selectedChessPiece = null;
 
-                    return false;
+                    
                 }
             }
             else
