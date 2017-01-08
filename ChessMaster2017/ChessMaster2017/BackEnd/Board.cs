@@ -148,6 +148,16 @@ namespace ChessMaster2017.BackEnd
             }
         }
 
+        public bool isValidMove(int x, int y)
+        {
+            if (highlightChessPieceMoves[x, y] == true)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
 
         public bool MoveChessPiece(int x, int y)
         {
