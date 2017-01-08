@@ -128,7 +128,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if(availableMoves[x,y] == true)
                 {
-                    
+                    //movedchess pieces new
                 }
                 else
                 {
