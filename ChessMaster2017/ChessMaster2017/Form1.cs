@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ChessMaster2017
 {
-    
+
     public partial class MainForm : Form
     {
         bool[,] Board = new bool[8, 8];
@@ -22,13 +22,13 @@ namespace ChessMaster2017
         public MainForm()
         {
             InitializeComponent();
-                       
-            
+
+
             /*e5.Image = Properties.Resources.black_pawn;
             e7.Image = null;
             b2.Image = e5.Image;*/
         }
-        
+
 
         private void Selector(object sender, EventArgs e)
         {
@@ -41,8 +41,8 @@ namespace ChessMaster2017
             {
                 isSelected = testBoard.SelectChessPiece(x, y);
             }
-            
-            
+
+
             PictureBox secondControl = (PictureBox)sender;
             if (isSelected)
             {
@@ -52,15 +52,15 @@ namespace ChessMaster2017
             {
                 secondControl = (PictureBox)sender;
             }
-           
-            
+
+
             if (!Action)
             {
 
                 /*Control control = (Control)sender;
                 MessageBox.Show(control.Name);*/
-                 
-                
+
+
                 if (isSelected)
                 {
                     Action = true;
@@ -72,6 +72,8 @@ namespace ChessMaster2017
             }
             else
             {
+                if (testBoard.isValidMove(x, y))
+                {
                     testBoard.MoveChessPiece(x, y);
                     ChessPieceColor turn = testBoard.GetPlayerTurn();
                     if (turn == ChessPieceColor.White)
@@ -92,10 +94,15 @@ namespace ChessMaster2017
                     oldControl.BackColor = oldColor;
                     secondControl.Image = newFigure;
                     Action = false;
-                
-                
+                }
+                else
+                {
+                    testBoard.selectedChessPiece = null;
+                    oldControl.BackColor = oldColor;
+                    Action = false;
+                }
             }
         }
-        
+
     }
 }
