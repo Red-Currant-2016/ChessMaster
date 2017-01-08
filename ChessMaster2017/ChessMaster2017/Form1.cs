@@ -14,7 +14,6 @@ namespace ChessMaster2017
     
     public partial class MainForm : Form
     {
-        
         bool Action = false;
         Board testBoard = new Board();
         public MainForm()
@@ -26,33 +25,57 @@ namespace ChessMaster2017
             e7.Image = null;
             b2.Image = e5.Image;*/
         }
+        PictureBox oldControl = null;
 
         private void Selector(object sender, EventArgs e)
         {
-            int x = 0;
-            int y = 0;
+            
+            if (!Action)
+            {
+                oldControl = (PictureBox)sender;
+            }
             PictureBox control = (PictureBox)sender;
             string cordinates = control.Name;
-            x = cordinates[0] - 'a';
-            y = cordinates[1] - '1';
+            int y = cordinates[0] - 'a';
+            int x = cordinates[1] - '1';
+            bool isSelected = testBoard.SelectChessPiece(x, y);
+            
+            PictureBox secondControl = (PictureBox)sender;
+            if (isSelected)
+            {
+                control = (PictureBox)sender;
+            }
+            else
+            {
+                secondControl = (PictureBox)sender;
+            }
+           
+            
             if (!Action)
             {
 
                 /*Control control = (Control)sender;
                 MessageBox.Show(control.Name);*/
                  
-                bool isSelected = testBoard.SelectChessPiece(x, y);
+                
                 if (isSelected)
                 {
-                    Action = true; ;
+                    Action = true;
                 }
                 //control.BackColor = Color.Aqua;
             }
             else
             {
                 testBoard.MoveSelectedChessPiece(x, y);
+                //control.Image = null;
+                Image newFigure = null;
+                newFigure = oldControl.Image;
+                testBoard.selectedChessPiece = null;
+                oldControl.Image = null;
+                secondControl.Image = newFigure;
                 Action = false;
             }
         }
+        
     }
 }

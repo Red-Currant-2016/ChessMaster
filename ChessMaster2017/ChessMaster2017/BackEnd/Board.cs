@@ -13,8 +13,8 @@ namespace ChessMaster2017.BackEnd
 
         private ChessPieceColor playerTurn;
 
-        private ChessPiece[,] chessBoard;
-        private ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
+        public ChessPiece[,] chessBoard;
+        public ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
 
         public List<ChessPiece> chessPiecePrefab;
 
@@ -112,8 +112,6 @@ namespace ChessMaster2017.BackEnd
 
         public bool SelectChessPiece(int x, int y) 
         {
-            
-            
             if (selectedChessPiece == null)
             {
                 selectedChessPiece = chessBoard[x, y];
@@ -126,7 +124,8 @@ namespace ChessMaster2017.BackEnd
         {
 
             chessBoard[x, y] = selectedChessPiece;
-            selectedChessPiece = null;
+            chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null;
+            
 
             /*if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
             {
