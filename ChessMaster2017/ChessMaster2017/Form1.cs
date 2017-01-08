@@ -14,6 +14,7 @@ namespace ChessMaster2017
     
     public partial class MainForm : Form
     {
+        bool[,] Board = new bool[8, 8];
         bool Action = false;
         Board testBoard = new Board();
         PictureBox oldControl = null;
@@ -35,7 +36,11 @@ namespace ChessMaster2017
             string cordinates = control.Name;
             int y = cordinates[0] - 'a';
             int x = cordinates[1] - '1';
-            bool isSelected = testBoard.SelectChessPiece(x, y);
+            bool isSelected = false;
+            if (Action)
+            {
+                isSelected = (testBoard.chessBoard[x, y] == null|| testBoard.chessBoard[x, y].Color == ChessPieceColor.White);
+            }
             
             PictureBox secondControl = (PictureBox)sender;
             if (isSelected)
@@ -66,15 +71,19 @@ namespace ChessMaster2017
             }
             else
             {
-                testBoard.MoveSelectedChessPiece(x, y);
-                //control.Image = null;
-                Image newFigure = null;
-                newFigure = oldControl.Image;
-                testBoard.selectedChessPiece = null;
-                oldControl.Image = null;
-                oldControl.BackColor = oldColor;
-                secondControl.Image = newFigure;
-                Action = false;
+                if (!isSelected)
+                {
+                    testBoard.MoveSelectedChessPiece(x, y);
+                    //control.Image = null;
+                    Image newFigure = null;
+                    newFigure = oldControl.Image;
+                    testBoard.selectedChessPiece = null;
+                    oldControl.Image = null;
+                    oldControl.BackColor = oldColor;
+                    secondControl.Image = newFigure;
+                    Action = false;
+                }
+                
             }
         }
         

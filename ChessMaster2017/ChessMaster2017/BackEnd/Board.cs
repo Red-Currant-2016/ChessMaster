@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    class Board
+    public class Board
     {
         private const int BOARD_SIZE = 8;
         private const int TOTAL_CHESS_PIECE_COUNT = 32;
