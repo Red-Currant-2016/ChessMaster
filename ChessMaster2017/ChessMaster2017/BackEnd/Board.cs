@@ -160,9 +160,11 @@ namespace ChessMaster2017.BackEnd
 
         public bool MoveChessPiece(int x, int y)
         {
-            if (selectedChessPiece != null && selectedChessPiece.Color == playerTurn)// chess piece is selected and is current player turn
+            // chess piece is selected and is current player turn
+            if (selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
             {
-                if (selectedChessPiece.CurrentX == x && selectedChessPiece.CurrentY == y)// same chess squar deselect
+                // same chess squar deselect
+                if (selectedChessPiece.CurrentX == x && selectedChessPiece.CurrentY == y)
                 {
                     selectedChessPiece = null;
                     return false;
@@ -175,7 +177,8 @@ namespace ChessMaster2017.BackEnd
                         //capture enemy piece
                         if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
                         {
-                            capturedChessPieces.Add(chessBoard[x, y]);// add enemy piece to captured pieces
+                            capturedChessPieces.Add(chessBoard[x, y]);// add enemy piece to captured pieces List
+                            chessBoard[x, y].isCaptured = true;
 
                             chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear board squar
                             chessBoard[x, y] = selectedChessPiece; //move
