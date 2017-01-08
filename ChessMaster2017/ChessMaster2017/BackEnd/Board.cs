@@ -16,12 +16,12 @@ namespace ChessMaster2017.BackEnd
         public ChessPiece[,] chessBoard;
         public ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
 
-        public List<ChessPiece> chessPiecePrefab;
+        private List<ChessPiece> chessPiecePrefab;
 
         private List<ChessPiece> activeChessPieces;
         private List<ChessPiece> capturedChessPieces;
 
-        private bool[,] highLightMoves = new bool[BOARD_SIZE, BOARD_SIZE];
+        private bool[,] highlightChessPieceMoves = new bool[BOARD_SIZE, BOARD_SIZE];
 
         public Board()
         {
@@ -112,15 +112,30 @@ namespace ChessMaster2017.BackEnd
 
         public bool SelectChessPiece(int x, int y) 
         {
-            if (chessBoard[x, y] == null)
+            if (selectedChessPiece == null && chessBoard[x, y] == null)
+            {
+                return false;
+            }
+            else if (chessBoard[x, y].Color != playerTurn)
             {
                 return false;
             }
             selectedChessPiece = chessBoard[x, y];
+            highlightChessPieceMoves = selectedChessPiece.PosibleMove();//ChessPiece[,] chessBoard
             return true;
         }
 
-        public void MoveSelectedChessPiece(int x, int y)
+        public ChessPieceColor GetPlayerTurn()
+        {
+            return playerTurn;
+        }
+
+        public bool[,] GetHighlightedMoves()
+        {
+            return highlightChessPieceMoves;
+        }
+
+        public void MoveChessPiece(int x, int y)
         {
 
             chessBoard[x, y] = selectedChessPiece;
