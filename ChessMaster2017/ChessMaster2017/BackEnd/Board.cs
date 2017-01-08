@@ -112,7 +112,14 @@ namespace ChessMaster2017.BackEnd
 
         private void SelectChessPiece(int x, int y)
         {
-            throw new NotImplementedException();
+            if(chessBoard[x,y] != null)
+            {
+                if(playerTurn == chessBoard[x,y].Color)
+                {
+                    selectedChessPiece = chessBoard[x, y];
+                    availableMoves =  selectedChessPiece.PosibleMove();// get available moves
+                }
+            }
         }
 
         private void MoveSelectedChessPiece()
