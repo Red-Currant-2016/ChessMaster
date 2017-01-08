@@ -137,9 +137,20 @@ namespace ChessMaster2017.BackEnd
 
         public void MoveChessPiece(int x, int y)
         {
-
+            
             chessBoard[x, y] = selectedChessPiece;
-            chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null;
+            if (chessBoard[x, y] != null)
+            {
+                chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null;
+            }
+            if (playerTurn == ChessPieceColor.White)
+            {
+                playerTurn = ChessPieceColor.Black;
+            }
+            else
+            {
+                playerTurn = ChessPieceColor.White;
+            }
             
 
             /*if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
