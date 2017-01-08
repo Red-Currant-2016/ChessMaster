@@ -45,143 +45,122 @@ namespace ChessMaster2017.BackEnd
             ChessPieceColor BishopColor = this.Color;
 
             
-                // left up diagonal
+                // bottom right diagonal
 
-                bool exitCycle = false;
-
-                for (int movesX = bishopX; movesX < 8; movesX--)
+                
+                for (int movesX = bishopX- 1, movesY = bishopY + 1 ; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)
                 {
-                    for (int movesY = bishopY; movesY < 8; movesY++)
-                    {
+                    
+                      
                         if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                         {
                             bishopMoves[movesX, movesY] = false;
-                            exitCycle = true;
+                         
                             break;
                         }
                         else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
                         {
                             bishopMoves[movesX, movesY] = true;
-                            exitCycle = true;
+                          
                             break;
                         }
 
                         else
                         {
                             bishopMoves[movesX, movesY] = true;
-                        }
-                        
+                             
                     }
-                    if (exitCycle)
-                    {
-                        exitCycle = false;
-                        break;
-                        
-                    }
+                                          
+                   
                 }
 
-            // right up diagonal
-            for (int movesX = bishopX; movesX < 8; movesX++)
+            // top right
+
+
+            for (int movesX = bishopX + 1, movesY = bishopY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY++)
             {
-                for (int movesY = bishopY; movesY < 8; movesY++)
-                {
-                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = false;
-                        exitCycle = true;
-                        break;
-                    }
-                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                        exitCycle = true;
-                        break;
-                    }
 
-                    else
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                    }
 
-                }
-                if (exitCycle)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
-                    exitCycle = false;
+                    bishopMoves[movesX, movesY] = false;
+
                     break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
+                {
+                    bishopMoves[movesX, movesY] = true;
+
+                    break;
+                }
+
+                else
+                {
+                    bishopMoves[movesX, movesY] = true;
 
                 }
+
+
             }
 
 
 
-            // left bottom diagonal
+            // Top Left
 
-            
 
-            for (int movesX = bishopX; movesX < 8; movesX++)
+            for (int movesX = bishopX + 1, movesY = bishopY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY--)
             {
-                for (int movesY = bishopY; movesY < 8; movesY--)
-                {
-                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = false;
-                        exitCycle = true;
-                        break;
-                    }
-                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                        exitCycle = true;
-                        break;
-                    }
 
-                    else
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                    }
 
-                }
-                if (exitCycle)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
-                    exitCycle = false;
+                    bishopMoves[movesX, movesY] = false;
+
                     break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
+                {
+                    bishopMoves[movesX, movesY] = true;
+
+                    break;
+                }
+
+                else
+                {
+                    bishopMoves[movesX, movesY] = true;
 
                 }
+
+
             }
 
-            // right bottom diagonal
+            // bottom right
 
-           
 
-            for (int movesX = bishopX; movesX < 8; movesX--)
+            for (int movesX = bishopX - 1, movesY = bishopY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY--)
             {
-                for (int movesY = bishopY; movesY < 8; movesY--)
-                {
-                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = false;
-                        exitCycle = true;
-                        break;
-                    }
-                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                        exitCycle = true;
-                        break;
-                    }
 
-                    else
-                    {
-                        bishopMoves[movesX, movesY] = true;
-                    }
 
-                }
-                if (exitCycle)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
-                    exitCycle = false;
+                    bishopMoves[movesX, movesY] = false;
+
                     break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
+                {
+                    bishopMoves[movesX, movesY] = true;
+
+                    break;
+                }
+
+                else
+                {
+                    bishopMoves[movesX, movesY] = true;
 
                 }
+
+
             }
 
 

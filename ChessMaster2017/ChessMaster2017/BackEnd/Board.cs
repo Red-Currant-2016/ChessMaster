@@ -176,6 +176,8 @@ namespace ChessMaster2017.BackEnd
                     {
                         chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
                         chessBoard[x, y] = selectedChessPiece; //move
+                        chessBoard[x, y].SetPosition(x,y);// set piece it's new coordinates
+
                         selectedChessPiece = null; //de-select
                         changePlayerTurn();// next turn
 
