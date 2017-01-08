@@ -16,8 +16,7 @@ namespace ChessMaster2017.BackEnd
         public ChessPiece[,] chessBoard;
         public ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
 
-        private List<ChessPiece> chessPiecePrefab;
-
+        private List<ChessPiece> chessPiecePrefab;// used to create all the chess pieces object and set there initial position;
         private List<ChessPiece> activeChessPieces;
         private List<ChessPiece> capturedChessPieces;
 
@@ -110,6 +109,19 @@ namespace ChessMaster2017.BackEnd
             activeChessPieces = new List<ChessPiece>(chessPiecePrefab);
         }
 
+        private void changePlayerTurn()
+        {
+
+            if (playerTurn == ChessPieceColor.White)
+            {
+                playerTurn = ChessPieceColor.Black;
+            }
+            else
+            {
+                playerTurn = ChessPieceColor.White;
+            }
+        }
+
         public bool SelectChessPiece(int x, int y) 
         {
             if (selectedChessPiece == null && chessBoard[x, y] == null)
@@ -135,19 +147,6 @@ namespace ChessMaster2017.BackEnd
             return highlightChessPieceMoves;
         }
 
-        private void changePlayerTurn()
-        {
-            
-            if (playerTurn == ChessPieceColor.White)
-            {
-                playerTurn = ChessPieceColor.Black;
-            }
-            else
-            {
-                playerTurn = ChessPieceColor.White;
-            }
-        }
-
         public bool isValidMove(int x, int y)
         {
             if (highlightChessPieceMoves[x, y] == true)
@@ -161,42 +160,56 @@ namespace ChessMaster2017.BackEnd
 
         public bool MoveChessPiece(int x, int y)
         {
-
             if (selectedChessPiece != null && selectedChessPiece.Color == playerTurn)// chess piece is selected and is current player turn
             {
-                if (selectedChessPiece.CurrentX == x && selectedChessPiece.CurrentY == y)
+                if (selectedChessPiece.CurrentX == x && selectedChessPiece.CurrentY == y)// same chess squar deselect
                 {
                     selectedChessPiece = null;
-
                     return false;
                 }
                 else
                 {
+                    //selected piece can move to x,y coordinates
                     if (highlightChessPieceMoves[x, y] == true)
                     {
-                        chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
-                        chessBoard[x, y] = selectedChessPiece; //move
-                        chessBoard[x, y].SetPosition(x,y);// set piece it's new coordinates
+                        //capture enemy piece
+                        if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
+                        {
+                            capturedChessPieces.Add(chessBoard[x, y]);// add enemy piece to captured pieces
 
-                        selectedChessPiece = null; //de-select
-                        changePlayerTurn();// next turn
+                            chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear board squar
+                            chessBoard[x, y] = selectedChessPiece; //move
+                            chessBoard[x, y].SetPosition(x, y);// set piece new coordinates
+
+                            selectedChessPiece = null; //de-select
+                            changePlayerTurn();// next turn
+
+                        }
+                        //else just move piece
+                        else
+                        {
+                            chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear
+                            chessBoard[x, y] = selectedChessPiece; //move
+                            chessBoard[x, y].SetPosition(x, y);// set piece new coordinates
+
+                            selectedChessPiece = null; //de-select
+                            changePlayerTurn();// next turn
+
+                        }
 
                         return true;
                     }
                     else
                     {
                         selectedChessPiece = null;
-
                         return false;
                     }
-
-                    
                 }
             }
             else
             {
-                Console.WriteLine("something went horraybly wrong");
-                return false;// case something goes horrably wrong;
+                throw new Exception("Board.cs->MoveChessPiece() line:195 -> selectedChessPiece is null OR selectedChessPiece is one of the enemy player pieces(.color is wrong)!");
+                //return false;// case something goes horrably wrong;
             }
         }
 

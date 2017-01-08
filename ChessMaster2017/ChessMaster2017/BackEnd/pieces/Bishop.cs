@@ -33,9 +33,8 @@ namespace ChessMaster2017.BackEnd
         /// 
         /// </summary>
         /// <param name="currentBoard"></param>
-        /// <returns></returns>
-
-
+        /// <returns> bool[,] bishopMoves </returns>
+        
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
         {
             int bishopX = this.CurrentX;
@@ -44,127 +43,87 @@ namespace ChessMaster2017.BackEnd
             bool[,] bishopMoves = new bool[8, 8];
             ChessPieceColor BishopColor = this.Color;
 
-            
-                // bottom right diagonal
 
-                
-                for (int movesX = bishopX- 1, movesY = bishopY + 1 ; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)
-                {
-                    
-                      
-                        if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
-                        {
-                            bishopMoves[movesX, movesY] = false;
-                         
-                            break;
-                        }
-                        else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
-                        {
-                            bishopMoves[movesX, movesY] = true;
-                          
-                            break;
-                        }
-
-                        else
-                        {
-                            bishopMoves[movesX, movesY] = true;
-                             
-                    }
-                                          
-                   
-                }
-
-            // top right
-
-
-            for (int movesX = bishopX + 1, movesY = bishopY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY++)
+            // bottom right diagonal
+            for (int movesX = bishopX - 1, movesY = bishopY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)
             {
-
-
+                
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
                     bishopMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
                 {
                     bishopMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     bishopMoves[movesX, movesY] = true;
-
                 }
-
-
+                
             }
 
-
-
-            // Top Left
-
-
-            for (int movesX = bishopX + 1, movesY = bishopY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY--)
+            // top right
+            for (int movesX = bishopX + 1, movesY = bishopY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY++)
             {
-
-
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
                     bishopMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
                 {
                     bishopMoves[movesX, movesY] = true;
+                    break;
+                }
+                else
+                {
+                    bishopMoves[movesX, movesY] = true;
+                }
+            }
 
+            // Top Left
+            for (int movesX = bishopX + 1, movesY = bishopY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY--)
+            {
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
+                {
+                    bishopMoves[movesX, movesY] = false;
+                    break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
+                {
+                    bishopMoves[movesX, movesY] = true;
                     break;
                 }
 
                 else
                 {
                     bishopMoves[movesX, movesY] = true;
-
                 }
-
-
             }
 
             // bottom right
-
-
             for (int movesX = bishopX - 1, movesY = bishopY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY--)
             {
-
-
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == BishopColor)
                 {
                     bishopMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != BishopColor)
                 {
                     bishopMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     bishopMoves[movesX, movesY] = true;
-
                 }
-
-
             }
 
-
-
+            //return bool bishopMoves matrix
             return bishopMoves;
         }
     }
