@@ -18,8 +18,16 @@ namespace ChessMaster2017
             InitializeComponent();
                        
             Board testBoard = new Board();
+            e5.Image = Properties.Resources.black_pawn;
+            e7.Image = null;
+            b2.Image = e5.Image;
         }
 
-        
+        private void Selector(object sender, EventArgs e)
+        {
+            /*Control control = (Control)sender;
+            MessageBox.Show(control.Name);*/
+
+        }
     }
 }
