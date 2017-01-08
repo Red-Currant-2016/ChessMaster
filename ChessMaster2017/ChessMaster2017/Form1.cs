@@ -73,7 +73,7 @@ namespace ChessMaster2017
             {
                 if (!isSelected)
                 {
-                    testBoard.MoveSelectedChessPiece(x, y);
+                    testBoard.MoveChessPiece(x, y);
                     //control.Image = null;
                     Image newFigure = null;
                     newFigure = oldControl.Image;
