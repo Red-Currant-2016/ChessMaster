@@ -704,6 +704,7 @@
             this.h7.Size = new System.Drawing.Size(50, 50);
             this.h7.TabIndex = 15;
             this.h7.TabStop = false;
+            
             // 
             // g7
             // 
@@ -792,6 +793,7 @@
             this.h8.Size = new System.Drawing.Size(50, 50);
             this.h8.TabIndex = 7;
             this.h8.TabStop = false;
+            
             // 
             // g8
             // 

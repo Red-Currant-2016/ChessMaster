@@ -14,7 +14,7 @@ namespace ChessMaster2017.BackEnd
         private ChessPieceColor playerTurn;
 
         private ChessPiece[,] chessBoard;
-        private ChessPiece selectedChessPiece;
+        private ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
 
         public List<ChessPiece> chessPiecePrefab;
 
@@ -45,43 +45,43 @@ namespace ChessMaster2017.BackEnd
         {
             //WHITE PLAYER
             //Rooks
-            chessPiecePrefab.Add(new Rook(7, 0, ChessPieceColor.White, ChessPieceType.Rook));
-            chessPiecePrefab.Add(new Rook(7, 7, ChessPieceColor.White, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 0, ChessPieceColor.White, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 7, ChessPieceColor.White, ChessPieceType.Rook));
             //Knights
-            chessPiecePrefab.Add(new Knight(7, 1, ChessPieceColor.White, ChessPieceType.Knight));
-            chessPiecePrefab.Add(new Knight(7, 6, ChessPieceColor.White, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 1, ChessPieceColor.White, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 6, ChessPieceColor.White, ChessPieceType.Knight));
             //Bishops
-            chessPiecePrefab.Add(new Bishop(7, 2, ChessPieceColor.White, ChessPieceType.Bishop));
-            chessPiecePrefab.Add(new Bishop(7, 5, ChessPieceColor.White, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 2, ChessPieceColor.White, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 5, ChessPieceColor.White, ChessPieceType.Bishop));
             //Queen
-            chessPiecePrefab.Add(new Queen(7, 3, ChessPieceColor.White, ChessPieceType.Queen));// white queen => white squar
+            chessPiecePrefab.Add(new Queen(0, 3, ChessPieceColor.White, ChessPieceType.Queen));// white queen => white squar
             //King
-            chessPiecePrefab.Add(new King(7, 4, ChessPieceColor.White, ChessPieceType.King));
+            chessPiecePrefab.Add(new King(0, 4, ChessPieceColor.White, ChessPieceType.King));
             //Pawns
             for(int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(6, y, ChessPieceColor.White, ChessPieceType.Pawn));
+                chessPiecePrefab.Add(new Pawn(1, y, ChessPieceColor.White, ChessPieceType.Pawn));
             }
 
             //BLACK PLAYER
             //Rooks
-            chessPiecePrefab.Add(new Rook(0, 0, ChessPieceColor.Black, ChessPieceType.Rook));
-            chessPiecePrefab.Add(new Rook(0, 7, ChessPieceColor.Black, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 0, ChessPieceColor.Black, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 7, ChessPieceColor.Black, ChessPieceType.Rook));
             //Knights
-            chessPiecePrefab.Add(new Knight(0, 1, ChessPieceColor.Black, ChessPieceType.Knight));
-            chessPiecePrefab.Add(new Knight(0, 6, ChessPieceColor.Black, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 1, ChessPieceColor.Black, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 6, ChessPieceColor.Black, ChessPieceType.Knight));
             //Bishops
-            chessPiecePrefab.Add(new Bishop(0, 2, ChessPieceColor.Black, ChessPieceType.Bishop));
-            chessPiecePrefab.Add(new Bishop(0, 5, ChessPieceColor.Black, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 2, ChessPieceColor.Black, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 5, ChessPieceColor.Black, ChessPieceType.Bishop));
             //King
-            chessPiecePrefab.Add(new King(0, 3, ChessPieceColor.Black, ChessPieceType.King));
+            chessPiecePrefab.Add(new King(7, 3, ChessPieceColor.Black, ChessPieceType.King));
             //Queen
-            chessPiecePrefab.Add(new Queen(0, 4, ChessPieceColor.Black, ChessPieceType.Queen));// black queen => black squar
+            chessPiecePrefab.Add(new Queen(7, 4, ChessPieceColor.Black, ChessPieceType.Queen));// black queen => black squar
             
             //Pawns
             for (int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(1, y, ChessPieceColor.Black, ChessPieceType.Pawn));
+                chessPiecePrefab.Add(new Pawn(7, y, ChessPieceColor.Black, ChessPieceType.Pawn));
             }
         }
 
@@ -122,9 +122,19 @@ namespace ChessMaster2017.BackEnd
             }
         }
 
-        private void MoveSelectedChessPiece()
+        private void MoveSelectedChessPiece(int x, int y)
         {
-            throw new NotImplementedException();
+            if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
+            {
+                if(availableMoves[x,y] == true)
+                {
+                    
+                }
+                else
+                {
+                    selectedChessPiece = null;// deselect chess piece
+                }
+            }
         }
 
     }
