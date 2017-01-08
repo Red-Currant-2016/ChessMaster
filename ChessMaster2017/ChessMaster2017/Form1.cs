@@ -37,9 +37,14 @@ namespace ChessMaster2017
             int y = cordinates[0] - 'a';
             int x = cordinates[1] - '1';
             bool isSelected = false;
-            if (Action)
+            ChessPieceColor turn = testBoard.GetPlayerTurn();
+            if (!Action)
             {
-                isSelected = (testBoard.chessBoard[x, y] == null|| testBoard.chessBoard[x, y].Color == ChessPieceColor.White);
+                isSelected = (testBoard.chessBoard[x, y].Color == turn);
+            }
+            else
+            {
+                isSelected = (testBoard.chessBoard[x, y] == null || testBoard.chessBoard[x, y].Color != turn);
             }
             
             PictureBox secondControl = (PictureBox)sender;
@@ -71,7 +76,7 @@ namespace ChessMaster2017
             }
             else
             {
-                if (!isSelected)
+                if (isSelected)
                 {
                     testBoard.MoveChessPiece(x, y);
                     //control.Image = null;
