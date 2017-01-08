@@ -128,7 +128,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if(availableMoves[x,y] == true)
                 {
-                    
+                    //move chess piece to new cell
                 }
                 else
                 {
