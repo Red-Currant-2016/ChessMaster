@@ -110,31 +110,35 @@ namespace ChessMaster2017.BackEnd
             activeChessPieces = new List<ChessPiece>(chessPiecePrefab);
         }
 
-        private void SelectChessPiece(int x, int y)
+        public bool SelectChessPiece(int x, int y) 
         {
-            if(chessBoard[x,y] != null)
+            
+            
+            if (selectedChessPiece == null)
             {
-                if(playerTurn == chessBoard[x,y].Color)
-                {
-                    selectedChessPiece = chessBoard[x, y];
-                    availableMoves =  selectedChessPiece.PosibleMove();// get available moves
-                }
+                selectedChessPiece = chessBoard[x, y];
+                return true;
             }
+            return false;
         }
 
-        private void MoveSelectedChessPiece(int x, int y)
+        public void MoveSelectedChessPiece(int x, int y)
         {
-            if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
+
+            chessBoard[x, y] = selectedChessPiece;
+            selectedChessPiece = null;
+
+            /*if(selectedChessPiece != null && selectedChessPiece.Color == playerTurn)
             {
-                if(availableMoves[x,y] == true)
+                if(true)
                 {
-                    
+                    chessBoard[x,y] = selectedChessPiece
                 }
                 else
                 {
                     selectedChessPiece = null;// deselect chess piece
                 }
-            }
+            }*/
         }
 
     }
