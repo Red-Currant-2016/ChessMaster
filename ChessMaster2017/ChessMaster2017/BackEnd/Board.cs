@@ -121,7 +121,7 @@ namespace ChessMaster2017.BackEnd
                 return false;
             }
             selectedChessPiece = chessBoard[x, y];
-            highlightChessPieceMoves = selectedChessPiece.PosibleMove();//ChessPiece[,] chessBoard
+            highlightChessPieceMoves = selectedChessPiece.PossibleMove(chessBoard);//ChessPiece[,] chessBoard
             return true;
         }
 
