@@ -14,9 +14,10 @@ namespace ChessMaster2017
     
     public partial class MainForm : Form
     {
-        
         bool Action = false;
         Board testBoard = new Board();
+        PictureBox oldControl = null;
+        Color oldColor = default(Color);
         public MainForm()
         {
             InitializeComponent();
@@ -26,33 +27,56 @@ namespace ChessMaster2017
             e7.Image = null;
             b2.Image = e5.Image;*/
         }
+        
 
         private void Selector(object sender, EventArgs e)
         {
-            int x = 0;
-            int y = 0;
             PictureBox control = (PictureBox)sender;
             string cordinates = control.Name;
-            x = cordinates[0] - 'a';
-            y = cordinates[1] - '1';
+            int y = cordinates[0] - 'a';
+            int x = cordinates[1] - '1';
+            bool isSelected = testBoard.SelectChessPiece(x, y);
+            
+            PictureBox secondControl = (PictureBox)sender;
+            if (isSelected)
+            {
+                control = (PictureBox)sender;
+            }
+            else
+            {
+                secondControl = (PictureBox)sender;
+            }
+           
+            
             if (!Action)
             {
 
                 /*Control control = (Control)sender;
                 MessageBox.Show(control.Name);*/
                  
-                bool isSelected = testBoard.SelectChessPiece(x, y);
+                
                 if (isSelected)
                 {
-                    Action = true; ;
+                    Action = true;
+                    oldControl = (PictureBox)sender;
+                    oldColor = oldControl.BackColor;
+                    oldControl.BackColor = Color.Aqua;
                 }
                 //control.BackColor = Color.Aqua;
             }
             else
             {
                 testBoard.MoveSelectedChessPiece(x, y);
+                //control.Image = null;
+                Image newFigure = null;
+                newFigure = oldControl.Image;
+                testBoard.selectedChessPiece = null;
+                oldControl.Image = null;
+                oldControl.BackColor = oldColor;
+                secondControl.Image = newFigure;
                 Action = false;
             }
         }
+        
     }
 }
