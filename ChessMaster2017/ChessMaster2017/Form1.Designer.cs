@@ -30,9 +30,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.WhitePlayerTurn = new System.Windows.Forms.RadioButton();
-            this.BlackPlayerTurn = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.h1 = new System.Windows.Forms.PictureBox();
             this.g1 = new System.Windows.Forms.PictureBox();
             this.f1 = new System.Windows.Forms.PictureBox();
@@ -97,24 +94,10 @@
             this.c8 = new System.Windows.Forms.PictureBox();
             this.b8 = new System.Windows.Forms.PictureBox();
             this.a8 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.BlackPlayerTurn = new System.Windows.Forms.RadioButton();
+            this.WhitePlayerTurn = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.h1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.g1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.f1)).BeginInit();
@@ -181,50 +164,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.a8)).BeginInit();
             this.SuspendLayout();
             // 
-            // WhitePlayerTurn
-            // 
-            this.WhitePlayerTurn.AutoCheck = false;
-            this.WhitePlayerTurn.AutoSize = true;
-            this.WhitePlayerTurn.Checked = true;
-            this.WhitePlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WhitePlayerTurn.Location = new System.Drawing.Point(3, 3);
-            this.WhitePlayerTurn.Name = "WhitePlayerTurn";
-            this.WhitePlayerTurn.Size = new System.Drawing.Size(68, 24);
-            this.WhitePlayerTurn.TabIndex = 64;
-            this.WhitePlayerTurn.TabStop = true;
-            this.WhitePlayerTurn.Text = "White";
-            this.WhitePlayerTurn.UseVisualStyleBackColor = true;
-            // 
-            // BlackPlayerTurn
-            // 
-            this.BlackPlayerTurn.AutoCheck = false;
-            this.BlackPlayerTurn.AutoSize = true;
-            this.BlackPlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BlackPlayerTurn.Location = new System.Drawing.Point(3, 33);
-            this.BlackPlayerTurn.Name = "BlackPlayerTurn";
-            this.BlackPlayerTurn.Size = new System.Drawing.Size(66, 24);
-            this.BlackPlayerTurn.TabIndex = 65;
-            this.BlackPlayerTurn.TabStop = true;
-            this.BlackPlayerTurn.Text = "Black";
-            this.BlackPlayerTurn.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.WhitePlayerTurn);
-            this.panel1.Controls.Add(this.BlackPlayerTurn);
-            this.panel1.Location = new System.Drawing.Point(463, 66);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(88, 62);
-            this.panel1.TabIndex = 66;
-            // 
             // h1
             // 
-            this.h1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h1.BackColor = System.Drawing.Color.Gainsboro;
             this.h1.Image = ((System.Drawing.Image)(resources.GetObject("h1.Image")));
-            this.h1.Location = new System.Drawing.Point(390, 416);
+            this.h1.Location = new System.Drawing.Point(843, 590);
             this.h1.Margin = new System.Windows.Forms.Padding(0);
             this.h1.Name = "h1";
-            this.h1.Size = new System.Drawing.Size(50, 50);
+            this.h1.Size = new System.Drawing.Size(67, 62);
             this.h1.TabIndex = 63;
             this.h1.TabStop = false;
             this.h1.Click += new System.EventHandler(this.Selector);
@@ -233,22 +180,22 @@
             // 
             this.g1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.g1.Image = ((System.Drawing.Image)(resources.GetObject("g1.Image")));
-            this.g1.Location = new System.Drawing.Point(340, 416);
+            this.g1.Location = new System.Drawing.Point(776, 590);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
             this.g1.Name = "g1";
-            this.g1.Size = new System.Drawing.Size(50, 50);
+            this.g1.Size = new System.Drawing.Size(67, 62);
             this.g1.TabIndex = 62;
             this.g1.TabStop = false;
             this.g1.Click += new System.EventHandler(this.Selector);
             // 
             // f1
             // 
-            this.f1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f1.BackColor = System.Drawing.Color.Gainsboro;
             this.f1.Image = ((System.Drawing.Image)(resources.GetObject("f1.Image")));
-            this.f1.Location = new System.Drawing.Point(290, 416);
+            this.f1.Location = new System.Drawing.Point(710, 590);
             this.f1.Margin = new System.Windows.Forms.Padding(0);
             this.f1.Name = "f1";
-            this.f1.Size = new System.Drawing.Size(50, 50);
+            this.f1.Size = new System.Drawing.Size(67, 62);
             this.f1.TabIndex = 61;
             this.f1.TabStop = false;
             this.f1.Click += new System.EventHandler(this.Selector);
@@ -257,22 +204,22 @@
             // 
             this.e1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.e1.Image = global::ChessMaster2017.Properties.Resources.white_king;
-            this.e1.Location = new System.Drawing.Point(240, 416);
+            this.e1.Location = new System.Drawing.Point(643, 590);
             this.e1.Margin = new System.Windows.Forms.Padding(0);
             this.e1.Name = "e1";
-            this.e1.Size = new System.Drawing.Size(50, 50);
+            this.e1.Size = new System.Drawing.Size(67, 62);
             this.e1.TabIndex = 60;
             this.e1.TabStop = false;
             this.e1.Click += new System.EventHandler(this.Selector);
             // 
             // d1
             // 
-            this.d1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d1.BackColor = System.Drawing.Color.Gainsboro;
             this.d1.Image = global::ChessMaster2017.Properties.Resources.white_queen;
-            this.d1.Location = new System.Drawing.Point(190, 416);
+            this.d1.Location = new System.Drawing.Point(576, 590);
             this.d1.Margin = new System.Windows.Forms.Padding(0);
             this.d1.Name = "d1";
-            this.d1.Size = new System.Drawing.Size(50, 50);
+            this.d1.Size = new System.Drawing.Size(67, 62);
             this.d1.TabIndex = 59;
             this.d1.TabStop = false;
             this.d1.Click += new System.EventHandler(this.Selector);
@@ -281,22 +228,22 @@
             // 
             this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.c1.Image = ((System.Drawing.Image)(resources.GetObject("c1.Image")));
-            this.c1.Location = new System.Drawing.Point(140, 416);
+            this.c1.Location = new System.Drawing.Point(510, 590);
             this.c1.Margin = new System.Windows.Forms.Padding(0);
             this.c1.Name = "c1";
-            this.c1.Size = new System.Drawing.Size(50, 50);
+            this.c1.Size = new System.Drawing.Size(67, 62);
             this.c1.TabIndex = 58;
             this.c1.TabStop = false;
             this.c1.Click += new System.EventHandler(this.Selector);
             // 
             // b1
             // 
-            this.b1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b1.BackColor = System.Drawing.Color.Gainsboro;
             this.b1.Image = ((System.Drawing.Image)(resources.GetObject("b1.Image")));
-            this.b1.Location = new System.Drawing.Point(90, 416);
+            this.b1.Location = new System.Drawing.Point(443, 590);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
             this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(50, 50);
+            this.b1.Size = new System.Drawing.Size(67, 62);
             this.b1.TabIndex = 57;
             this.b1.TabStop = false;
             this.b1.Click += new System.EventHandler(this.Selector);
@@ -305,10 +252,10 @@
             // 
             this.a1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.a1.Image = ((System.Drawing.Image)(resources.GetObject("a1.Image")));
-            this.a1.Location = new System.Drawing.Point(40, 416);
+            this.a1.Location = new System.Drawing.Point(376, 590);
             this.a1.Margin = new System.Windows.Forms.Padding(0);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(50, 50);
+            this.a1.Size = new System.Drawing.Size(67, 62);
             this.a1.TabIndex = 56;
             this.a1.TabStop = false;
             this.a1.Click += new System.EventHandler(this.Selector);
@@ -317,22 +264,22 @@
             // 
             this.h2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.h2.Image = ((System.Drawing.Image)(resources.GetObject("h2.Image")));
-            this.h2.Location = new System.Drawing.Point(390, 366);
+            this.h2.Location = new System.Drawing.Point(843, 528);
             this.h2.Margin = new System.Windows.Forms.Padding(0);
             this.h2.Name = "h2";
-            this.h2.Size = new System.Drawing.Size(50, 50);
+            this.h2.Size = new System.Drawing.Size(67, 62);
             this.h2.TabIndex = 55;
             this.h2.TabStop = false;
             this.h2.Click += new System.EventHandler(this.Selector);
             // 
             // g2
             // 
-            this.g2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g2.BackColor = System.Drawing.Color.Gainsboro;
             this.g2.Image = ((System.Drawing.Image)(resources.GetObject("g2.Image")));
-            this.g2.Location = new System.Drawing.Point(340, 366);
+            this.g2.Location = new System.Drawing.Point(776, 528);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
             this.g2.Name = "g2";
-            this.g2.Size = new System.Drawing.Size(50, 50);
+            this.g2.Size = new System.Drawing.Size(67, 62);
             this.g2.TabIndex = 54;
             this.g2.TabStop = false;
             this.g2.Click += new System.EventHandler(this.Selector);
@@ -341,22 +288,22 @@
             // 
             this.f2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.f2.Image = ((System.Drawing.Image)(resources.GetObject("f2.Image")));
-            this.f2.Location = new System.Drawing.Point(290, 366);
+            this.f2.Location = new System.Drawing.Point(710, 528);
             this.f2.Margin = new System.Windows.Forms.Padding(0);
             this.f2.Name = "f2";
-            this.f2.Size = new System.Drawing.Size(50, 50);
+            this.f2.Size = new System.Drawing.Size(67, 62);
             this.f2.TabIndex = 53;
             this.f2.TabStop = false;
             this.f2.Click += new System.EventHandler(this.Selector);
             // 
             // e2
             // 
-            this.e2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e2.BackColor = System.Drawing.Color.Gainsboro;
             this.e2.Image = ((System.Drawing.Image)(resources.GetObject("e2.Image")));
-            this.e2.Location = new System.Drawing.Point(240, 366);
+            this.e2.Location = new System.Drawing.Point(643, 528);
             this.e2.Margin = new System.Windows.Forms.Padding(0);
             this.e2.Name = "e2";
-            this.e2.Size = new System.Drawing.Size(50, 50);
+            this.e2.Size = new System.Drawing.Size(67, 62);
             this.e2.TabIndex = 52;
             this.e2.TabStop = false;
             this.e2.Click += new System.EventHandler(this.Selector);
@@ -365,22 +312,22 @@
             // 
             this.d2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.d2.Image = ((System.Drawing.Image)(resources.GetObject("d2.Image")));
-            this.d2.Location = new System.Drawing.Point(190, 366);
+            this.d2.Location = new System.Drawing.Point(576, 528);
             this.d2.Margin = new System.Windows.Forms.Padding(0);
             this.d2.Name = "d2";
-            this.d2.Size = new System.Drawing.Size(50, 50);
+            this.d2.Size = new System.Drawing.Size(67, 62);
             this.d2.TabIndex = 51;
             this.d2.TabStop = false;
             this.d2.Click += new System.EventHandler(this.Selector);
             // 
             // c2
             // 
-            this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c2.BackColor = System.Drawing.Color.Gainsboro;
             this.c2.Image = ((System.Drawing.Image)(resources.GetObject("c2.Image")));
-            this.c2.Location = new System.Drawing.Point(140, 366);
+            this.c2.Location = new System.Drawing.Point(510, 528);
             this.c2.Margin = new System.Windows.Forms.Padding(0);
             this.c2.Name = "c2";
-            this.c2.Size = new System.Drawing.Size(50, 50);
+            this.c2.Size = new System.Drawing.Size(67, 62);
             this.c2.TabIndex = 50;
             this.c2.TabStop = false;
             this.c2.Click += new System.EventHandler(this.Selector);
@@ -389,33 +336,33 @@
             // 
             this.b2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.b2.Image = ((System.Drawing.Image)(resources.GetObject("b2.Image")));
-            this.b2.Location = new System.Drawing.Point(90, 366);
+            this.b2.Location = new System.Drawing.Point(443, 528);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
             this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(50, 50);
+            this.b2.Size = new System.Drawing.Size(67, 62);
             this.b2.TabIndex = 49;
             this.b2.TabStop = false;
             this.b2.Click += new System.EventHandler(this.Selector);
             // 
             // a2
             // 
-            this.a2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a2.BackColor = System.Drawing.Color.Gainsboro;
             this.a2.Image = ((System.Drawing.Image)(resources.GetObject("a2.Image")));
-            this.a2.Location = new System.Drawing.Point(40, 366);
+            this.a2.Location = new System.Drawing.Point(376, 528);
             this.a2.Margin = new System.Windows.Forms.Padding(0);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(50, 50);
+            this.a2.Size = new System.Drawing.Size(67, 62);
             this.a2.TabIndex = 48;
             this.a2.TabStop = false;
             this.a2.Click += new System.EventHandler(this.Selector);
             // 
             // h3
             // 
-            this.h3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.h3.Location = new System.Drawing.Point(390, 316);
+            this.h3.BackColor = System.Drawing.Color.Gainsboro;
+            this.h3.Location = new System.Drawing.Point(843, 467);
             this.h3.Margin = new System.Windows.Forms.Padding(0);
             this.h3.Name = "h3";
-            this.h3.Size = new System.Drawing.Size(50, 50);
+            this.h3.Size = new System.Drawing.Size(67, 62);
             this.h3.TabIndex = 47;
             this.h3.TabStop = false;
             this.h3.Click += new System.EventHandler(this.Selector);
@@ -423,21 +370,21 @@
             // g3
             // 
             this.g3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.g3.Location = new System.Drawing.Point(340, 316);
+            this.g3.Location = new System.Drawing.Point(776, 467);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
-            this.g3.Size = new System.Drawing.Size(50, 50);
+            this.g3.Size = new System.Drawing.Size(67, 62);
             this.g3.TabIndex = 46;
             this.g3.TabStop = false;
             this.g3.Click += new System.EventHandler(this.Selector);
             // 
             // f3
             // 
-            this.f3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.f3.Location = new System.Drawing.Point(290, 316);
+            this.f3.BackColor = System.Drawing.Color.Gainsboro;
+            this.f3.Location = new System.Drawing.Point(710, 467);
             this.f3.Margin = new System.Windows.Forms.Padding(0);
             this.f3.Name = "f3";
-            this.f3.Size = new System.Drawing.Size(50, 50);
+            this.f3.Size = new System.Drawing.Size(67, 62);
             this.f3.TabIndex = 45;
             this.f3.TabStop = false;
             this.f3.Click += new System.EventHandler(this.Selector);
@@ -445,21 +392,21 @@
             // e3
             // 
             this.e3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.e3.Location = new System.Drawing.Point(240, 316);
+            this.e3.Location = new System.Drawing.Point(643, 467);
             this.e3.Margin = new System.Windows.Forms.Padding(0);
             this.e3.Name = "e3";
-            this.e3.Size = new System.Drawing.Size(50, 50);
+            this.e3.Size = new System.Drawing.Size(67, 62);
             this.e3.TabIndex = 44;
             this.e3.TabStop = false;
             this.e3.Click += new System.EventHandler(this.Selector);
             // 
             // d3
             // 
-            this.d3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.d3.Location = new System.Drawing.Point(190, 316);
+            this.d3.BackColor = System.Drawing.Color.Gainsboro;
+            this.d3.Location = new System.Drawing.Point(576, 467);
             this.d3.Margin = new System.Windows.Forms.Padding(0);
             this.d3.Name = "d3";
-            this.d3.Size = new System.Drawing.Size(50, 50);
+            this.d3.Size = new System.Drawing.Size(67, 62);
             this.d3.TabIndex = 43;
             this.d3.TabStop = false;
             this.d3.Click += new System.EventHandler(this.Selector);
@@ -467,21 +414,21 @@
             // c3
             // 
             this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.c3.Location = new System.Drawing.Point(140, 316);
+            this.c3.Location = new System.Drawing.Point(510, 467);
             this.c3.Margin = new System.Windows.Forms.Padding(0);
             this.c3.Name = "c3";
-            this.c3.Size = new System.Drawing.Size(50, 50);
+            this.c3.Size = new System.Drawing.Size(67, 62);
             this.c3.TabIndex = 42;
             this.c3.TabStop = false;
             this.c3.Click += new System.EventHandler(this.Selector);
             // 
             // b3
             // 
-            this.b3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.b3.Location = new System.Drawing.Point(90, 316);
+            this.b3.BackColor = System.Drawing.Color.Gainsboro;
+            this.b3.Location = new System.Drawing.Point(443, 467);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(50, 50);
+            this.b3.Size = new System.Drawing.Size(67, 62);
             this.b3.TabIndex = 41;
             this.b3.TabStop = false;
             this.b3.Click += new System.EventHandler(this.Selector);
@@ -489,10 +436,10 @@
             // a3
             // 
             this.a3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.a3.Location = new System.Drawing.Point(40, 316);
+            this.a3.Location = new System.Drawing.Point(376, 467);
             this.a3.Margin = new System.Windows.Forms.Padding(0);
             this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(50, 50);
+            this.a3.Size = new System.Drawing.Size(67, 62);
             this.a3.TabIndex = 40;
             this.a3.TabStop = false;
             this.a3.Click += new System.EventHandler(this.Selector);
@@ -500,21 +447,21 @@
             // h4
             // 
             this.h4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.h4.Location = new System.Drawing.Point(390, 266);
+            this.h4.Location = new System.Drawing.Point(843, 405);
             this.h4.Margin = new System.Windows.Forms.Padding(0);
             this.h4.Name = "h4";
-            this.h4.Size = new System.Drawing.Size(50, 50);
+            this.h4.Size = new System.Drawing.Size(67, 62);
             this.h4.TabIndex = 39;
             this.h4.TabStop = false;
             this.h4.Click += new System.EventHandler(this.Selector);
             // 
             // g4
             // 
-            this.g4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.g4.Location = new System.Drawing.Point(340, 266);
+            this.g4.BackColor = System.Drawing.Color.Gainsboro;
+            this.g4.Location = new System.Drawing.Point(776, 405);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
-            this.g4.Size = new System.Drawing.Size(50, 50);
+            this.g4.Size = new System.Drawing.Size(67, 62);
             this.g4.TabIndex = 38;
             this.g4.TabStop = false;
             this.g4.Click += new System.EventHandler(this.Selector);
@@ -522,21 +469,21 @@
             // f4
             // 
             this.f4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.f4.Location = new System.Drawing.Point(290, 266);
+            this.f4.Location = new System.Drawing.Point(710, 405);
             this.f4.Margin = new System.Windows.Forms.Padding(0);
             this.f4.Name = "f4";
-            this.f4.Size = new System.Drawing.Size(50, 50);
+            this.f4.Size = new System.Drawing.Size(67, 62);
             this.f4.TabIndex = 37;
             this.f4.TabStop = false;
             this.f4.Click += new System.EventHandler(this.Selector);
             // 
             // e4
             // 
-            this.e4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.e4.Location = new System.Drawing.Point(240, 266);
+            this.e4.BackColor = System.Drawing.Color.Gainsboro;
+            this.e4.Location = new System.Drawing.Point(643, 405);
             this.e4.Margin = new System.Windows.Forms.Padding(0);
             this.e4.Name = "e4";
-            this.e4.Size = new System.Drawing.Size(50, 50);
+            this.e4.Size = new System.Drawing.Size(67, 62);
             this.e4.TabIndex = 36;
             this.e4.TabStop = false;
             this.e4.Click += new System.EventHandler(this.Selector);
@@ -544,21 +491,21 @@
             // d4
             // 
             this.d4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.d4.Location = new System.Drawing.Point(190, 266);
+            this.d4.Location = new System.Drawing.Point(576, 405);
             this.d4.Margin = new System.Windows.Forms.Padding(0);
             this.d4.Name = "d4";
-            this.d4.Size = new System.Drawing.Size(50, 50);
+            this.d4.Size = new System.Drawing.Size(67, 62);
             this.d4.TabIndex = 35;
             this.d4.TabStop = false;
             this.d4.Click += new System.EventHandler(this.Selector);
             // 
             // c4
             // 
-            this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.c4.Location = new System.Drawing.Point(140, 266);
+            this.c4.BackColor = System.Drawing.Color.Gainsboro;
+            this.c4.Location = new System.Drawing.Point(510, 405);
             this.c4.Margin = new System.Windows.Forms.Padding(0);
             this.c4.Name = "c4";
-            this.c4.Size = new System.Drawing.Size(50, 50);
+            this.c4.Size = new System.Drawing.Size(67, 62);
             this.c4.TabIndex = 34;
             this.c4.TabStop = false;
             this.c4.Click += new System.EventHandler(this.Selector);
@@ -566,32 +513,32 @@
             // b4
             // 
             this.b4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.b4.Location = new System.Drawing.Point(90, 266);
+            this.b4.Location = new System.Drawing.Point(443, 405);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
-            this.b4.Size = new System.Drawing.Size(50, 50);
+            this.b4.Size = new System.Drawing.Size(67, 62);
             this.b4.TabIndex = 33;
             this.b4.TabStop = false;
             this.b4.Click += new System.EventHandler(this.Selector);
             // 
             // a4
             // 
-            this.a4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.a4.Location = new System.Drawing.Point(40, 266);
+            this.a4.BackColor = System.Drawing.Color.Gainsboro;
+            this.a4.Location = new System.Drawing.Point(376, 405);
             this.a4.Margin = new System.Windows.Forms.Padding(0);
             this.a4.Name = "a4";
-            this.a4.Size = new System.Drawing.Size(50, 50);
+            this.a4.Size = new System.Drawing.Size(67, 62);
             this.a4.TabIndex = 32;
             this.a4.TabStop = false;
             this.a4.Click += new System.EventHandler(this.Selector);
             // 
             // h5
             // 
-            this.h5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.h5.Location = new System.Drawing.Point(390, 216);
+            this.h5.BackColor = System.Drawing.Color.Gainsboro;
+            this.h5.Location = new System.Drawing.Point(843, 344);
             this.h5.Margin = new System.Windows.Forms.Padding(0);
             this.h5.Name = "h5";
-            this.h5.Size = new System.Drawing.Size(50, 50);
+            this.h5.Size = new System.Drawing.Size(67, 62);
             this.h5.TabIndex = 31;
             this.h5.TabStop = false;
             this.h5.Click += new System.EventHandler(this.Selector);
@@ -599,21 +546,21 @@
             // g5
             // 
             this.g5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.g5.Location = new System.Drawing.Point(340, 216);
+            this.g5.Location = new System.Drawing.Point(776, 344);
             this.g5.Margin = new System.Windows.Forms.Padding(0);
             this.g5.Name = "g5";
-            this.g5.Size = new System.Drawing.Size(50, 50);
+            this.g5.Size = new System.Drawing.Size(67, 62);
             this.g5.TabIndex = 30;
             this.g5.TabStop = false;
             this.g5.Click += new System.EventHandler(this.Selector);
             // 
             // f5
             // 
-            this.f5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.f5.Location = new System.Drawing.Point(290, 216);
+            this.f5.BackColor = System.Drawing.Color.Gainsboro;
+            this.f5.Location = new System.Drawing.Point(710, 344);
             this.f5.Margin = new System.Windows.Forms.Padding(0);
             this.f5.Name = "f5";
-            this.f5.Size = new System.Drawing.Size(50, 50);
+            this.f5.Size = new System.Drawing.Size(67, 62);
             this.f5.TabIndex = 29;
             this.f5.TabStop = false;
             this.f5.Click += new System.EventHandler(this.Selector);
@@ -621,21 +568,21 @@
             // e5
             // 
             this.e5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.e5.Location = new System.Drawing.Point(240, 216);
+            this.e5.Location = new System.Drawing.Point(643, 344);
             this.e5.Margin = new System.Windows.Forms.Padding(0);
             this.e5.Name = "e5";
-            this.e5.Size = new System.Drawing.Size(50, 50);
+            this.e5.Size = new System.Drawing.Size(67, 62);
             this.e5.TabIndex = 28;
             this.e5.TabStop = false;
             this.e5.Click += new System.EventHandler(this.Selector);
             // 
             // d5
             // 
-            this.d5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.d5.Location = new System.Drawing.Point(190, 216);
+            this.d5.BackColor = System.Drawing.Color.Gainsboro;
+            this.d5.Location = new System.Drawing.Point(576, 344);
             this.d5.Margin = new System.Windows.Forms.Padding(0);
             this.d5.Name = "d5";
-            this.d5.Size = new System.Drawing.Size(50, 50);
+            this.d5.Size = new System.Drawing.Size(67, 62);
             this.d5.TabIndex = 27;
             this.d5.TabStop = false;
             this.d5.Click += new System.EventHandler(this.Selector);
@@ -643,21 +590,21 @@
             // c5
             // 
             this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.c5.Location = new System.Drawing.Point(140, 216);
+            this.c5.Location = new System.Drawing.Point(510, 344);
             this.c5.Margin = new System.Windows.Forms.Padding(0);
             this.c5.Name = "c5";
-            this.c5.Size = new System.Drawing.Size(50, 50);
+            this.c5.Size = new System.Drawing.Size(67, 62);
             this.c5.TabIndex = 26;
             this.c5.TabStop = false;
             this.c5.Click += new System.EventHandler(this.Selector);
             // 
             // b5
             // 
-            this.b5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.b5.Location = new System.Drawing.Point(90, 216);
+            this.b5.BackColor = System.Drawing.Color.Gainsboro;
+            this.b5.Location = new System.Drawing.Point(443, 344);
             this.b5.Margin = new System.Windows.Forms.Padding(0);
             this.b5.Name = "b5";
-            this.b5.Size = new System.Drawing.Size(50, 50);
+            this.b5.Size = new System.Drawing.Size(67, 62);
             this.b5.TabIndex = 25;
             this.b5.TabStop = false;
             this.b5.Click += new System.EventHandler(this.Selector);
@@ -665,10 +612,10 @@
             // a5
             // 
             this.a5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.a5.Location = new System.Drawing.Point(40, 216);
+            this.a5.Location = new System.Drawing.Point(376, 344);
             this.a5.Margin = new System.Windows.Forms.Padding(0);
             this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(50, 50);
+            this.a5.Size = new System.Drawing.Size(67, 62);
             this.a5.TabIndex = 24;
             this.a5.TabStop = false;
             this.a5.Click += new System.EventHandler(this.Selector);
@@ -676,21 +623,21 @@
             // h6
             // 
             this.h6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.h6.Location = new System.Drawing.Point(390, 166);
+            this.h6.Location = new System.Drawing.Point(843, 282);
             this.h6.Margin = new System.Windows.Forms.Padding(0);
             this.h6.Name = "h6";
-            this.h6.Size = new System.Drawing.Size(50, 50);
+            this.h6.Size = new System.Drawing.Size(67, 62);
             this.h6.TabIndex = 23;
             this.h6.TabStop = false;
             this.h6.Click += new System.EventHandler(this.Selector);
             // 
             // g6
             // 
-            this.g6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.g6.Location = new System.Drawing.Point(340, 166);
+            this.g6.BackColor = System.Drawing.Color.Gainsboro;
+            this.g6.Location = new System.Drawing.Point(776, 282);
             this.g6.Margin = new System.Windows.Forms.Padding(0);
             this.g6.Name = "g6";
-            this.g6.Size = new System.Drawing.Size(50, 50);
+            this.g6.Size = new System.Drawing.Size(67, 62);
             this.g6.TabIndex = 22;
             this.g6.TabStop = false;
             this.g6.Click += new System.EventHandler(this.Selector);
@@ -698,21 +645,21 @@
             // f6
             // 
             this.f6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.f6.Location = new System.Drawing.Point(290, 166);
+            this.f6.Location = new System.Drawing.Point(710, 282);
             this.f6.Margin = new System.Windows.Forms.Padding(0);
             this.f6.Name = "f6";
-            this.f6.Size = new System.Drawing.Size(50, 50);
+            this.f6.Size = new System.Drawing.Size(67, 62);
             this.f6.TabIndex = 21;
             this.f6.TabStop = false;
             this.f6.Click += new System.EventHandler(this.Selector);
             // 
             // e6
             // 
-            this.e6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.e6.Location = new System.Drawing.Point(240, 166);
+            this.e6.BackColor = System.Drawing.Color.Gainsboro;
+            this.e6.Location = new System.Drawing.Point(643, 282);
             this.e6.Margin = new System.Windows.Forms.Padding(0);
             this.e6.Name = "e6";
-            this.e6.Size = new System.Drawing.Size(50, 50);
+            this.e6.Size = new System.Drawing.Size(67, 62);
             this.e6.TabIndex = 20;
             this.e6.TabStop = false;
             this.e6.Click += new System.EventHandler(this.Selector);
@@ -720,21 +667,21 @@
             // d6
             // 
             this.d6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.d6.Location = new System.Drawing.Point(190, 166);
+            this.d6.Location = new System.Drawing.Point(576, 282);
             this.d6.Margin = new System.Windows.Forms.Padding(0);
             this.d6.Name = "d6";
-            this.d6.Size = new System.Drawing.Size(50, 50);
+            this.d6.Size = new System.Drawing.Size(67, 62);
             this.d6.TabIndex = 19;
             this.d6.TabStop = false;
             this.d6.Click += new System.EventHandler(this.Selector);
             // 
             // c6
             // 
-            this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.c6.Location = new System.Drawing.Point(140, 166);
+            this.c6.BackColor = System.Drawing.Color.Gainsboro;
+            this.c6.Location = new System.Drawing.Point(510, 282);
             this.c6.Margin = new System.Windows.Forms.Padding(0);
             this.c6.Name = "c6";
-            this.c6.Size = new System.Drawing.Size(50, 50);
+            this.c6.Size = new System.Drawing.Size(67, 62);
             this.c6.TabIndex = 18;
             this.c6.TabStop = false;
             this.c6.Click += new System.EventHandler(this.Selector);
@@ -742,33 +689,33 @@
             // b6
             // 
             this.b6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.b6.Location = new System.Drawing.Point(90, 166);
+            this.b6.Location = new System.Drawing.Point(443, 282);
             this.b6.Margin = new System.Windows.Forms.Padding(0);
             this.b6.Name = "b6";
-            this.b6.Size = new System.Drawing.Size(50, 50);
+            this.b6.Size = new System.Drawing.Size(67, 62);
             this.b6.TabIndex = 17;
             this.b6.TabStop = false;
             this.b6.Click += new System.EventHandler(this.Selector);
             // 
             // a6
             // 
-            this.a6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.a6.Location = new System.Drawing.Point(40, 166);
+            this.a6.BackColor = System.Drawing.Color.Gainsboro;
+            this.a6.Location = new System.Drawing.Point(376, 282);
             this.a6.Margin = new System.Windows.Forms.Padding(0);
             this.a6.Name = "a6";
-            this.a6.Size = new System.Drawing.Size(50, 50);
+            this.a6.Size = new System.Drawing.Size(67, 62);
             this.a6.TabIndex = 16;
             this.a6.TabStop = false;
             this.a6.Click += new System.EventHandler(this.Selector);
             // 
             // h7
             // 
-            this.h7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h7.BackColor = System.Drawing.Color.Gainsboro;
             this.h7.Image = ((System.Drawing.Image)(resources.GetObject("h7.Image")));
-            this.h7.Location = new System.Drawing.Point(390, 116);
+            this.h7.Location = new System.Drawing.Point(843, 221);
             this.h7.Margin = new System.Windows.Forms.Padding(0);
             this.h7.Name = "h7";
-            this.h7.Size = new System.Drawing.Size(50, 50);
+            this.h7.Size = new System.Drawing.Size(67, 62);
             this.h7.TabIndex = 15;
             this.h7.TabStop = false;
             this.h7.Click += new System.EventHandler(this.Selector);
@@ -777,22 +724,22 @@
             // 
             this.g7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.g7.Image = ((System.Drawing.Image)(resources.GetObject("g7.Image")));
-            this.g7.Location = new System.Drawing.Point(340, 116);
+            this.g7.Location = new System.Drawing.Point(776, 221);
             this.g7.Margin = new System.Windows.Forms.Padding(0);
             this.g7.Name = "g7";
-            this.g7.Size = new System.Drawing.Size(50, 50);
+            this.g7.Size = new System.Drawing.Size(67, 62);
             this.g7.TabIndex = 14;
             this.g7.TabStop = false;
             this.g7.Click += new System.EventHandler(this.Selector);
             // 
             // f7
             // 
-            this.f7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f7.BackColor = System.Drawing.Color.Gainsboro;
             this.f7.Image = ((System.Drawing.Image)(resources.GetObject("f7.Image")));
-            this.f7.Location = new System.Drawing.Point(290, 116);
+            this.f7.Location = new System.Drawing.Point(710, 221);
             this.f7.Margin = new System.Windows.Forms.Padding(0);
             this.f7.Name = "f7";
-            this.f7.Size = new System.Drawing.Size(50, 50);
+            this.f7.Size = new System.Drawing.Size(67, 62);
             this.f7.TabIndex = 13;
             this.f7.TabStop = false;
             this.f7.Click += new System.EventHandler(this.Selector);
@@ -801,22 +748,22 @@
             // 
             this.e7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.e7.Image = ((System.Drawing.Image)(resources.GetObject("e7.Image")));
-            this.e7.Location = new System.Drawing.Point(240, 116);
+            this.e7.Location = new System.Drawing.Point(643, 221);
             this.e7.Margin = new System.Windows.Forms.Padding(0);
             this.e7.Name = "e7";
-            this.e7.Size = new System.Drawing.Size(50, 50);
+            this.e7.Size = new System.Drawing.Size(67, 62);
             this.e7.TabIndex = 12;
             this.e7.TabStop = false;
             this.e7.Click += new System.EventHandler(this.Selector);
             // 
             // d7
             // 
-            this.d7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d7.BackColor = System.Drawing.Color.Gainsboro;
             this.d7.Image = ((System.Drawing.Image)(resources.GetObject("d7.Image")));
-            this.d7.Location = new System.Drawing.Point(190, 116);
+            this.d7.Location = new System.Drawing.Point(576, 221);
             this.d7.Margin = new System.Windows.Forms.Padding(0);
             this.d7.Name = "d7";
-            this.d7.Size = new System.Drawing.Size(50, 50);
+            this.d7.Size = new System.Drawing.Size(67, 62);
             this.d7.TabIndex = 11;
             this.d7.TabStop = false;
             this.d7.Click += new System.EventHandler(this.Selector);
@@ -825,22 +772,22 @@
             // 
             this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.c7.Image = ((System.Drawing.Image)(resources.GetObject("c7.Image")));
-            this.c7.Location = new System.Drawing.Point(140, 116);
+            this.c7.Location = new System.Drawing.Point(510, 221);
             this.c7.Margin = new System.Windows.Forms.Padding(0);
             this.c7.Name = "c7";
-            this.c7.Size = new System.Drawing.Size(50, 50);
+            this.c7.Size = new System.Drawing.Size(67, 62);
             this.c7.TabIndex = 10;
             this.c7.TabStop = false;
             this.c7.Click += new System.EventHandler(this.Selector);
             // 
             // b7
             // 
-            this.b7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b7.BackColor = System.Drawing.Color.Gainsboro;
             this.b7.Image = ((System.Drawing.Image)(resources.GetObject("b7.Image")));
-            this.b7.Location = new System.Drawing.Point(90, 116);
+            this.b7.Location = new System.Drawing.Point(443, 221);
             this.b7.Margin = new System.Windows.Forms.Padding(0);
             this.b7.Name = "b7";
-            this.b7.Size = new System.Drawing.Size(50, 50);
+            this.b7.Size = new System.Drawing.Size(67, 62);
             this.b7.TabIndex = 9;
             this.b7.TabStop = false;
             this.b7.Click += new System.EventHandler(this.Selector);
@@ -849,10 +796,10 @@
             // 
             this.a7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.a7.Image = ((System.Drawing.Image)(resources.GetObject("a7.Image")));
-            this.a7.Location = new System.Drawing.Point(40, 116);
+            this.a7.Location = new System.Drawing.Point(376, 221);
             this.a7.Margin = new System.Windows.Forms.Padding(0);
             this.a7.Name = "a7";
-            this.a7.Size = new System.Drawing.Size(50, 50);
+            this.a7.Size = new System.Drawing.Size(67, 62);
             this.a7.TabIndex = 8;
             this.a7.TabStop = false;
             this.a7.Click += new System.EventHandler(this.Selector);
@@ -861,22 +808,22 @@
             // 
             this.h8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.h8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.h8.Location = new System.Drawing.Point(390, 66);
+            this.h8.Location = new System.Drawing.Point(843, 159);
             this.h8.Margin = new System.Windows.Forms.Padding(0);
             this.h8.Name = "h8";
-            this.h8.Size = new System.Drawing.Size(50, 50);
+            this.h8.Size = new System.Drawing.Size(67, 62);
             this.h8.TabIndex = 7;
             this.h8.TabStop = false;
             this.h8.Click += new System.EventHandler(this.Selector);
             // 
             // g8
             // 
-            this.g8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g8.BackColor = System.Drawing.Color.Gainsboro;
             this.g8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.g8.Location = new System.Drawing.Point(340, 66);
+            this.g8.Location = new System.Drawing.Point(776, 159);
             this.g8.Margin = new System.Windows.Forms.Padding(0);
             this.g8.Name = "g8";
-            this.g8.Size = new System.Drawing.Size(50, 50);
+            this.g8.Size = new System.Drawing.Size(67, 62);
             this.g8.TabIndex = 6;
             this.g8.TabStop = false;
             this.g8.Click += new System.EventHandler(this.Selector);
@@ -885,22 +832,22 @@
             // 
             this.f8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.f8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.f8.Location = new System.Drawing.Point(290, 66);
+            this.f8.Location = new System.Drawing.Point(710, 159);
             this.f8.Margin = new System.Windows.Forms.Padding(0);
             this.f8.Name = "f8";
-            this.f8.Size = new System.Drawing.Size(50, 50);
+            this.f8.Size = new System.Drawing.Size(67, 62);
             this.f8.TabIndex = 5;
             this.f8.TabStop = false;
             this.f8.Click += new System.EventHandler(this.Selector);
             // 
             // e8
             // 
-            this.e8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e8.BackColor = System.Drawing.Color.Gainsboro;
             this.e8.Image = global::ChessMaster2017.Properties.Resources.black_king;
-            this.e8.Location = new System.Drawing.Point(240, 66);
+            this.e8.Location = new System.Drawing.Point(643, 159);
             this.e8.Margin = new System.Windows.Forms.Padding(0);
             this.e8.Name = "e8";
-            this.e8.Size = new System.Drawing.Size(50, 50);
+            this.e8.Size = new System.Drawing.Size(67, 62);
             this.e8.TabIndex = 4;
             this.e8.TabStop = false;
             this.e8.Click += new System.EventHandler(this.Selector);
@@ -909,22 +856,22 @@
             // 
             this.d8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.d8.Image = global::ChessMaster2017.Properties.Resources.black_queen;
-            this.d8.Location = new System.Drawing.Point(190, 66);
+            this.d8.Location = new System.Drawing.Point(576, 159);
             this.d8.Margin = new System.Windows.Forms.Padding(0);
             this.d8.Name = "d8";
-            this.d8.Size = new System.Drawing.Size(50, 50);
+            this.d8.Size = new System.Drawing.Size(67, 62);
             this.d8.TabIndex = 3;
             this.d8.TabStop = false;
             this.d8.Click += new System.EventHandler(this.Selector);
             // 
             // c8
             // 
-            this.c8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c8.BackColor = System.Drawing.Color.Gainsboro;
             this.c8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.c8.Location = new System.Drawing.Point(140, 66);
+            this.c8.Location = new System.Drawing.Point(510, 159);
             this.c8.Margin = new System.Windows.Forms.Padding(0);
             this.c8.Name = "c8";
-            this.c8.Size = new System.Drawing.Size(50, 50);
+            this.c8.Size = new System.Drawing.Size(67, 62);
             this.c8.TabIndex = 2;
             this.c8.TabStop = false;
             this.c8.Click += new System.EventHandler(this.Selector);
@@ -933,217 +880,88 @@
             // 
             this.b8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
             this.b8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.b8.Location = new System.Drawing.Point(90, 66);
+            this.b8.Location = new System.Drawing.Point(443, 159);
             this.b8.Margin = new System.Windows.Forms.Padding(0);
             this.b8.Name = "b8";
-            this.b8.Size = new System.Drawing.Size(50, 50);
+            this.b8.Size = new System.Drawing.Size(67, 62);
             this.b8.TabIndex = 1;
             this.b8.TabStop = false;
             this.b8.Click += new System.EventHandler(this.Selector);
             // 
             // a8
             // 
-            this.a8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a8.BackColor = System.Drawing.Color.Gainsboro;
             this.a8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.a8.Location = new System.Drawing.Point(40, 66);
+            this.a8.Location = new System.Drawing.Point(376, 159);
             this.a8.Margin = new System.Windows.Forms.Padding(0);
             this.a8.Name = "a8";
-            this.a8.Size = new System.Drawing.Size(50, 50);
+            this.a8.Size = new System.Drawing.Size(67, 62);
             this.a8.TabIndex = 0;
             this.a8.TabStop = false;
             this.a8.Click += new System.EventHandler(this.Selector);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(53, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 20);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "A";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(103, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 20);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "B";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(153, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 20);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "C";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(203, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(22, 20);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "D";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(253, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 71;
-            this.label5.Text = "E";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(303, 29);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 20);
-            this.label6.TabIndex = 72;
-            this.label6.Text = "F";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(353, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 20);
-            this.label7.TabIndex = 73;
-            this.label7.Text = "G";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(403, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 20);
-            this.label8.TabIndex = 74;
-            this.label8.Text = "H";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(12, 77);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(19, 20);
-            this.label9.TabIndex = 75;
-            this.label9.Text = "8";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(12, 131);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 20);
-            this.label10.TabIndex = 76;
-            this.label10.Text = "7";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(12, 182);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 20);
-            this.label11.TabIndex = 77;
-            this.label11.Text = "6";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(12, 232);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 20);
-            this.label12.TabIndex = 78;
-            this.label12.Text = "5";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(-4, 284);
+            this.label13.Location = new System.Drawing.Point(-5, 350);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.Size = new System.Drawing.Size(0, 17);
             this.label13.TabIndex = 79;
             // 
-            // label14
+            // BlackPlayerTurn
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(12, 329);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(19, 20);
-            this.label14.TabIndex = 80;
-            this.label14.Text = "3";
+            this.BlackPlayerTurn.AutoCheck = false;
+            this.BlackPlayerTurn.AutoSize = true;
+            this.BlackPlayerTurn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BlackPlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BlackPlayerTurn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BlackPlayerTurn.Location = new System.Drawing.Point(180, 387);
+            this.BlackPlayerTurn.Margin = new System.Windows.Forms.Padding(4);
+            this.BlackPlayerTurn.Name = "BlackPlayerTurn";
+            this.BlackPlayerTurn.Size = new System.Drawing.Size(81, 29);
+            this.BlackPlayerTurn.TabIndex = 65;
+            this.BlackPlayerTurn.TabStop = true;
+            this.BlackPlayerTurn.Text = "Black";
+            this.BlackPlayerTurn.UseVisualStyleBackColor = false;
+            this.BlackPlayerTurn.CheckedChanged += new System.EventHandler(this.BlackPlayerTurn_CheckedChanged);
             // 
-            // label15
+            // WhitePlayerTurn
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(12, 383);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(19, 20);
-            this.label15.TabIndex = 81;
-            this.label15.Text = "2";
+            this.WhitePlayerTurn.AutoCheck = false;
+            this.WhitePlayerTurn.AutoSize = true;
+            this.WhitePlayerTurn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.WhitePlayerTurn.Checked = true;
+            this.WhitePlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WhitePlayerTurn.Location = new System.Drawing.Point(180, 343);
+            this.WhitePlayerTurn.Margin = new System.Windows.Forms.Padding(4);
+            this.WhitePlayerTurn.Name = "WhitePlayerTurn";
+            this.WhitePlayerTurn.Size = new System.Drawing.Size(84, 29);
+            this.WhitePlayerTurn.TabIndex = 64;
+            this.WhitePlayerTurn.TabStop = true;
+            this.WhitePlayerTurn.Text = "White";
+            this.WhitePlayerTurn.UseVisualStyleBackColor = false;
+            this.WhitePlayerTurn.CheckedChanged += new System.EventHandler(this.WhitePlayerTurn_CheckedChanged);
             // 
-            // label16
+            // panel1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(12, 431);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(19, 20);
-            this.label16.TabIndex = 82;
-            this.label16.Text = "1";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(12, 281);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 20);
-            this.label17.TabIndex = 83;
-            this.label17.Text = "4";
+            this.panel1.Location = new System.Drawing.Point(751, 13);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(18, 15);
+            this.panel1.TabIndex = 66;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(784, 601);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1029, 764);
+            this.Controls.Add(this.WhitePlayerTurn);
+            this.Controls.Add(this.BlackPlayerTurn);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.h1);
             this.Controls.Add(this.g1);
@@ -1209,14 +1027,14 @@
             this.Controls.Add(this.c8);
             this.Controls.Add(this.b8);
             this.Controls.Add(this.a8);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 640);
+            this.MaximumSize = new System.Drawing.Size(1061, 820);
             this.MinimumSize = new System.Drawing.Size(800, 640);
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Chess Master 2017";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.h1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.g1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.f1)).EndInit();
@@ -1352,27 +1170,10 @@
         private System.Windows.Forms.PictureBox c2;
         private System.Windows.Forms.PictureBox b2;
         private System.Windows.Forms.PictureBox a2;
-        private System.Windows.Forms.RadioButton WhitePlayerTurn;
-        private System.Windows.Forms.RadioButton BlackPlayerTurn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        
+        private System.Windows.Forms.RadioButton BlackPlayerTurn;
+        private System.Windows.Forms.RadioButton WhitePlayerTurn;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

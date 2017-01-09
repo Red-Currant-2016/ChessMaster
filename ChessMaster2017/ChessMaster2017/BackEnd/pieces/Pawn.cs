@@ -48,7 +48,7 @@ namespace ChessMaster2017.BackEnd
             //WHITE PAWN LOGIC
             // Top ^ Special move pawn - double forward move
 
-            for (int movesX = pawnX + 2; pawnX==1 && whitePawn && movesX >= 0 && movesX < 8; movesX++)
+            for (int movesX = pawnX + 2; pawnX==1 && whitePawn && movesX >= 0 && movesX < 8; )
             {
                 int movesY = pawnY;
 
@@ -69,7 +69,7 @@ namespace ChessMaster2017.BackEnd
 
 
             //TOP ^ if the pawn is white it can move upwards - no special exchange
-            for (int movesX = pawnX + 1; whitePawn && movesX >= 0 && movesX < 8; movesX++)
+            for (int movesX = pawnX + 1; whitePawn && movesX >= 0 && movesX < 8; )
             {
                 int movesY = pawnY;
 
@@ -88,7 +88,7 @@ namespace ChessMaster2017.BackEnd
 
             }
             // Top Right diagonal
-            for (int movesX = pawnX + 1, movesY = pawnY - 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY--)
+            for (int movesX = pawnX + 1, movesY = pawnY - 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; )
             {
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == pawnColor)
@@ -110,7 +110,7 @@ namespace ChessMaster2017.BackEnd
             }
 
             // Top Left diagonal
-            for (int movesX = pawnX + 1, movesY = pawnY + 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY++)
+            for (int movesX = pawnX + 1, movesY = pawnY + 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; )
             {
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == pawnColor)
@@ -134,7 +134,7 @@ namespace ChessMaster2017.BackEnd
             // BLACK PAWN LOGIC
             // Bottom ^ Special move pawn - double forward move
 
-            for (int movesX = pawnX - 2; pawnX == 6 && !whitePawn && movesX >= 0 && movesX < 8; movesX--)
+            for (int movesX = pawnX - 2; pawnX == 6 && !whitePawn && movesX >= 0 && movesX < 8; )
             {
                 int movesY = pawnY;
 
@@ -155,7 +155,7 @@ namespace ChessMaster2017.BackEnd
 
 
             //BOTTOM ^ if the pawn is white it can move upwards - no special exchange
-            for (int movesX = pawnX - 1; !whitePawn && movesX >= 0 && movesX < 8; movesX++)
+            for (int movesX = pawnX - 1; !whitePawn && movesX >= 0 && movesX < 8; )
             {
                 int movesY = pawnY;
 
@@ -174,7 +174,7 @@ namespace ChessMaster2017.BackEnd
 
             }
             // Bottom \ Right diagonal
-            for (int movesX = pawnX - 1, movesY = pawnY + 1; !whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)
+            for (int movesX = pawnX - 1, movesY = pawnY + 1; !whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; )
             {
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == pawnColor)
@@ -196,7 +196,7 @@ namespace ChessMaster2017.BackEnd
             }
 
             // Bottom / Left diagonal
-            for (int movesX = pawnX - 1, movesY = pawnY - 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY--)
+            for (int movesX = pawnX - 1, movesY = pawnY - 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; )
             {
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == pawnColor)

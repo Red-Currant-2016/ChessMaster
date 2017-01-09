@@ -103,5 +103,20 @@ namespace ChessMaster2017
                 }
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WhitePlayerTurn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BlackPlayerTurn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
