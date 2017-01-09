@@ -149,6 +149,11 @@ namespace ChessMaster2017.BackEnd
             return highlightChessPieceMoves;
         }
 
+        private King getCurrentKing()
+        {
+            return (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
+        }
+
         public bool isKingCheck()
         {
             //not tested!!!
@@ -195,6 +200,19 @@ namespace ChessMaster2017.BackEnd
                     //selected piece can move to x,y coordinates
                     if (highlightChessPieceMoves[x, y] == true)
                     {
+                        if(selectedChessPiece.Type == ChessPieceType.King)
+                        {
+                            King currentKing = getCurrentKing();
+                            if (currentKing.hasMoved == false)
+                            {
+                                // if a valid move - king hasMoved property is set to true
+                                currentKing.hasMoved = true;
+                            }
+                        }
+
+
+                        
+
                         //capture enemy piece
                         if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
                         {

@@ -9,10 +9,12 @@ namespace ChessMaster2017.BackEnd
     class King : ChessPiece
     {
         public bool isCheck { get; set; }
+        public bool hasMoved { get; set; }
 
         public King(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
         {
             this.isCheck = false;
+            this.hasMoved = false;
         }
 
         /// <summary>
