@@ -186,6 +186,7 @@
             this.WhitePlayerTurn.AutoCheck = false;
             this.WhitePlayerTurn.AutoSize = true;
             this.WhitePlayerTurn.Checked = true;
+            this.WhitePlayerTurn.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.WhitePlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WhitePlayerTurn.Location = new System.Drawing.Point(3, 3);
             this.WhitePlayerTurn.Name = "WhitePlayerTurn";
@@ -199,6 +200,7 @@
             // 
             this.BlackPlayerTurn.AutoCheck = false;
             this.BlackPlayerTurn.AutoSize = true;
+            this.BlackPlayerTurn.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BlackPlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BlackPlayerTurn.Location = new System.Drawing.Point(3, 33);
             this.BlackPlayerTurn.Name = "BlackPlayerTurn";
@@ -212,6 +214,7 @@
             // 
             this.panel1.Controls.Add(this.WhitePlayerTurn);
             this.panel1.Controls.Add(this.BlackPlayerTurn);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel1.Location = new System.Drawing.Point(463, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(88, 62);
@@ -219,7 +222,9 @@
             // 
             // h1
             // 
-            this.h1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h1.BackColor = System.Drawing.Color.Moccasin;
+            this.h1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.h1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h1.Image = ((System.Drawing.Image)(resources.GetObject("h1.Image")));
             this.h1.Location = new System.Drawing.Point(390, 416);
             this.h1.Margin = new System.Windows.Forms.Padding(0);
@@ -231,7 +236,8 @@
             // 
             // g1
             // 
-            this.g1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g1.BackColor = System.Drawing.Color.Sienna;
+            this.g1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g1.Image = ((System.Drawing.Image)(resources.GetObject("g1.Image")));
             this.g1.Location = new System.Drawing.Point(340, 416);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
@@ -243,7 +249,9 @@
             // 
             // f1
             // 
-            this.f1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f1.BackColor = System.Drawing.Color.Moccasin;
+            this.f1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.f1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f1.Image = ((System.Drawing.Image)(resources.GetObject("f1.Image")));
             this.f1.Location = new System.Drawing.Point(290, 416);
             this.f1.Margin = new System.Windows.Forms.Padding(0);
@@ -255,7 +263,8 @@
             // 
             // e1
             // 
-            this.e1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e1.BackColor = System.Drawing.Color.Sienna;
+            this.e1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e1.Image = global::ChessMaster2017.Properties.Resources.white_king;
             this.e1.Location = new System.Drawing.Point(240, 416);
             this.e1.Margin = new System.Windows.Forms.Padding(0);
@@ -267,7 +276,9 @@
             // 
             // d1
             // 
-            this.d1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d1.BackColor = System.Drawing.Color.Moccasin;
+            this.d1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.d1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d1.Image = global::ChessMaster2017.Properties.Resources.white_queen;
             this.d1.Location = new System.Drawing.Point(190, 416);
             this.d1.Margin = new System.Windows.Forms.Padding(0);
@@ -279,7 +290,8 @@
             // 
             // c1
             // 
-            this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c1.BackColor = System.Drawing.Color.Sienna;
+            this.c1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c1.Image = ((System.Drawing.Image)(resources.GetObject("c1.Image")));
             this.c1.Location = new System.Drawing.Point(140, 416);
             this.c1.Margin = new System.Windows.Forms.Padding(0);
@@ -291,7 +303,9 @@
             // 
             // b1
             // 
-            this.b1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b1.BackColor = System.Drawing.Color.Moccasin;
+            this.b1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.b1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b1.Image = ((System.Drawing.Image)(resources.GetObject("b1.Image")));
             this.b1.Location = new System.Drawing.Point(90, 416);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
@@ -303,7 +317,8 @@
             // 
             // a1
             // 
-            this.a1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a1.BackColor = System.Drawing.Color.Sienna;
+            this.a1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a1.Image = ((System.Drawing.Image)(resources.GetObject("a1.Image")));
             this.a1.Location = new System.Drawing.Point(40, 416);
             this.a1.Margin = new System.Windows.Forms.Padding(0);
@@ -315,7 +330,8 @@
             // 
             // h2
             // 
-            this.h2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.h2.BackColor = System.Drawing.Color.Sienna;
+            this.h2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h2.Image = ((System.Drawing.Image)(resources.GetObject("h2.Image")));
             this.h2.Location = new System.Drawing.Point(390, 366);
             this.h2.Margin = new System.Windows.Forms.Padding(0);
@@ -327,7 +343,9 @@
             // 
             // g2
             // 
-            this.g2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g2.BackColor = System.Drawing.Color.Moccasin;
+            this.g2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.g2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g2.Image = ((System.Drawing.Image)(resources.GetObject("g2.Image")));
             this.g2.Location = new System.Drawing.Point(340, 366);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
@@ -339,7 +357,8 @@
             // 
             // f2
             // 
-            this.f2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f2.BackColor = System.Drawing.Color.Sienna;
+            this.f2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f2.Image = ((System.Drawing.Image)(resources.GetObject("f2.Image")));
             this.f2.Location = new System.Drawing.Point(290, 366);
             this.f2.Margin = new System.Windows.Forms.Padding(0);
@@ -351,7 +370,9 @@
             // 
             // e2
             // 
-            this.e2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e2.BackColor = System.Drawing.Color.Moccasin;
+            this.e2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.e2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e2.Image = ((System.Drawing.Image)(resources.GetObject("e2.Image")));
             this.e2.Location = new System.Drawing.Point(240, 366);
             this.e2.Margin = new System.Windows.Forms.Padding(0);
@@ -363,7 +384,8 @@
             // 
             // d2
             // 
-            this.d2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.d2.BackColor = System.Drawing.Color.Sienna;
+            this.d2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d2.Image = ((System.Drawing.Image)(resources.GetObject("d2.Image")));
             this.d2.Location = new System.Drawing.Point(190, 366);
             this.d2.Margin = new System.Windows.Forms.Padding(0);
@@ -375,7 +397,9 @@
             // 
             // c2
             // 
-            this.c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c2.BackColor = System.Drawing.Color.Moccasin;
+            this.c2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c2.Image = ((System.Drawing.Image)(resources.GetObject("c2.Image")));
             this.c2.Location = new System.Drawing.Point(140, 366);
             this.c2.Margin = new System.Windows.Forms.Padding(0);
@@ -387,7 +411,8 @@
             // 
             // b2
             // 
-            this.b2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.b2.BackColor = System.Drawing.Color.Sienna;
+            this.b2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b2.Image = ((System.Drawing.Image)(resources.GetObject("b2.Image")));
             this.b2.Location = new System.Drawing.Point(90, 366);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
@@ -399,7 +424,9 @@
             // 
             // a2
             // 
-            this.a2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a2.BackColor = System.Drawing.Color.Moccasin;
+            this.a2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.a2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a2.Image = ((System.Drawing.Image)(resources.GetObject("a2.Image")));
             this.a2.Location = new System.Drawing.Point(40, 366);
             this.a2.Margin = new System.Windows.Forms.Padding(0);
@@ -411,7 +438,9 @@
             // 
             // h3
             // 
-            this.h3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h3.BackColor = System.Drawing.Color.Moccasin;
+            this.h3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.h3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h3.Location = new System.Drawing.Point(390, 316);
             this.h3.Margin = new System.Windows.Forms.Padding(0);
             this.h3.Name = "h3";
@@ -422,7 +451,8 @@
             // 
             // g3
             // 
-            this.g3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g3.BackColor = System.Drawing.Color.Sienna;
+            this.g3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g3.Location = new System.Drawing.Point(340, 316);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
@@ -433,7 +463,9 @@
             // 
             // f3
             // 
-            this.f3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f3.BackColor = System.Drawing.Color.Moccasin;
+            this.f3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.f3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f3.Location = new System.Drawing.Point(290, 316);
             this.f3.Margin = new System.Windows.Forms.Padding(0);
             this.f3.Name = "f3";
@@ -444,7 +476,8 @@
             // 
             // e3
             // 
-            this.e3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e3.BackColor = System.Drawing.Color.Sienna;
+            this.e3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e3.Location = new System.Drawing.Point(240, 316);
             this.e3.Margin = new System.Windows.Forms.Padding(0);
             this.e3.Name = "e3";
@@ -455,7 +488,9 @@
             // 
             // d3
             // 
-            this.d3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d3.BackColor = System.Drawing.Color.Moccasin;
+            this.d3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.d3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d3.Location = new System.Drawing.Point(190, 316);
             this.d3.Margin = new System.Windows.Forms.Padding(0);
             this.d3.Name = "d3";
@@ -466,7 +501,8 @@
             // 
             // c3
             // 
-            this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c3.BackColor = System.Drawing.Color.Sienna;
+            this.c3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c3.Location = new System.Drawing.Point(140, 316);
             this.c3.Margin = new System.Windows.Forms.Padding(0);
             this.c3.Name = "c3";
@@ -477,7 +513,9 @@
             // 
             // b3
             // 
-            this.b3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b3.BackColor = System.Drawing.Color.Moccasin;
+            this.b3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.b3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b3.Location = new System.Drawing.Point(90, 316);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
@@ -488,7 +526,8 @@
             // 
             // a3
             // 
-            this.a3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a3.BackColor = System.Drawing.Color.Sienna;
+            this.a3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a3.Location = new System.Drawing.Point(40, 316);
             this.a3.Margin = new System.Windows.Forms.Padding(0);
             this.a3.Name = "a3";
@@ -499,7 +538,8 @@
             // 
             // h4
             // 
-            this.h4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.h4.BackColor = System.Drawing.Color.Sienna;
+            this.h4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h4.Location = new System.Drawing.Point(390, 266);
             this.h4.Margin = new System.Windows.Forms.Padding(0);
             this.h4.Name = "h4";
@@ -510,7 +550,9 @@
             // 
             // g4
             // 
-            this.g4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g4.BackColor = System.Drawing.Color.Moccasin;
+            this.g4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.g4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g4.Location = new System.Drawing.Point(340, 266);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
@@ -521,7 +563,8 @@
             // 
             // f4
             // 
-            this.f4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f4.BackColor = System.Drawing.Color.Sienna;
+            this.f4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f4.Location = new System.Drawing.Point(290, 266);
             this.f4.Margin = new System.Windows.Forms.Padding(0);
             this.f4.Name = "f4";
@@ -532,7 +575,9 @@
             // 
             // e4
             // 
-            this.e4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e4.BackColor = System.Drawing.Color.Moccasin;
+            this.e4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.e4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e4.Location = new System.Drawing.Point(240, 266);
             this.e4.Margin = new System.Windows.Forms.Padding(0);
             this.e4.Name = "e4";
@@ -543,7 +588,8 @@
             // 
             // d4
             // 
-            this.d4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.d4.BackColor = System.Drawing.Color.Sienna;
+            this.d4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d4.Location = new System.Drawing.Point(190, 266);
             this.d4.Margin = new System.Windows.Forms.Padding(0);
             this.d4.Name = "d4";
@@ -554,7 +600,9 @@
             // 
             // c4
             // 
-            this.c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c4.BackColor = System.Drawing.Color.Moccasin;
+            this.c4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c4.Location = new System.Drawing.Point(140, 266);
             this.c4.Margin = new System.Windows.Forms.Padding(0);
             this.c4.Name = "c4";
@@ -565,7 +613,8 @@
             // 
             // b4
             // 
-            this.b4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.b4.BackColor = System.Drawing.Color.Sienna;
+            this.b4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b4.Location = new System.Drawing.Point(90, 266);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
@@ -576,7 +625,9 @@
             // 
             // a4
             // 
-            this.a4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a4.BackColor = System.Drawing.Color.Moccasin;
+            this.a4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.a4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a4.Location = new System.Drawing.Point(40, 266);
             this.a4.Margin = new System.Windows.Forms.Padding(0);
             this.a4.Name = "a4";
@@ -587,7 +638,9 @@
             // 
             // h5
             // 
-            this.h5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h5.BackColor = System.Drawing.Color.Moccasin;
+            this.h5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.h5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h5.Location = new System.Drawing.Point(390, 216);
             this.h5.Margin = new System.Windows.Forms.Padding(0);
             this.h5.Name = "h5";
@@ -598,7 +651,8 @@
             // 
             // g5
             // 
-            this.g5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g5.BackColor = System.Drawing.Color.Sienna;
+            this.g5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g5.Location = new System.Drawing.Point(340, 216);
             this.g5.Margin = new System.Windows.Forms.Padding(0);
             this.g5.Name = "g5";
@@ -609,7 +663,9 @@
             // 
             // f5
             // 
-            this.f5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f5.BackColor = System.Drawing.Color.Moccasin;
+            this.f5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.f5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f5.Location = new System.Drawing.Point(290, 216);
             this.f5.Margin = new System.Windows.Forms.Padding(0);
             this.f5.Name = "f5";
@@ -620,7 +676,8 @@
             // 
             // e5
             // 
-            this.e5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e5.BackColor = System.Drawing.Color.Sienna;
+            this.e5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e5.Location = new System.Drawing.Point(240, 216);
             this.e5.Margin = new System.Windows.Forms.Padding(0);
             this.e5.Name = "e5";
@@ -631,7 +688,9 @@
             // 
             // d5
             // 
-            this.d5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d5.BackColor = System.Drawing.Color.Moccasin;
+            this.d5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.d5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d5.Location = new System.Drawing.Point(190, 216);
             this.d5.Margin = new System.Windows.Forms.Padding(0);
             this.d5.Name = "d5";
@@ -642,7 +701,8 @@
             // 
             // c5
             // 
-            this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c5.BackColor = System.Drawing.Color.Sienna;
+            this.c5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c5.Location = new System.Drawing.Point(140, 216);
             this.c5.Margin = new System.Windows.Forms.Padding(0);
             this.c5.Name = "c5";
@@ -653,7 +713,9 @@
             // 
             // b5
             // 
-            this.b5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b5.BackColor = System.Drawing.Color.Moccasin;
+            this.b5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.b5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b5.Location = new System.Drawing.Point(90, 216);
             this.b5.Margin = new System.Windows.Forms.Padding(0);
             this.b5.Name = "b5";
@@ -664,7 +726,8 @@
             // 
             // a5
             // 
-            this.a5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a5.BackColor = System.Drawing.Color.Sienna;
+            this.a5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a5.Location = new System.Drawing.Point(40, 216);
             this.a5.Margin = new System.Windows.Forms.Padding(0);
             this.a5.Name = "a5";
@@ -675,7 +738,8 @@
             // 
             // h6
             // 
-            this.h6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.h6.BackColor = System.Drawing.Color.Sienna;
+            this.h6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h6.Location = new System.Drawing.Point(390, 166);
             this.h6.Margin = new System.Windows.Forms.Padding(0);
             this.h6.Name = "h6";
@@ -686,7 +750,9 @@
             // 
             // g6
             // 
-            this.g6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g6.BackColor = System.Drawing.Color.Moccasin;
+            this.g6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.g6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g6.Location = new System.Drawing.Point(340, 166);
             this.g6.Margin = new System.Windows.Forms.Padding(0);
             this.g6.Name = "g6";
@@ -697,7 +763,8 @@
             // 
             // f6
             // 
-            this.f6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f6.BackColor = System.Drawing.Color.Sienna;
+            this.f6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f6.Location = new System.Drawing.Point(290, 166);
             this.f6.Margin = new System.Windows.Forms.Padding(0);
             this.f6.Name = "f6";
@@ -708,7 +775,9 @@
             // 
             // e6
             // 
-            this.e6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e6.BackColor = System.Drawing.Color.Moccasin;
+            this.e6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.e6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e6.Location = new System.Drawing.Point(240, 166);
             this.e6.Margin = new System.Windows.Forms.Padding(0);
             this.e6.Name = "e6";
@@ -719,7 +788,8 @@
             // 
             // d6
             // 
-            this.d6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.d6.BackColor = System.Drawing.Color.Sienna;
+            this.d6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d6.Location = new System.Drawing.Point(190, 166);
             this.d6.Margin = new System.Windows.Forms.Padding(0);
             this.d6.Name = "d6";
@@ -730,7 +800,9 @@
             // 
             // c6
             // 
-            this.c6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c6.BackColor = System.Drawing.Color.Moccasin;
+            this.c6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c6.Location = new System.Drawing.Point(140, 166);
             this.c6.Margin = new System.Windows.Forms.Padding(0);
             this.c6.Name = "c6";
@@ -741,7 +813,8 @@
             // 
             // b6
             // 
-            this.b6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.b6.BackColor = System.Drawing.Color.Sienna;
+            this.b6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b6.Location = new System.Drawing.Point(90, 166);
             this.b6.Margin = new System.Windows.Forms.Padding(0);
             this.b6.Name = "b6";
@@ -752,7 +825,9 @@
             // 
             // a6
             // 
-            this.a6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a6.BackColor = System.Drawing.Color.Moccasin;
+            this.a6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.a6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a6.Location = new System.Drawing.Point(40, 166);
             this.a6.Margin = new System.Windows.Forms.Padding(0);
             this.a6.Name = "a6";
@@ -763,7 +838,9 @@
             // 
             // h7
             // 
-            this.h7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.h7.BackColor = System.Drawing.Color.Moccasin;
+            this.h7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.h7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h7.Image = ((System.Drawing.Image)(resources.GetObject("h7.Image")));
             this.h7.Location = new System.Drawing.Point(390, 116);
             this.h7.Margin = new System.Windows.Forms.Padding(0);
@@ -775,7 +852,8 @@
             // 
             // g7
             // 
-            this.g7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g7.BackColor = System.Drawing.Color.Sienna;
+            this.g7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g7.Image = ((System.Drawing.Image)(resources.GetObject("g7.Image")));
             this.g7.Location = new System.Drawing.Point(340, 116);
             this.g7.Margin = new System.Windows.Forms.Padding(0);
@@ -787,7 +865,9 @@
             // 
             // f7
             // 
-            this.f7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.f7.BackColor = System.Drawing.Color.Moccasin;
+            this.f7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.f7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f7.Image = ((System.Drawing.Image)(resources.GetObject("f7.Image")));
             this.f7.Location = new System.Drawing.Point(290, 116);
             this.f7.Margin = new System.Windows.Forms.Padding(0);
@@ -799,7 +879,8 @@
             // 
             // e7
             // 
-            this.e7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e7.BackColor = System.Drawing.Color.Sienna;
+            this.e7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e7.Image = ((System.Drawing.Image)(resources.GetObject("e7.Image")));
             this.e7.Location = new System.Drawing.Point(240, 116);
             this.e7.Margin = new System.Windows.Forms.Padding(0);
@@ -811,7 +892,9 @@
             // 
             // d7
             // 
-            this.d7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.d7.BackColor = System.Drawing.Color.Moccasin;
+            this.d7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.d7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d7.Image = ((System.Drawing.Image)(resources.GetObject("d7.Image")));
             this.d7.Location = new System.Drawing.Point(190, 116);
             this.d7.Margin = new System.Windows.Forms.Padding(0);
@@ -823,7 +906,8 @@
             // 
             // c7
             // 
-            this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c7.BackColor = System.Drawing.Color.Sienna;
+            this.c7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c7.Image = ((System.Drawing.Image)(resources.GetObject("c7.Image")));
             this.c7.Location = new System.Drawing.Point(140, 116);
             this.c7.Margin = new System.Windows.Forms.Padding(0);
@@ -835,7 +919,9 @@
             // 
             // b7
             // 
-            this.b7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.b7.BackColor = System.Drawing.Color.Moccasin;
+            this.b7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.b7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b7.Image = ((System.Drawing.Image)(resources.GetObject("b7.Image")));
             this.b7.Location = new System.Drawing.Point(90, 116);
             this.b7.Margin = new System.Windows.Forms.Padding(0);
@@ -847,7 +933,8 @@
             // 
             // a7
             // 
-            this.a7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a7.BackColor = System.Drawing.Color.Sienna;
+            this.a7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a7.Image = ((System.Drawing.Image)(resources.GetObject("a7.Image")));
             this.a7.Location = new System.Drawing.Point(40, 116);
             this.a7.Margin = new System.Windows.Forms.Padding(0);
@@ -859,7 +946,8 @@
             // 
             // h8
             // 
-            this.h8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.h8.BackColor = System.Drawing.Color.Sienna;
+            this.h8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
             this.h8.Location = new System.Drawing.Point(390, 66);
             this.h8.Margin = new System.Windows.Forms.Padding(0);
@@ -871,7 +959,9 @@
             // 
             // g8
             // 
-            this.g8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.g8.BackColor = System.Drawing.Color.Moccasin;
+            this.g8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.g8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
             this.g8.Location = new System.Drawing.Point(340, 66);
             this.g8.Margin = new System.Windows.Forms.Padding(0);
@@ -883,7 +973,8 @@
             // 
             // f8
             // 
-            this.f8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f8.BackColor = System.Drawing.Color.Sienna;
+            this.f8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
             this.f8.Location = new System.Drawing.Point(290, 66);
             this.f8.Margin = new System.Windows.Forms.Padding(0);
@@ -895,7 +986,9 @@
             // 
             // e8
             // 
-            this.e8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.e8.BackColor = System.Drawing.Color.Moccasin;
+            this.e8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.e8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e8.Image = global::ChessMaster2017.Properties.Resources.black_king;
             this.e8.Location = new System.Drawing.Point(240, 66);
             this.e8.Margin = new System.Windows.Forms.Padding(0);
@@ -907,7 +1000,8 @@
             // 
             // d8
             // 
-            this.d8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.d8.BackColor = System.Drawing.Color.Sienna;
+            this.d8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d8.Image = global::ChessMaster2017.Properties.Resources.black_queen;
             this.d8.Location = new System.Drawing.Point(190, 66);
             this.d8.Margin = new System.Windows.Forms.Padding(0);
@@ -919,7 +1013,9 @@
             // 
             // c8
             // 
-            this.c8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.c8.BackColor = System.Drawing.Color.Moccasin;
+            this.c8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
             this.c8.Location = new System.Drawing.Point(140, 66);
             this.c8.Margin = new System.Windows.Forms.Padding(0);
@@ -931,7 +1027,8 @@
             // 
             // b8
             // 
-            this.b8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.b8.BackColor = System.Drawing.Color.Sienna;
+            this.b8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
             this.b8.Location = new System.Drawing.Point(90, 66);
             this.b8.Margin = new System.Windows.Forms.Padding(0);
@@ -943,7 +1040,9 @@
             // 
             // a8
             // 
-            this.a8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.a8.BackColor = System.Drawing.Color.Moccasin;
+            this.a8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.a8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
             this.a8.Location = new System.Drawing.Point(40, 66);
             this.a8.Margin = new System.Windows.Forms.Padding(0);
@@ -956,6 +1055,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(53, 29);
             this.label1.Name = "label1";
@@ -966,6 +1066,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(103, 29);
             this.label2.Name = "label2";
@@ -976,6 +1077,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(153, 29);
             this.label3.Name = "label3";
@@ -986,6 +1088,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(203, 29);
             this.label4.Name = "label4";
@@ -996,6 +1099,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(253, 29);
             this.label5.Name = "label5";
@@ -1006,6 +1110,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(303, 29);
             this.label6.Name = "label6";
@@ -1016,6 +1121,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.Location = new System.Drawing.Point(353, 29);
             this.label7.Name = "label7";
@@ -1026,6 +1132,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(403, 29);
             this.label8.Name = "label8";
@@ -1036,6 +1143,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.Location = new System.Drawing.Point(12, 77);
             this.label9.Name = "label9";
@@ -1046,6 +1154,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.Location = new System.Drawing.Point(12, 131);
             this.label10.Name = "label10";
@@ -1056,6 +1165,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.Location = new System.Drawing.Point(12, 182);
             this.label11.Name = "label11";
@@ -1066,6 +1176,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.Location = new System.Drawing.Point(12, 232);
             this.label12.Name = "label12";
@@ -1076,6 +1187,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label13.Location = new System.Drawing.Point(-4, 284);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
@@ -1084,6 +1196,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.Location = new System.Drawing.Point(12, 329);
             this.label14.Name = "label14";
@@ -1094,6 +1207,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.Location = new System.Drawing.Point(12, 383);
             this.label15.Name = "label15";
@@ -1104,6 +1218,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.Location = new System.Drawing.Point(12, 431);
             this.label16.Name = "label16";
@@ -1114,6 +1229,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.Location = new System.Drawing.Point(12, 281);
             this.label17.Name = "label17";
@@ -1125,7 +1241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(784, 601);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -1209,6 +1325,7 @@
             this.Controls.Add(this.c8);
             this.Controls.Add(this.b8);
             this.Controls.Add(this.a8);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 640);
             this.MinimumSize = new System.Drawing.Size(800, 640);

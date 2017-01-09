@@ -24,7 +24,6 @@ namespace ChessMaster2017.BackEnd
         {
             int kingX = this.CurrentX;
             int kingY = this.CurrentY;
-
             bool[,] kingMoves = new bool[8, 8];
             ChessPieceColor kingColor = this.Color;
 
@@ -170,9 +169,6 @@ namespace ChessMaster2017.BackEnd
                     kingMoves[kingX + 1, kingY + 1] = true;
                 }
             }
-
-            
-
 
             return kingMoves;
         }
