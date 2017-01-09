@@ -8,7 +8,10 @@ namespace ChessMaster2017.BackEnd
 {
     /// <summary>
     /// Logic is the same as Bishop ; Check Bishop Summery. 
+    /// Special move is not included in the logic.
     /// </summary>
+    /// /// <param name="currentBoard"></param>
+    /// <returns> bool[,] rockMoves </returns>
 
     class Rook : ChessPiece
     {
@@ -25,13 +28,62 @@ namespace ChessMaster2017.BackEnd
             ChessPieceColor rockColor = this.Color;
 
 
-            // left
+            // right
+            for (int movesY = rockY + 1; movesY >= 0 && movesY < 8; movesY++)
+            {
+                int movesX = rockX;
 
-            
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                {
+                    rockMoves[movesX, movesY] = false;
 
-            for (int movesX = rockX; movesX < 8; movesX--)
+                    break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                {
+                    rockMoves[movesX, movesY] = true;
+
+                    break;
+                }
+
+                else
+                {
+                    rockMoves[movesX, movesY] = true;
+                }
+
+            }
+
+            // bottom
+
+            for (int movesX = rockX - 1; movesX>=0 && movesX < 8; movesX--)
             {
                 int movesY = rockY;
+
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                {
+                    rockMoves[movesX, movesY] = false;
+
+                    break;
+                }
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                {
+                    rockMoves[movesX, movesY] = true;
+
+                    break;
+                }
+
+                else
+                {
+                    rockMoves[movesX, movesY] = true;
+                }
+
+            }
+
+            // left
+
+            for (int movesY = rockY-1; movesY>=0 && movesY < 8; movesY--)
+            {
+                int movesX = rockX;
                 
                     if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
                     {
@@ -53,10 +105,11 @@ namespace ChessMaster2017.BackEnd
 
                 }
 
+            
 
-
-            // right
-            for (int movesX = rockX; movesX < 8; movesX++)
+            // top
+            
+            for (int movesX = rockX+1; movesX>=0 && movesX < 8; movesX--)
             {
                 int movesY = rockY;
 
@@ -82,64 +135,8 @@ namespace ChessMaster2017.BackEnd
 
 
 
-            // top
 
-
-
-            for (int movesY = rockY; movesY < 8; movesY--)
-            {
-                int movesX = rockX;
-
-                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
-                {
-                    rockMoves[movesX, movesY] = false;
-                    
-                    break;
-                }
-                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
-                {
-                    rockMoves[movesX, movesY] = true;
-                    
-                    break;
-                }
-
-                else
-                {
-                    rockMoves[movesX, movesY] = true;
-                }
-
-            }
-
-            // bottom
-
-
-
-            for (int movesY = rockY; movesY < 8; movesY--)
-            {
-                int movesX = rockX;
-
-                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
-                {
-                    rockMoves[movesX, movesY] = false;
-                   
-                    break;
-                }
-                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
-                {
-                    rockMoves[movesX, movesY] = true;
-                    
-                    break;
-                }
-
-                else
-                {
-                    rockMoves[movesX, movesY] = true;
-                }
-
-            }
-
-
-
+            //return bool rockMoves matrix
             return rockMoves;
         }
     }
