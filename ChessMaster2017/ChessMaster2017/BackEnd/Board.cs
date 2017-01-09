@@ -147,6 +147,13 @@ namespace ChessMaster2017.BackEnd
             return highlightChessPieceMoves;
         }
 
+        public bool isKingCheck()
+        {
+            //TODO return true if current player king is checked
+
+            return false;
+        }
+
         public bool isValidMove(int x, int y)
         {
             if (highlightChessPieceMoves[x, y] == true)
@@ -178,6 +185,7 @@ namespace ChessMaster2017.BackEnd
                         if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
                         {
                             capturedChessPieces.Add(chessBoard[x, y]);// add enemy piece to captured pieces List
+                            activeChessPieces.Remove(chessBoard[x, y]);// remove enemy piece from activetChessPieces List
                             chessBoard[x, y].isCaptured = true;
 
                             chessBoard[selectedChessPiece.CurrentX, selectedChessPiece.CurrentY] = null; //clear board squar
