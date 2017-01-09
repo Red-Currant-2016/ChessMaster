@@ -212,6 +212,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.WhitePlayerTurn);
             this.panel1.Controls.Add(this.BlackPlayerTurn);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -1326,6 +1327,7 @@
             this.Controls.Add(this.b8);
             this.Controls.Add(this.a8);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 640);
             this.MinimumSize = new System.Drawing.Size(800, 640);
