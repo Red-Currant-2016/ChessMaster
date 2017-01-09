@@ -199,10 +199,10 @@
             this.panel1.Controls.Add(this.WhitePlayerTurn);
             this.panel1.Controls.Add(this.BlackPlayerTurn);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel1.Location = new System.Drawing.Point(127, 289);
+            this.panel1.Location = new System.Drawing.Point(127, 290);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel1.Size = new System.Drawing.Size(88, 62);
+            this.panel1.Size = new System.Drawing.Size(102, 73);
             this.panel1.TabIndex = 66;
             // 
             // h1
@@ -1051,7 +1051,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ChessMaster2017.Properties.Resources._15935908_1375835152487760_753141144_n__1_1;
             this.ClientSize = new System.Drawing.Size(784, 601);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel1);

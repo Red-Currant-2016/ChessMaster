@@ -63,6 +63,16 @@ namespace ChessMaster2017.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _15935908_1375835152487760_753141144_n__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("15935908_1375835152487760_753141144_n (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_bishop {
             get {
                 object obj = ResourceManager.GetObject("black_bishop", resourceCulture);

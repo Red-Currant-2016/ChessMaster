@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App chess.ico" />
+    <None Include="Resources\15935908_1375835152487760_753141144_n %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
