@@ -179,7 +179,7 @@ namespace ChessMaster2017.BackEnd
 
             // top
 
-            for (int movesX = queenX + 1; movesX >= 0 && movesX < 8; movesX--)
+            for (int movesX = queenX + 1; movesX >= 0 && movesX < 8; movesX++)
             {
                 int movesY = queenY;
 
