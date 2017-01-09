@@ -12,7 +12,7 @@ namespace ChessMaster2017.BackEnd
 
         public King(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
         {
-            isCheck = false;
+            this.isCheck = false;
         }
 
         /// <summary>
