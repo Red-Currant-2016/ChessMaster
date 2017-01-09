@@ -33,6 +33,8 @@ namespace ChessMaster2017.BackEnd
 
             playerTurn = ChessPieceColor.White;
             selectedChessPiece = null;
+
+            capturedChessPieces = new List<ChessPiece>();
         }
 
         /// <summary>
@@ -149,8 +151,20 @@ namespace ChessMaster2017.BackEnd
 
         public bool isKingCheck()
         {
-            //TODO return true if current player king is checked
-
+            //not tested!!!
+            try
+            {
+                King currentPlayerKing = (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
+                if (currentPlayerKing.isCheck == true)
+                {
+                    return true;
+                }
+            }
+            catch (InvalidCastException ex)
+            {
+                throw new Exception("activeChessPieces didn't return king /r/n" + ex.Message);
+            }
+            
             return false;
         }
 
