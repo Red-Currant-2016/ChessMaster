@@ -168,7 +168,7 @@
             // 
             this.h1.BackColor = System.Drawing.Color.Gainsboro;
             this.h1.Image = ((System.Drawing.Image)(resources.GetObject("h1.Image")));
-            this.h1.Location = new System.Drawing.Point(843, 590);
+            this.h1.Location = new System.Drawing.Point(844, 590);
             this.h1.Margin = new System.Windows.Forms.Padding(0);
             this.h1.Name = "h1";
             this.h1.Size = new System.Drawing.Size(67, 62);
@@ -179,8 +179,9 @@
             // g1
             // 
             this.g1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g1.Image = ((System.Drawing.Image)(resources.GetObject("g1.Image")));
-            this.g1.Location = new System.Drawing.Point(776, 590);
+            this.g1.Location = new System.Drawing.Point(777, 590);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
             this.g1.Name = "g1";
             this.g1.Size = new System.Drawing.Size(67, 62);
@@ -192,7 +193,7 @@
             // 
             this.f1.BackColor = System.Drawing.Color.Gainsboro;
             this.f1.Image = ((System.Drawing.Image)(resources.GetObject("f1.Image")));
-            this.f1.Location = new System.Drawing.Point(710, 590);
+            this.f1.Location = new System.Drawing.Point(711, 590);
             this.f1.Margin = new System.Windows.Forms.Padding(0);
             this.f1.Name = "f1";
             this.f1.Size = new System.Drawing.Size(67, 62);
@@ -203,8 +204,9 @@
             // e1
             // 
             this.e1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e1.Image = global::ChessMaster2017.Properties.Resources.white_king;
-            this.e1.Location = new System.Drawing.Point(643, 590);
+            this.e1.Location = new System.Drawing.Point(644, 590);
             this.e1.Margin = new System.Windows.Forms.Padding(0);
             this.e1.Name = "e1";
             this.e1.Size = new System.Drawing.Size(67, 62);
@@ -216,7 +218,7 @@
             // 
             this.d1.BackColor = System.Drawing.Color.Gainsboro;
             this.d1.Image = global::ChessMaster2017.Properties.Resources.white_queen;
-            this.d1.Location = new System.Drawing.Point(576, 590);
+            this.d1.Location = new System.Drawing.Point(577, 590);
             this.d1.Margin = new System.Windows.Forms.Padding(0);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(67, 62);
@@ -227,8 +229,9 @@
             // c1
             // 
             this.c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c1.Image = ((System.Drawing.Image)(resources.GetObject("c1.Image")));
-            this.c1.Location = new System.Drawing.Point(510, 590);
+            this.c1.Location = new System.Drawing.Point(511, 590);
             this.c1.Margin = new System.Windows.Forms.Padding(0);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(67, 62);
@@ -240,7 +243,7 @@
             // 
             this.b1.BackColor = System.Drawing.Color.Gainsboro;
             this.b1.Image = ((System.Drawing.Image)(resources.GetObject("b1.Image")));
-            this.b1.Location = new System.Drawing.Point(443, 590);
+            this.b1.Location = new System.Drawing.Point(444, 590);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(67, 62);
@@ -251,8 +254,9 @@
             // a1
             // 
             this.a1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a1.Image = ((System.Drawing.Image)(resources.GetObject("a1.Image")));
-            this.a1.Location = new System.Drawing.Point(376, 590);
+            this.a1.Location = new System.Drawing.Point(377, 590);
             this.a1.Margin = new System.Windows.Forms.Padding(0);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(67, 62);
@@ -263,8 +267,9 @@
             // h2
             // 
             this.h2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.h2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h2.Image = ((System.Drawing.Image)(resources.GetObject("h2.Image")));
-            this.h2.Location = new System.Drawing.Point(843, 528);
+            this.h2.Location = new System.Drawing.Point(844, 528);
             this.h2.Margin = new System.Windows.Forms.Padding(0);
             this.h2.Name = "h2";
             this.h2.Size = new System.Drawing.Size(67, 62);
@@ -276,7 +281,7 @@
             // 
             this.g2.BackColor = System.Drawing.Color.Gainsboro;
             this.g2.Image = ((System.Drawing.Image)(resources.GetObject("g2.Image")));
-            this.g2.Location = new System.Drawing.Point(776, 528);
+            this.g2.Location = new System.Drawing.Point(777, 528);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(67, 62);
@@ -287,8 +292,9 @@
             // f2
             // 
             this.f2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f2.Image = ((System.Drawing.Image)(resources.GetObject("f2.Image")));
-            this.f2.Location = new System.Drawing.Point(710, 528);
+            this.f2.Location = new System.Drawing.Point(711, 528);
             this.f2.Margin = new System.Windows.Forms.Padding(0);
             this.f2.Name = "f2";
             this.f2.Size = new System.Drawing.Size(67, 62);
@@ -300,7 +306,7 @@
             // 
             this.e2.BackColor = System.Drawing.Color.Gainsboro;
             this.e2.Image = ((System.Drawing.Image)(resources.GetObject("e2.Image")));
-            this.e2.Location = new System.Drawing.Point(643, 528);
+            this.e2.Location = new System.Drawing.Point(644, 528);
             this.e2.Margin = new System.Windows.Forms.Padding(0);
             this.e2.Name = "e2";
             this.e2.Size = new System.Drawing.Size(67, 62);
@@ -311,8 +317,9 @@
             // d2
             // 
             this.d2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.d2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d2.Image = ((System.Drawing.Image)(resources.GetObject("d2.Image")));
-            this.d2.Location = new System.Drawing.Point(576, 528);
+            this.d2.Location = new System.Drawing.Point(577, 528);
             this.d2.Margin = new System.Windows.Forms.Padding(0);
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(67, 62);
@@ -324,7 +331,7 @@
             // 
             this.c2.BackColor = System.Drawing.Color.Gainsboro;
             this.c2.Image = ((System.Drawing.Image)(resources.GetObject("c2.Image")));
-            this.c2.Location = new System.Drawing.Point(510, 528);
+            this.c2.Location = new System.Drawing.Point(511, 528);
             this.c2.Margin = new System.Windows.Forms.Padding(0);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(67, 62);
@@ -335,8 +342,9 @@
             // b2
             // 
             this.b2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.b2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b2.Image = ((System.Drawing.Image)(resources.GetObject("b2.Image")));
-            this.b2.Location = new System.Drawing.Point(443, 528);
+            this.b2.Location = new System.Drawing.Point(444, 528);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(67, 62);
@@ -348,7 +356,7 @@
             // 
             this.a2.BackColor = System.Drawing.Color.Gainsboro;
             this.a2.Image = ((System.Drawing.Image)(resources.GetObject("a2.Image")));
-            this.a2.Location = new System.Drawing.Point(376, 528);
+            this.a2.Location = new System.Drawing.Point(377, 528);
             this.a2.Margin = new System.Windows.Forms.Padding(0);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(67, 62);
@@ -359,7 +367,7 @@
             // h3
             // 
             this.h3.BackColor = System.Drawing.Color.Gainsboro;
-            this.h3.Location = new System.Drawing.Point(843, 467);
+            this.h3.Location = new System.Drawing.Point(844, 467);
             this.h3.Margin = new System.Windows.Forms.Padding(0);
             this.h3.Name = "h3";
             this.h3.Size = new System.Drawing.Size(67, 62);
@@ -370,7 +378,7 @@
             // g3
             // 
             this.g3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.g3.Location = new System.Drawing.Point(776, 467);
+            this.g3.Location = new System.Drawing.Point(777, 467);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
             this.g3.Size = new System.Drawing.Size(67, 62);
@@ -381,7 +389,7 @@
             // f3
             // 
             this.f3.BackColor = System.Drawing.Color.Gainsboro;
-            this.f3.Location = new System.Drawing.Point(710, 467);
+            this.f3.Location = new System.Drawing.Point(711, 467);
             this.f3.Margin = new System.Windows.Forms.Padding(0);
             this.f3.Name = "f3";
             this.f3.Size = new System.Drawing.Size(67, 62);
@@ -392,7 +400,7 @@
             // e3
             // 
             this.e3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.e3.Location = new System.Drawing.Point(643, 467);
+            this.e3.Location = new System.Drawing.Point(644, 467);
             this.e3.Margin = new System.Windows.Forms.Padding(0);
             this.e3.Name = "e3";
             this.e3.Size = new System.Drawing.Size(67, 62);
@@ -403,7 +411,7 @@
             // d3
             // 
             this.d3.BackColor = System.Drawing.Color.Gainsboro;
-            this.d3.Location = new System.Drawing.Point(576, 467);
+            this.d3.Location = new System.Drawing.Point(577, 467);
             this.d3.Margin = new System.Windows.Forms.Padding(0);
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(67, 62);
@@ -414,7 +422,7 @@
             // c3
             // 
             this.c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.c3.Location = new System.Drawing.Point(510, 467);
+            this.c3.Location = new System.Drawing.Point(511, 467);
             this.c3.Margin = new System.Windows.Forms.Padding(0);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(67, 62);
@@ -425,7 +433,7 @@
             // b3
             // 
             this.b3.BackColor = System.Drawing.Color.Gainsboro;
-            this.b3.Location = new System.Drawing.Point(443, 467);
+            this.b3.Location = new System.Drawing.Point(444, 467);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(67, 62);
@@ -436,7 +444,7 @@
             // a3
             // 
             this.a3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.a3.Location = new System.Drawing.Point(376, 467);
+            this.a3.Location = new System.Drawing.Point(377, 467);
             this.a3.Margin = new System.Windows.Forms.Padding(0);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(67, 62);
@@ -447,7 +455,7 @@
             // h4
             // 
             this.h4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.h4.Location = new System.Drawing.Point(843, 405);
+            this.h4.Location = new System.Drawing.Point(844, 405);
             this.h4.Margin = new System.Windows.Forms.Padding(0);
             this.h4.Name = "h4";
             this.h4.Size = new System.Drawing.Size(67, 62);
@@ -458,7 +466,7 @@
             // g4
             // 
             this.g4.BackColor = System.Drawing.Color.Gainsboro;
-            this.g4.Location = new System.Drawing.Point(776, 405);
+            this.g4.Location = new System.Drawing.Point(777, 405);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
             this.g4.Size = new System.Drawing.Size(67, 62);
@@ -469,7 +477,7 @@
             // f4
             // 
             this.f4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.f4.Location = new System.Drawing.Point(710, 405);
+            this.f4.Location = new System.Drawing.Point(711, 405);
             this.f4.Margin = new System.Windows.Forms.Padding(0);
             this.f4.Name = "f4";
             this.f4.Size = new System.Drawing.Size(67, 62);
@@ -480,7 +488,7 @@
             // e4
             // 
             this.e4.BackColor = System.Drawing.Color.Gainsboro;
-            this.e4.Location = new System.Drawing.Point(643, 405);
+            this.e4.Location = new System.Drawing.Point(644, 405);
             this.e4.Margin = new System.Windows.Forms.Padding(0);
             this.e4.Name = "e4";
             this.e4.Size = new System.Drawing.Size(67, 62);
@@ -491,7 +499,7 @@
             // d4
             // 
             this.d4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.d4.Location = new System.Drawing.Point(576, 405);
+            this.d4.Location = new System.Drawing.Point(577, 405);
             this.d4.Margin = new System.Windows.Forms.Padding(0);
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(67, 62);
@@ -502,7 +510,7 @@
             // c4
             // 
             this.c4.BackColor = System.Drawing.Color.Gainsboro;
-            this.c4.Location = new System.Drawing.Point(510, 405);
+            this.c4.Location = new System.Drawing.Point(511, 405);
             this.c4.Margin = new System.Windows.Forms.Padding(0);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(67, 62);
@@ -513,7 +521,7 @@
             // b4
             // 
             this.b4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.b4.Location = new System.Drawing.Point(443, 405);
+            this.b4.Location = new System.Drawing.Point(444, 405);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(67, 62);
@@ -524,7 +532,7 @@
             // a4
             // 
             this.a4.BackColor = System.Drawing.Color.Gainsboro;
-            this.a4.Location = new System.Drawing.Point(376, 405);
+            this.a4.Location = new System.Drawing.Point(377, 405);
             this.a4.Margin = new System.Windows.Forms.Padding(0);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(67, 62);
@@ -535,7 +543,7 @@
             // h5
             // 
             this.h5.BackColor = System.Drawing.Color.Gainsboro;
-            this.h5.Location = new System.Drawing.Point(843, 344);
+            this.h5.Location = new System.Drawing.Point(844, 344);
             this.h5.Margin = new System.Windows.Forms.Padding(0);
             this.h5.Name = "h5";
             this.h5.Size = new System.Drawing.Size(67, 62);
@@ -546,7 +554,7 @@
             // g5
             // 
             this.g5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.g5.Location = new System.Drawing.Point(776, 344);
+            this.g5.Location = new System.Drawing.Point(777, 344);
             this.g5.Margin = new System.Windows.Forms.Padding(0);
             this.g5.Name = "g5";
             this.g5.Size = new System.Drawing.Size(67, 62);
@@ -557,7 +565,7 @@
             // f5
             // 
             this.f5.BackColor = System.Drawing.Color.Gainsboro;
-            this.f5.Location = new System.Drawing.Point(710, 344);
+            this.f5.Location = new System.Drawing.Point(711, 344);
             this.f5.Margin = new System.Windows.Forms.Padding(0);
             this.f5.Name = "f5";
             this.f5.Size = new System.Drawing.Size(67, 62);
@@ -568,7 +576,7 @@
             // e5
             // 
             this.e5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.e5.Location = new System.Drawing.Point(643, 344);
+            this.e5.Location = new System.Drawing.Point(644, 344);
             this.e5.Margin = new System.Windows.Forms.Padding(0);
             this.e5.Name = "e5";
             this.e5.Size = new System.Drawing.Size(67, 62);
@@ -579,7 +587,7 @@
             // d5
             // 
             this.d5.BackColor = System.Drawing.Color.Gainsboro;
-            this.d5.Location = new System.Drawing.Point(576, 344);
+            this.d5.Location = new System.Drawing.Point(577, 344);
             this.d5.Margin = new System.Windows.Forms.Padding(0);
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(67, 62);
@@ -590,7 +598,7 @@
             // c5
             // 
             this.c5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.c5.Location = new System.Drawing.Point(510, 344);
+            this.c5.Location = new System.Drawing.Point(511, 344);
             this.c5.Margin = new System.Windows.Forms.Padding(0);
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(67, 62);
@@ -601,7 +609,7 @@
             // b5
             // 
             this.b5.BackColor = System.Drawing.Color.Gainsboro;
-            this.b5.Location = new System.Drawing.Point(443, 344);
+            this.b5.Location = new System.Drawing.Point(444, 344);
             this.b5.Margin = new System.Windows.Forms.Padding(0);
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(67, 62);
@@ -612,7 +620,7 @@
             // a5
             // 
             this.a5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.a5.Location = new System.Drawing.Point(376, 344);
+            this.a5.Location = new System.Drawing.Point(377, 344);
             this.a5.Margin = new System.Windows.Forms.Padding(0);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(67, 62);
@@ -623,7 +631,7 @@
             // h6
             // 
             this.h6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.h6.Location = new System.Drawing.Point(843, 282);
+            this.h6.Location = new System.Drawing.Point(844, 282);
             this.h6.Margin = new System.Windows.Forms.Padding(0);
             this.h6.Name = "h6";
             this.h6.Size = new System.Drawing.Size(67, 62);
@@ -634,7 +642,7 @@
             // g6
             // 
             this.g6.BackColor = System.Drawing.Color.Gainsboro;
-            this.g6.Location = new System.Drawing.Point(776, 282);
+            this.g6.Location = new System.Drawing.Point(777, 282);
             this.g6.Margin = new System.Windows.Forms.Padding(0);
             this.g6.Name = "g6";
             this.g6.Size = new System.Drawing.Size(67, 62);
@@ -645,7 +653,7 @@
             // f6
             // 
             this.f6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.f6.Location = new System.Drawing.Point(710, 282);
+            this.f6.Location = new System.Drawing.Point(711, 282);
             this.f6.Margin = new System.Windows.Forms.Padding(0);
             this.f6.Name = "f6";
             this.f6.Size = new System.Drawing.Size(67, 62);
@@ -656,7 +664,7 @@
             // e6
             // 
             this.e6.BackColor = System.Drawing.Color.Gainsboro;
-            this.e6.Location = new System.Drawing.Point(643, 282);
+            this.e6.Location = new System.Drawing.Point(644, 282);
             this.e6.Margin = new System.Windows.Forms.Padding(0);
             this.e6.Name = "e6";
             this.e6.Size = new System.Drawing.Size(67, 62);
@@ -667,7 +675,7 @@
             // d6
             // 
             this.d6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.d6.Location = new System.Drawing.Point(576, 282);
+            this.d6.Location = new System.Drawing.Point(577, 282);
             this.d6.Margin = new System.Windows.Forms.Padding(0);
             this.d6.Name = "d6";
             this.d6.Size = new System.Drawing.Size(67, 62);
@@ -678,7 +686,7 @@
             // c6
             // 
             this.c6.BackColor = System.Drawing.Color.Gainsboro;
-            this.c6.Location = new System.Drawing.Point(510, 282);
+            this.c6.Location = new System.Drawing.Point(511, 282);
             this.c6.Margin = new System.Windows.Forms.Padding(0);
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(67, 62);
@@ -689,7 +697,7 @@
             // b6
             // 
             this.b6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.b6.Location = new System.Drawing.Point(443, 282);
+            this.b6.Location = new System.Drawing.Point(444, 282);
             this.b6.Margin = new System.Windows.Forms.Padding(0);
             this.b6.Name = "b6";
             this.b6.Size = new System.Drawing.Size(67, 62);
@@ -700,7 +708,7 @@
             // a6
             // 
             this.a6.BackColor = System.Drawing.Color.Gainsboro;
-            this.a6.Location = new System.Drawing.Point(376, 282);
+            this.a6.Location = new System.Drawing.Point(377, 282);
             this.a6.Margin = new System.Windows.Forms.Padding(0);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(67, 62);
@@ -712,7 +720,7 @@
             // 
             this.h7.BackColor = System.Drawing.Color.Gainsboro;
             this.h7.Image = ((System.Drawing.Image)(resources.GetObject("h7.Image")));
-            this.h7.Location = new System.Drawing.Point(843, 221);
+            this.h7.Location = new System.Drawing.Point(844, 221);
             this.h7.Margin = new System.Windows.Forms.Padding(0);
             this.h7.Name = "h7";
             this.h7.Size = new System.Drawing.Size(67, 62);
@@ -723,8 +731,10 @@
             // g7
             // 
             this.g7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.g7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("g7.BackgroundImage")));
+            this.g7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g7.Image = ((System.Drawing.Image)(resources.GetObject("g7.Image")));
-            this.g7.Location = new System.Drawing.Point(776, 221);
+            this.g7.Location = new System.Drawing.Point(777, 221);
             this.g7.Margin = new System.Windows.Forms.Padding(0);
             this.g7.Name = "g7";
             this.g7.Size = new System.Drawing.Size(67, 62);
@@ -736,7 +746,7 @@
             // 
             this.f7.BackColor = System.Drawing.Color.Gainsboro;
             this.f7.Image = ((System.Drawing.Image)(resources.GetObject("f7.Image")));
-            this.f7.Location = new System.Drawing.Point(710, 221);
+            this.f7.Location = new System.Drawing.Point(711, 221);
             this.f7.Margin = new System.Windows.Forms.Padding(0);
             this.f7.Name = "f7";
             this.f7.Size = new System.Drawing.Size(67, 62);
@@ -747,8 +757,10 @@
             // e7
             // 
             this.e7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.e7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("e7.BackgroundImage")));
+            this.e7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e7.Image = ((System.Drawing.Image)(resources.GetObject("e7.Image")));
-            this.e7.Location = new System.Drawing.Point(643, 221);
+            this.e7.Location = new System.Drawing.Point(644, 221);
             this.e7.Margin = new System.Windows.Forms.Padding(0);
             this.e7.Name = "e7";
             this.e7.Size = new System.Drawing.Size(67, 62);
@@ -760,7 +772,7 @@
             // 
             this.d7.BackColor = System.Drawing.Color.Gainsboro;
             this.d7.Image = ((System.Drawing.Image)(resources.GetObject("d7.Image")));
-            this.d7.Location = new System.Drawing.Point(576, 221);
+            this.d7.Location = new System.Drawing.Point(577, 221);
             this.d7.Margin = new System.Windows.Forms.Padding(0);
             this.d7.Name = "d7";
             this.d7.Size = new System.Drawing.Size(67, 62);
@@ -771,8 +783,10 @@
             // c7
             // 
             this.c7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.c7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c7.BackgroundImage")));
+            this.c7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c7.Image = ((System.Drawing.Image)(resources.GetObject("c7.Image")));
-            this.c7.Location = new System.Drawing.Point(510, 221);
+            this.c7.Location = new System.Drawing.Point(511, 221);
             this.c7.Margin = new System.Windows.Forms.Padding(0);
             this.c7.Name = "c7";
             this.c7.Size = new System.Drawing.Size(67, 62);
@@ -784,7 +798,7 @@
             // 
             this.b7.BackColor = System.Drawing.Color.Gainsboro;
             this.b7.Image = ((System.Drawing.Image)(resources.GetObject("b7.Image")));
-            this.b7.Location = new System.Drawing.Point(443, 221);
+            this.b7.Location = new System.Drawing.Point(444, 221);
             this.b7.Margin = new System.Windows.Forms.Padding(0);
             this.b7.Name = "b7";
             this.b7.Size = new System.Drawing.Size(67, 62);
@@ -795,8 +809,10 @@
             // a7
             // 
             this.a7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.a7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("a7.BackgroundImage")));
+            this.a7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a7.Image = ((System.Drawing.Image)(resources.GetObject("a7.Image")));
-            this.a7.Location = new System.Drawing.Point(376, 221);
+            this.a7.Location = new System.Drawing.Point(377, 221);
             this.a7.Margin = new System.Windows.Forms.Padding(0);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(67, 62);
@@ -807,8 +823,9 @@
             // h8
             // 
             this.h8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.h8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.h8.Location = new System.Drawing.Point(843, 159);
+            this.h8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("h8.BackgroundImage")));
+            this.h8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.h8.Location = new System.Drawing.Point(844, 159);
             this.h8.Margin = new System.Windows.Forms.Padding(0);
             this.h8.Name = "h8";
             this.h8.Size = new System.Drawing.Size(67, 62);
@@ -819,8 +836,7 @@
             // g8
             // 
             this.g8.BackColor = System.Drawing.Color.Gainsboro;
-            this.g8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.g8.Location = new System.Drawing.Point(776, 159);
+            this.g8.Location = new System.Drawing.Point(777, 159);
             this.g8.Margin = new System.Windows.Forms.Padding(0);
             this.g8.Name = "g8";
             this.g8.Size = new System.Drawing.Size(67, 62);
@@ -831,8 +847,9 @@
             // f8
             // 
             this.f8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.f8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.f8.Location = new System.Drawing.Point(710, 159);
+            this.f8.Location = new System.Drawing.Point(711, 159);
             this.f8.Margin = new System.Windows.Forms.Padding(0);
             this.f8.Name = "f8";
             this.f8.Size = new System.Drawing.Size(67, 62);
@@ -843,8 +860,7 @@
             // e8
             // 
             this.e8.BackColor = System.Drawing.Color.Gainsboro;
-            this.e8.Image = global::ChessMaster2017.Properties.Resources.black_king;
-            this.e8.Location = new System.Drawing.Point(643, 159);
+            this.e8.Location = new System.Drawing.Point(644, 159);
             this.e8.Margin = new System.Windows.Forms.Padding(0);
             this.e8.Name = "e8";
             this.e8.Size = new System.Drawing.Size(67, 62);
@@ -855,8 +871,9 @@
             // d8
             // 
             this.d8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.d8.Image = global::ChessMaster2017.Properties.Resources.black_queen;
-            this.d8.Location = new System.Drawing.Point(576, 159);
+            this.d8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("d8.BackgroundImage")));
+            this.d8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.d8.Location = new System.Drawing.Point(577, 159);
             this.d8.Margin = new System.Windows.Forms.Padding(0);
             this.d8.Name = "d8";
             this.d8.Size = new System.Drawing.Size(67, 62);
@@ -867,8 +884,7 @@
             // c8
             // 
             this.c8.BackColor = System.Drawing.Color.Gainsboro;
-            this.c8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.c8.Location = new System.Drawing.Point(510, 159);
+            this.c8.Location = new System.Drawing.Point(511, 159);
             this.c8.Margin = new System.Windows.Forms.Padding(0);
             this.c8.Name = "c8";
             this.c8.Size = new System.Drawing.Size(67, 62);
@@ -879,8 +895,9 @@
             // b8
             // 
             this.b8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.b8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.b8.Location = new System.Drawing.Point(443, 159);
+            this.b8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b8.BackgroundImage")));
+            this.b8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.b8.Location = new System.Drawing.Point(444, 159);
             this.b8.Margin = new System.Windows.Forms.Padding(0);
             this.b8.Name = "b8";
             this.b8.Size = new System.Drawing.Size(67, 62);
@@ -891,8 +908,7 @@
             // a8
             // 
             this.a8.BackColor = System.Drawing.Color.Gainsboro;
-            this.a8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.a8.Location = new System.Drawing.Point(376, 159);
+            this.a8.Location = new System.Drawing.Point(377, 159);
             this.a8.Margin = new System.Windows.Forms.Padding(0);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(67, 62);
@@ -924,7 +940,6 @@
             this.BlackPlayerTurn.TabStop = true;
             this.BlackPlayerTurn.Text = "Black";
             this.BlackPlayerTurn.UseVisualStyleBackColor = false;
-            this.BlackPlayerTurn.CheckedChanged += new System.EventHandler(this.BlackPlayerTurn_CheckedChanged);
             // 
             // WhitePlayerTurn
             // 
@@ -941,7 +956,6 @@
             this.WhitePlayerTurn.TabStop = true;
             this.WhitePlayerTurn.Text = "White";
             this.WhitePlayerTurn.UseVisualStyleBackColor = false;
-            this.WhitePlayerTurn.CheckedChanged += new System.EventHandler(this.WhitePlayerTurn_CheckedChanged);
             // 
             // panel1
             // 
@@ -956,9 +970,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ChessMaster2017.Properties.Resources.CHESSBOARD1W2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1029, 764);
+            this.ClientSize = new System.Drawing.Size(1032, 767);
             this.Controls.Add(this.WhitePlayerTurn);
             this.Controls.Add(this.BlackPlayerTurn);
             this.Controls.Add(this.label13);
@@ -1027,14 +1041,14 @@
             this.Controls.Add(this.c8);
             this.Controls.Add(this.b8);
             this.Controls.Add(this.a8);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1061, 820);
-            this.MinimumSize = new System.Drawing.Size(800, 640);
+            this.MaximumSize = new System.Drawing.Size(1050, 840);
+            this.MinimumSize = new System.Drawing.Size(1050, 500);
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Chess Master 2017";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.h1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.g1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.f1)).EndInit();

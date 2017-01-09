@@ -196,7 +196,7 @@ namespace ChessMaster2017.BackEnd
             }
 
             // Bottom / Left diagonal
-            for (int movesX = pawnX - 1, movesY = pawnY - 1; whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; )
+            for (int movesX = pawnX - 1, movesY = pawnY - 1; !whitePawn && movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY--)
             {
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == pawnColor)
