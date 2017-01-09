@@ -97,23 +97,7 @@
             this.c8 = new System.Windows.Forms.PictureBox();
             this.b8 = new System.Windows.Forms.PictureBox();
             this.a8 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.h1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.g1)).BeginInit();
@@ -190,10 +174,9 @@
             this.WhitePlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WhitePlayerTurn.Location = new System.Drawing.Point(3, 3);
             this.WhitePlayerTurn.Name = "WhitePlayerTurn";
-            this.WhitePlayerTurn.Size = new System.Drawing.Size(68, 24);
+            this.WhitePlayerTurn.Size = new System.Drawing.Size(14, 13);
             this.WhitePlayerTurn.TabIndex = 64;
             this.WhitePlayerTurn.TabStop = true;
-            this.WhitePlayerTurn.Text = "White";
             this.WhitePlayerTurn.UseVisualStyleBackColor = true;
             // 
             // BlackPlayerTurn
@@ -204,20 +187,21 @@
             this.BlackPlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BlackPlayerTurn.Location = new System.Drawing.Point(3, 33);
             this.BlackPlayerTurn.Name = "BlackPlayerTurn";
-            this.BlackPlayerTurn.Size = new System.Drawing.Size(66, 24);
+            this.BlackPlayerTurn.Size = new System.Drawing.Size(14, 13);
             this.BlackPlayerTurn.TabIndex = 65;
             this.BlackPlayerTurn.TabStop = true;
-            this.BlackPlayerTurn.Text = "Black";
             this.BlackPlayerTurn.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.WhitePlayerTurn);
             this.panel1.Controls.Add(this.BlackPlayerTurn);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel1.Location = new System.Drawing.Point(463, 66);
+            this.panel1.Location = new System.Drawing.Point(127, 289);
             this.panel1.Name = "panel1";
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel1.Size = new System.Drawing.Size(88, 62);
             this.panel1.TabIndex = 66;
             // 
@@ -227,7 +211,7 @@
             this.h1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.h1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h1.Image = ((System.Drawing.Image)(resources.GetObject("h1.Image")));
-            this.h1.Location = new System.Drawing.Point(390, 416);
+            this.h1.Location = new System.Drawing.Point(637, 480);
             this.h1.Margin = new System.Windows.Forms.Padding(0);
             this.h1.Name = "h1";
             this.h1.Size = new System.Drawing.Size(50, 50);
@@ -240,7 +224,7 @@
             this.g1.BackColor = System.Drawing.Color.Sienna;
             this.g1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g1.Image = ((System.Drawing.Image)(resources.GetObject("g1.Image")));
-            this.g1.Location = new System.Drawing.Point(340, 416);
+            this.g1.Location = new System.Drawing.Point(587, 480);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
             this.g1.Name = "g1";
             this.g1.Size = new System.Drawing.Size(50, 50);
@@ -254,7 +238,7 @@
             this.f1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.f1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f1.Image = ((System.Drawing.Image)(resources.GetObject("f1.Image")));
-            this.f1.Location = new System.Drawing.Point(290, 416);
+            this.f1.Location = new System.Drawing.Point(537, 480);
             this.f1.Margin = new System.Windows.Forms.Padding(0);
             this.f1.Name = "f1";
             this.f1.Size = new System.Drawing.Size(50, 50);
@@ -267,7 +251,7 @@
             this.e1.BackColor = System.Drawing.Color.Sienna;
             this.e1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e1.Image = global::ChessMaster2017.Properties.Resources.white_king;
-            this.e1.Location = new System.Drawing.Point(240, 416);
+            this.e1.Location = new System.Drawing.Point(487, 480);
             this.e1.Margin = new System.Windows.Forms.Padding(0);
             this.e1.Name = "e1";
             this.e1.Size = new System.Drawing.Size(50, 50);
@@ -281,7 +265,7 @@
             this.d1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.d1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d1.Image = global::ChessMaster2017.Properties.Resources.white_queen;
-            this.d1.Location = new System.Drawing.Point(190, 416);
+            this.d1.Location = new System.Drawing.Point(437, 480);
             this.d1.Margin = new System.Windows.Forms.Padding(0);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(50, 50);
@@ -294,7 +278,7 @@
             this.c1.BackColor = System.Drawing.Color.Sienna;
             this.c1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c1.Image = ((System.Drawing.Image)(resources.GetObject("c1.Image")));
-            this.c1.Location = new System.Drawing.Point(140, 416);
+            this.c1.Location = new System.Drawing.Point(387, 480);
             this.c1.Margin = new System.Windows.Forms.Padding(0);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(50, 50);
@@ -308,7 +292,7 @@
             this.b1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.b1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b1.Image = ((System.Drawing.Image)(resources.GetObject("b1.Image")));
-            this.b1.Location = new System.Drawing.Point(90, 416);
+            this.b1.Location = new System.Drawing.Point(337, 480);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(50, 50);
@@ -321,7 +305,7 @@
             this.a1.BackColor = System.Drawing.Color.Sienna;
             this.a1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a1.Image = ((System.Drawing.Image)(resources.GetObject("a1.Image")));
-            this.a1.Location = new System.Drawing.Point(40, 416);
+            this.a1.Location = new System.Drawing.Point(287, 480);
             this.a1.Margin = new System.Windows.Forms.Padding(0);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(50, 50);
@@ -334,7 +318,7 @@
             this.h2.BackColor = System.Drawing.Color.Sienna;
             this.h2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h2.Image = ((System.Drawing.Image)(resources.GetObject("h2.Image")));
-            this.h2.Location = new System.Drawing.Point(390, 366);
+            this.h2.Location = new System.Drawing.Point(637, 430);
             this.h2.Margin = new System.Windows.Forms.Padding(0);
             this.h2.Name = "h2";
             this.h2.Size = new System.Drawing.Size(50, 50);
@@ -348,7 +332,7 @@
             this.g2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.g2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g2.Image = ((System.Drawing.Image)(resources.GetObject("g2.Image")));
-            this.g2.Location = new System.Drawing.Point(340, 366);
+            this.g2.Location = new System.Drawing.Point(587, 430);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(50, 50);
@@ -361,7 +345,7 @@
             this.f2.BackColor = System.Drawing.Color.Sienna;
             this.f2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f2.Image = ((System.Drawing.Image)(resources.GetObject("f2.Image")));
-            this.f2.Location = new System.Drawing.Point(290, 366);
+            this.f2.Location = new System.Drawing.Point(537, 430);
             this.f2.Margin = new System.Windows.Forms.Padding(0);
             this.f2.Name = "f2";
             this.f2.Size = new System.Drawing.Size(50, 50);
@@ -375,7 +359,7 @@
             this.e2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.e2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e2.Image = ((System.Drawing.Image)(resources.GetObject("e2.Image")));
-            this.e2.Location = new System.Drawing.Point(240, 366);
+            this.e2.Location = new System.Drawing.Point(487, 430);
             this.e2.Margin = new System.Windows.Forms.Padding(0);
             this.e2.Name = "e2";
             this.e2.Size = new System.Drawing.Size(50, 50);
@@ -388,7 +372,7 @@
             this.d2.BackColor = System.Drawing.Color.Sienna;
             this.d2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d2.Image = ((System.Drawing.Image)(resources.GetObject("d2.Image")));
-            this.d2.Location = new System.Drawing.Point(190, 366);
+            this.d2.Location = new System.Drawing.Point(437, 430);
             this.d2.Margin = new System.Windows.Forms.Padding(0);
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(50, 50);
@@ -402,7 +386,7 @@
             this.c2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.c2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c2.Image = ((System.Drawing.Image)(resources.GetObject("c2.Image")));
-            this.c2.Location = new System.Drawing.Point(140, 366);
+            this.c2.Location = new System.Drawing.Point(387, 430);
             this.c2.Margin = new System.Windows.Forms.Padding(0);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(50, 50);
@@ -415,7 +399,7 @@
             this.b2.BackColor = System.Drawing.Color.Sienna;
             this.b2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b2.Image = ((System.Drawing.Image)(resources.GetObject("b2.Image")));
-            this.b2.Location = new System.Drawing.Point(90, 366);
+            this.b2.Location = new System.Drawing.Point(337, 430);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(50, 50);
@@ -429,7 +413,7 @@
             this.a2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.a2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a2.Image = ((System.Drawing.Image)(resources.GetObject("a2.Image")));
-            this.a2.Location = new System.Drawing.Point(40, 366);
+            this.a2.Location = new System.Drawing.Point(287, 430);
             this.a2.Margin = new System.Windows.Forms.Padding(0);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(50, 50);
@@ -442,7 +426,7 @@
             this.h3.BackColor = System.Drawing.Color.Moccasin;
             this.h3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.h3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.h3.Location = new System.Drawing.Point(390, 316);
+            this.h3.Location = new System.Drawing.Point(637, 380);
             this.h3.Margin = new System.Windows.Forms.Padding(0);
             this.h3.Name = "h3";
             this.h3.Size = new System.Drawing.Size(50, 50);
@@ -454,7 +438,7 @@
             // 
             this.g3.BackColor = System.Drawing.Color.Sienna;
             this.g3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.g3.Location = new System.Drawing.Point(340, 316);
+            this.g3.Location = new System.Drawing.Point(587, 380);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
             this.g3.Size = new System.Drawing.Size(50, 50);
@@ -467,7 +451,7 @@
             this.f3.BackColor = System.Drawing.Color.Moccasin;
             this.f3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.f3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.f3.Location = new System.Drawing.Point(290, 316);
+            this.f3.Location = new System.Drawing.Point(537, 380);
             this.f3.Margin = new System.Windows.Forms.Padding(0);
             this.f3.Name = "f3";
             this.f3.Size = new System.Drawing.Size(50, 50);
@@ -479,7 +463,7 @@
             // 
             this.e3.BackColor = System.Drawing.Color.Sienna;
             this.e3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.e3.Location = new System.Drawing.Point(240, 316);
+            this.e3.Location = new System.Drawing.Point(487, 380);
             this.e3.Margin = new System.Windows.Forms.Padding(0);
             this.e3.Name = "e3";
             this.e3.Size = new System.Drawing.Size(50, 50);
@@ -492,7 +476,7 @@
             this.d3.BackColor = System.Drawing.Color.Moccasin;
             this.d3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.d3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.d3.Location = new System.Drawing.Point(190, 316);
+            this.d3.Location = new System.Drawing.Point(437, 380);
             this.d3.Margin = new System.Windows.Forms.Padding(0);
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(50, 50);
@@ -504,7 +488,7 @@
             // 
             this.c3.BackColor = System.Drawing.Color.Sienna;
             this.c3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.c3.Location = new System.Drawing.Point(140, 316);
+            this.c3.Location = new System.Drawing.Point(387, 380);
             this.c3.Margin = new System.Windows.Forms.Padding(0);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(50, 50);
@@ -517,7 +501,7 @@
             this.b3.BackColor = System.Drawing.Color.Moccasin;
             this.b3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.b3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.b3.Location = new System.Drawing.Point(90, 316);
+            this.b3.Location = new System.Drawing.Point(337, 380);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(50, 50);
@@ -529,7 +513,7 @@
             // 
             this.a3.BackColor = System.Drawing.Color.Sienna;
             this.a3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.a3.Location = new System.Drawing.Point(40, 316);
+            this.a3.Location = new System.Drawing.Point(287, 380);
             this.a3.Margin = new System.Windows.Forms.Padding(0);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(50, 50);
@@ -541,7 +525,7 @@
             // 
             this.h4.BackColor = System.Drawing.Color.Sienna;
             this.h4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.h4.Location = new System.Drawing.Point(390, 266);
+            this.h4.Location = new System.Drawing.Point(637, 330);
             this.h4.Margin = new System.Windows.Forms.Padding(0);
             this.h4.Name = "h4";
             this.h4.Size = new System.Drawing.Size(50, 50);
@@ -554,7 +538,7 @@
             this.g4.BackColor = System.Drawing.Color.Moccasin;
             this.g4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.g4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.g4.Location = new System.Drawing.Point(340, 266);
+            this.g4.Location = new System.Drawing.Point(587, 330);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
             this.g4.Size = new System.Drawing.Size(50, 50);
@@ -566,7 +550,7 @@
             // 
             this.f4.BackColor = System.Drawing.Color.Sienna;
             this.f4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.f4.Location = new System.Drawing.Point(290, 266);
+            this.f4.Location = new System.Drawing.Point(537, 330);
             this.f4.Margin = new System.Windows.Forms.Padding(0);
             this.f4.Name = "f4";
             this.f4.Size = new System.Drawing.Size(50, 50);
@@ -579,7 +563,7 @@
             this.e4.BackColor = System.Drawing.Color.Moccasin;
             this.e4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.e4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.e4.Location = new System.Drawing.Point(240, 266);
+            this.e4.Location = new System.Drawing.Point(487, 330);
             this.e4.Margin = new System.Windows.Forms.Padding(0);
             this.e4.Name = "e4";
             this.e4.Size = new System.Drawing.Size(50, 50);
@@ -591,7 +575,7 @@
             // 
             this.d4.BackColor = System.Drawing.Color.Sienna;
             this.d4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.d4.Location = new System.Drawing.Point(190, 266);
+            this.d4.Location = new System.Drawing.Point(437, 330);
             this.d4.Margin = new System.Windows.Forms.Padding(0);
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(50, 50);
@@ -604,7 +588,7 @@
             this.c4.BackColor = System.Drawing.Color.Moccasin;
             this.c4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.c4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.c4.Location = new System.Drawing.Point(140, 266);
+            this.c4.Location = new System.Drawing.Point(387, 330);
             this.c4.Margin = new System.Windows.Forms.Padding(0);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(50, 50);
@@ -616,7 +600,7 @@
             // 
             this.b4.BackColor = System.Drawing.Color.Sienna;
             this.b4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.b4.Location = new System.Drawing.Point(90, 266);
+            this.b4.Location = new System.Drawing.Point(337, 330);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(50, 50);
@@ -629,7 +613,7 @@
             this.a4.BackColor = System.Drawing.Color.Moccasin;
             this.a4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.a4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.a4.Location = new System.Drawing.Point(40, 266);
+            this.a4.Location = new System.Drawing.Point(287, 330);
             this.a4.Margin = new System.Windows.Forms.Padding(0);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(50, 50);
@@ -642,7 +626,7 @@
             this.h5.BackColor = System.Drawing.Color.Moccasin;
             this.h5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.h5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.h5.Location = new System.Drawing.Point(390, 216);
+            this.h5.Location = new System.Drawing.Point(637, 280);
             this.h5.Margin = new System.Windows.Forms.Padding(0);
             this.h5.Name = "h5";
             this.h5.Size = new System.Drawing.Size(50, 50);
@@ -654,7 +638,7 @@
             // 
             this.g5.BackColor = System.Drawing.Color.Sienna;
             this.g5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.g5.Location = new System.Drawing.Point(340, 216);
+            this.g5.Location = new System.Drawing.Point(587, 280);
             this.g5.Margin = new System.Windows.Forms.Padding(0);
             this.g5.Name = "g5";
             this.g5.Size = new System.Drawing.Size(50, 50);
@@ -667,7 +651,7 @@
             this.f5.BackColor = System.Drawing.Color.Moccasin;
             this.f5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.f5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.f5.Location = new System.Drawing.Point(290, 216);
+            this.f5.Location = new System.Drawing.Point(537, 280);
             this.f5.Margin = new System.Windows.Forms.Padding(0);
             this.f5.Name = "f5";
             this.f5.Size = new System.Drawing.Size(50, 50);
@@ -679,7 +663,7 @@
             // 
             this.e5.BackColor = System.Drawing.Color.Sienna;
             this.e5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.e5.Location = new System.Drawing.Point(240, 216);
+            this.e5.Location = new System.Drawing.Point(487, 280);
             this.e5.Margin = new System.Windows.Forms.Padding(0);
             this.e5.Name = "e5";
             this.e5.Size = new System.Drawing.Size(50, 50);
@@ -692,7 +676,7 @@
             this.d5.BackColor = System.Drawing.Color.Moccasin;
             this.d5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.d5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.d5.Location = new System.Drawing.Point(190, 216);
+            this.d5.Location = new System.Drawing.Point(437, 280);
             this.d5.Margin = new System.Windows.Forms.Padding(0);
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(50, 50);
@@ -704,7 +688,7 @@
             // 
             this.c5.BackColor = System.Drawing.Color.Sienna;
             this.c5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.c5.Location = new System.Drawing.Point(140, 216);
+            this.c5.Location = new System.Drawing.Point(387, 280);
             this.c5.Margin = new System.Windows.Forms.Padding(0);
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(50, 50);
@@ -717,7 +701,7 @@
             this.b5.BackColor = System.Drawing.Color.Moccasin;
             this.b5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.b5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.b5.Location = new System.Drawing.Point(90, 216);
+            this.b5.Location = new System.Drawing.Point(337, 280);
             this.b5.Margin = new System.Windows.Forms.Padding(0);
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(50, 50);
@@ -729,7 +713,7 @@
             // 
             this.a5.BackColor = System.Drawing.Color.Sienna;
             this.a5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.a5.Location = new System.Drawing.Point(40, 216);
+            this.a5.Location = new System.Drawing.Point(287, 280);
             this.a5.Margin = new System.Windows.Forms.Padding(0);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(50, 50);
@@ -741,7 +725,7 @@
             // 
             this.h6.BackColor = System.Drawing.Color.Sienna;
             this.h6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.h6.Location = new System.Drawing.Point(390, 166);
+            this.h6.Location = new System.Drawing.Point(637, 230);
             this.h6.Margin = new System.Windows.Forms.Padding(0);
             this.h6.Name = "h6";
             this.h6.Size = new System.Drawing.Size(50, 50);
@@ -754,7 +738,7 @@
             this.g6.BackColor = System.Drawing.Color.Moccasin;
             this.g6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.g6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.g6.Location = new System.Drawing.Point(340, 166);
+            this.g6.Location = new System.Drawing.Point(587, 230);
             this.g6.Margin = new System.Windows.Forms.Padding(0);
             this.g6.Name = "g6";
             this.g6.Size = new System.Drawing.Size(50, 50);
@@ -766,7 +750,7 @@
             // 
             this.f6.BackColor = System.Drawing.Color.Sienna;
             this.f6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.f6.Location = new System.Drawing.Point(290, 166);
+            this.f6.Location = new System.Drawing.Point(537, 230);
             this.f6.Margin = new System.Windows.Forms.Padding(0);
             this.f6.Name = "f6";
             this.f6.Size = new System.Drawing.Size(50, 50);
@@ -779,7 +763,7 @@
             this.e6.BackColor = System.Drawing.Color.Moccasin;
             this.e6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.e6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.e6.Location = new System.Drawing.Point(240, 166);
+            this.e6.Location = new System.Drawing.Point(487, 230);
             this.e6.Margin = new System.Windows.Forms.Padding(0);
             this.e6.Name = "e6";
             this.e6.Size = new System.Drawing.Size(50, 50);
@@ -791,7 +775,7 @@
             // 
             this.d6.BackColor = System.Drawing.Color.Sienna;
             this.d6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.d6.Location = new System.Drawing.Point(190, 166);
+            this.d6.Location = new System.Drawing.Point(437, 230);
             this.d6.Margin = new System.Windows.Forms.Padding(0);
             this.d6.Name = "d6";
             this.d6.Size = new System.Drawing.Size(50, 50);
@@ -804,7 +788,7 @@
             this.c6.BackColor = System.Drawing.Color.Moccasin;
             this.c6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.c6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.c6.Location = new System.Drawing.Point(140, 166);
+            this.c6.Location = new System.Drawing.Point(387, 230);
             this.c6.Margin = new System.Windows.Forms.Padding(0);
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(50, 50);
@@ -816,7 +800,7 @@
             // 
             this.b6.BackColor = System.Drawing.Color.Sienna;
             this.b6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.b6.Location = new System.Drawing.Point(90, 166);
+            this.b6.Location = new System.Drawing.Point(337, 230);
             this.b6.Margin = new System.Windows.Forms.Padding(0);
             this.b6.Name = "b6";
             this.b6.Size = new System.Drawing.Size(50, 50);
@@ -829,7 +813,7 @@
             this.a6.BackColor = System.Drawing.Color.Moccasin;
             this.a6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.a6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.a6.Location = new System.Drawing.Point(40, 166);
+            this.a6.Location = new System.Drawing.Point(287, 230);
             this.a6.Margin = new System.Windows.Forms.Padding(0);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(50, 50);
@@ -843,7 +827,7 @@
             this.h7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.h7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h7.Image = ((System.Drawing.Image)(resources.GetObject("h7.Image")));
-            this.h7.Location = new System.Drawing.Point(390, 116);
+            this.h7.Location = new System.Drawing.Point(637, 180);
             this.h7.Margin = new System.Windows.Forms.Padding(0);
             this.h7.Name = "h7";
             this.h7.Size = new System.Drawing.Size(50, 50);
@@ -856,7 +840,7 @@
             this.g7.BackColor = System.Drawing.Color.Sienna;
             this.g7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g7.Image = ((System.Drawing.Image)(resources.GetObject("g7.Image")));
-            this.g7.Location = new System.Drawing.Point(340, 116);
+            this.g7.Location = new System.Drawing.Point(587, 180);
             this.g7.Margin = new System.Windows.Forms.Padding(0);
             this.g7.Name = "g7";
             this.g7.Size = new System.Drawing.Size(50, 50);
@@ -870,7 +854,7 @@
             this.f7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.f7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f7.Image = ((System.Drawing.Image)(resources.GetObject("f7.Image")));
-            this.f7.Location = new System.Drawing.Point(290, 116);
+            this.f7.Location = new System.Drawing.Point(537, 180);
             this.f7.Margin = new System.Windows.Forms.Padding(0);
             this.f7.Name = "f7";
             this.f7.Size = new System.Drawing.Size(50, 50);
@@ -883,7 +867,7 @@
             this.e7.BackColor = System.Drawing.Color.Sienna;
             this.e7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e7.Image = ((System.Drawing.Image)(resources.GetObject("e7.Image")));
-            this.e7.Location = new System.Drawing.Point(240, 116);
+            this.e7.Location = new System.Drawing.Point(487, 180);
             this.e7.Margin = new System.Windows.Forms.Padding(0);
             this.e7.Name = "e7";
             this.e7.Size = new System.Drawing.Size(50, 50);
@@ -897,7 +881,7 @@
             this.d7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.d7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d7.Image = ((System.Drawing.Image)(resources.GetObject("d7.Image")));
-            this.d7.Location = new System.Drawing.Point(190, 116);
+            this.d7.Location = new System.Drawing.Point(437, 180);
             this.d7.Margin = new System.Windows.Forms.Padding(0);
             this.d7.Name = "d7";
             this.d7.Size = new System.Drawing.Size(50, 50);
@@ -910,7 +894,7 @@
             this.c7.BackColor = System.Drawing.Color.Sienna;
             this.c7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c7.Image = ((System.Drawing.Image)(resources.GetObject("c7.Image")));
-            this.c7.Location = new System.Drawing.Point(140, 116);
+            this.c7.Location = new System.Drawing.Point(387, 180);
             this.c7.Margin = new System.Windows.Forms.Padding(0);
             this.c7.Name = "c7";
             this.c7.Size = new System.Drawing.Size(50, 50);
@@ -924,7 +908,7 @@
             this.b7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.b7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b7.Image = ((System.Drawing.Image)(resources.GetObject("b7.Image")));
-            this.b7.Location = new System.Drawing.Point(90, 116);
+            this.b7.Location = new System.Drawing.Point(337, 180);
             this.b7.Margin = new System.Windows.Forms.Padding(0);
             this.b7.Name = "b7";
             this.b7.Size = new System.Drawing.Size(50, 50);
@@ -937,7 +921,7 @@
             this.a7.BackColor = System.Drawing.Color.Sienna;
             this.a7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a7.Image = ((System.Drawing.Image)(resources.GetObject("a7.Image")));
-            this.a7.Location = new System.Drawing.Point(40, 116);
+            this.a7.Location = new System.Drawing.Point(287, 180);
             this.a7.Margin = new System.Windows.Forms.Padding(0);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(50, 50);
@@ -950,7 +934,7 @@
             this.h8.BackColor = System.Drawing.Color.Sienna;
             this.h8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.h8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.h8.Location = new System.Drawing.Point(390, 66);
+            this.h8.Location = new System.Drawing.Point(637, 130);
             this.h8.Margin = new System.Windows.Forms.Padding(0);
             this.h8.Name = "h8";
             this.h8.Size = new System.Drawing.Size(50, 50);
@@ -964,7 +948,7 @@
             this.g8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.g8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.g8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.g8.Location = new System.Drawing.Point(340, 66);
+            this.g8.Location = new System.Drawing.Point(587, 130);
             this.g8.Margin = new System.Windows.Forms.Padding(0);
             this.g8.Name = "g8";
             this.g8.Size = new System.Drawing.Size(50, 50);
@@ -977,7 +961,7 @@
             this.f8.BackColor = System.Drawing.Color.Sienna;
             this.f8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.f8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.f8.Location = new System.Drawing.Point(290, 66);
+            this.f8.Location = new System.Drawing.Point(537, 130);
             this.f8.Margin = new System.Windows.Forms.Padding(0);
             this.f8.Name = "f8";
             this.f8.Size = new System.Drawing.Size(50, 50);
@@ -991,7 +975,7 @@
             this.e8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.e8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.e8.Image = global::ChessMaster2017.Properties.Resources.black_king;
-            this.e8.Location = new System.Drawing.Point(240, 66);
+            this.e8.Location = new System.Drawing.Point(487, 130);
             this.e8.Margin = new System.Windows.Forms.Padding(0);
             this.e8.Name = "e8";
             this.e8.Size = new System.Drawing.Size(50, 50);
@@ -1004,7 +988,7 @@
             this.d8.BackColor = System.Drawing.Color.Sienna;
             this.d8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.d8.Image = global::ChessMaster2017.Properties.Resources.black_queen;
-            this.d8.Location = new System.Drawing.Point(190, 66);
+            this.d8.Location = new System.Drawing.Point(437, 130);
             this.d8.Margin = new System.Windows.Forms.Padding(0);
             this.d8.Name = "d8";
             this.d8.Size = new System.Drawing.Size(50, 50);
@@ -1018,7 +1002,7 @@
             this.c8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.c8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.c8.Image = global::ChessMaster2017.Properties.Resources.black_bishop;
-            this.c8.Location = new System.Drawing.Point(140, 66);
+            this.c8.Location = new System.Drawing.Point(387, 130);
             this.c8.Margin = new System.Windows.Forms.Padding(0);
             this.c8.Name = "c8";
             this.c8.Size = new System.Drawing.Size(50, 50);
@@ -1031,7 +1015,7 @@
             this.b8.BackColor = System.Drawing.Color.Sienna;
             this.b8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.b8.Image = global::ChessMaster2017.Properties.Resources.black_knight;
-            this.b8.Location = new System.Drawing.Point(90, 66);
+            this.b8.Location = new System.Drawing.Point(337, 130);
             this.b8.Margin = new System.Windows.Forms.Padding(0);
             this.b8.Name = "b8";
             this.b8.Size = new System.Drawing.Size(50, 50);
@@ -1045,145 +1029,13 @@
             this.a8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.a8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.a8.Image = global::ChessMaster2017.Properties.Resources.black_rook;
-            this.a8.Location = new System.Drawing.Point(40, 66);
+            this.a8.Location = new System.Drawing.Point(287, 130);
             this.a8.Margin = new System.Windows.Forms.Padding(0);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(50, 50);
             this.a8.TabIndex = 0;
             this.a8.TabStop = false;
             this.a8.Click += new System.EventHandler(this.Selector);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(53, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 20);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "A";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(103, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 20);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "B";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(153, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 20);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "C";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(203, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(22, 20);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "D";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(253, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 71;
-            this.label5.Text = "E";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(303, 29);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 20);
-            this.label6.TabIndex = 72;
-            this.label6.Text = "F";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(353, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 20);
-            this.label7.TabIndex = 73;
-            this.label7.Text = "G";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(403, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 20);
-            this.label8.TabIndex = 74;
-            this.label8.Text = "H";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(12, 77);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(19, 20);
-            this.label9.TabIndex = 75;
-            this.label9.Text = "8";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(12, 131);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 20);
-            this.label10.TabIndex = 76;
-            this.label10.Text = "7";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(12, 182);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 20);
-            this.label11.TabIndex = 77;
-            this.label11.Text = "6";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(12, 232);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 20);
-            this.label12.TabIndex = 78;
-            this.label12.Text = "5";
             // 
             // label13
             // 
@@ -1194,73 +1046,14 @@
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 79;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(12, 329);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(19, 20);
-            this.label14.TabIndex = 80;
-            this.label14.Text = "3";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(12, 383);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(19, 20);
-            this.label15.TabIndex = 81;
-            this.label15.Text = "2";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(12, 431);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(19, 20);
-            this.label16.TabIndex = 82;
-            this.label16.Text = "1";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(12, 281);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 20);
-            this.label17.TabIndex = 83;
-            this.label17.Text = "4";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 601);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.h1);
             this.Controls.Add(this.g1);
@@ -1474,23 +1267,7 @@
         private System.Windows.Forms.RadioButton WhitePlayerTurn;
         private System.Windows.Forms.RadioButton BlackPlayerTurn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         
     }
 }
