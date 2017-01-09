@@ -21,86 +21,86 @@ namespace ChessMaster2017.BackEnd
         }
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
         {
-            int rockX = this.CurrentX;
-            int rockY = this.CurrentY;
+            int rookX = this.CurrentX;
+            int rookY = this.CurrentY;
 
-            bool[,] rockMoves = new bool[8, 8];
-            ChessPieceColor rockColor = this.Color;
+            bool[,] rookMoves = new bool[8, 8];
+            ChessPieceColor rookColor = this.Color;
 
 
             // right
-            for (int movesY = rockY + 1; movesY >= 0 && movesY < 8; movesY++)
+            for (int movesY = rookY + 1; movesY >= 0 && movesY < 8; movesY++)
             {
-                int movesX = rockX;
+                int movesX = rookX;
 
-                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
-                    rockMoves[movesX, movesY] = false;
+                    rookMoves[movesX, movesY] = false;
 
                     break;
                 }
-                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
 
                     break;
                 }
 
                 else
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
                 }
 
             }
 
             // bottom
 
-            for (int movesX = rockX - 1; movesX>=0 && movesX < 8; movesX--)
+            for (int movesX = rookX - 1; movesX>=0 && movesX < 8; movesX--)
             {
-                int movesY = rockY;
+                int movesY = rookY;
 
-                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
-                    rockMoves[movesX, movesY] = false;
+                    rookMoves[movesX, movesY] = false;
 
                     break;
                 }
-                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
 
                     break;
                 }
 
                 else
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
                 }
 
             }
 
             // left
 
-            for (int movesY = rockY-1; movesY>=0 && movesY < 8; movesY--)
+            for (int movesY = rookY-1; movesY>=0 && movesY < 8; movesY--)
             {
-                int movesX = rockX;
+                int movesX = rookX;
                 
-                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                    if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                     {
-                        rockMoves[movesX, movesY] = false;
+                        rookMoves[movesX, movesY] = false;
                         
                         break;
                     }
-                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                    else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                     {
-                        rockMoves[movesX, movesY] = true;
+                        rookMoves[movesX, movesY] = true;
                         
                         break;
                     }
 
                     else
                     {
-                        rockMoves[movesX, movesY] = true;
+                        rookMoves[movesX, movesY] = true;
                     }
 
                 }
@@ -109,26 +109,26 @@ namespace ChessMaster2017.BackEnd
 
             // top
             
-            for (int movesX = rockX+1; movesX>=0 && movesX < 8; movesX--)
+            for (int movesX = rookX+1; movesX>=0 && movesX < 8; movesX++)
             {
-                int movesY = rockY;
+                int movesY = rookY;
 
-                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rockColor)
+                if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
-                    rockMoves[movesX, movesY] = false;
+                    rookMoves[movesX, movesY] = false;
                     
                     break;
                 }
-                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rockColor)
+                else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
                     
                     break;
                 }
 
                 else
                 {
-                    rockMoves[movesX, movesY] = true;
+                    rookMoves[movesX, movesY] = true;
                 }
 
             }
@@ -137,7 +137,7 @@ namespace ChessMaster2017.BackEnd
 
 
             //return bool rockMoves matrix
-            return rockMoves;
+            return rookMoves;
         }
     }
 }
