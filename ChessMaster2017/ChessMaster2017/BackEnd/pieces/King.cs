@@ -28,7 +28,150 @@ namespace ChessMaster2017.BackEnd
             bool[,] kingMoves = new bool[8, 8];
             ChessPieceColor kingColor = this.Color;
 
-            //TODO king posible move logic
+            //top
+            if (kingX + 1 < 8)
+            {
+                if (currentBoard[kingX + 1, kingY] != null && currentBoard[kingX + 1, kingY].Color == kingColor)
+                {
+                    kingMoves[kingX + 1, kingY] = false;
+                }
+                else if (currentBoard[kingX + 1, kingY] != null && currentBoard[kingX + 1, kingY].Color != kingColor)
+                {
+                    kingMoves[kingX + 1, kingY] = true;
+                }
+                else
+                {
+                    kingMoves[kingX + 1, kingY] = true;
+                }
+            }
+
+            // top left
+
+            if (kingX + 1 < 8 && kingY - 1 >= 0)
+            {
+                if (currentBoard[kingX + 1, kingY - 1] != null && currentBoard[kingX + 1, kingY - 1].Color == kingColor)
+                {
+                    kingMoves[kingX + 1, kingY - 1] = false;
+                }
+                else if (currentBoard[kingX + 1, kingY -1 ] != null && currentBoard[kingX + 1, kingY - 1].Color != kingColor)
+                {
+                    kingMoves[kingX + 1, kingY - 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX + 1, kingY - 1] = true;
+                }
+            }
+
+            //left
+
+            if (kingY - 1 >= 0)
+            {
+                if (currentBoard[kingX, kingY - 1] != null && currentBoard[kingX, kingY - 1].Color == kingColor)
+                {
+                    kingMoves[kingX, kingY - 1] = false;
+                }
+                else if (currentBoard[kingX, kingY - 1] != null && currentBoard[kingX, kingY - 1].Color != kingColor)
+                {
+                    kingMoves[kingX, kingY - 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX, kingY - 1] = true;
+                }
+            }
+
+            //bottom left
+
+            if (kingX - 1 >= 0 && kingY - 1 >= 0)
+            {
+                if (currentBoard[kingX - 1, kingY - 1] != null && currentBoard[kingX - 1, kingY - 1].Color == kingColor)
+                {
+                    kingMoves[kingX - 1, kingY - 1] = false;
+                }
+                else if (currentBoard[kingX - 1, kingY - 1] != null && currentBoard[kingX - 1, kingY - 1].Color != kingColor)
+                {
+                    kingMoves[kingX - 1, kingY - 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX - 1, kingY - 1] = true;
+                }
+            }
+
+            //bottom
+
+            if (kingX - 1 >= 0)
+            {
+                if (currentBoard[kingX - 1, kingY] != null && currentBoard[kingX - 1, kingY].Color == kingColor)
+                {
+                    kingMoves[kingX - 1, kingY] = false;
+                }
+                else if (currentBoard[kingX - 1, kingY] != null && currentBoard[kingX - 1, kingY].Color != kingColor)
+                {
+                    kingMoves[kingX - 1, kingY] = true;
+                }
+                else
+                {
+                    kingMoves[kingX  - 1, kingY] = true;
+                }
+            }
+
+            //bottom right
+
+            if (kingX - 1 >= 0 && kingY + 1 < 8)
+            {
+                if (currentBoard[kingX - 1, kingY + 1] != null && currentBoard[kingX - 1, kingY + 1].Color == kingColor)
+                {
+                    kingMoves[kingX - 1, kingY + 1] = false;
+                }
+                else if (currentBoard[kingX - 1, kingY + 1] != null && currentBoard[kingX - 1, kingY + 1].Color != kingColor)
+                {
+                    kingMoves[kingX - 1, kingY + 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX - 1, kingY + 1] = true;
+                }
+            }
+
+            //right
+
+            if (kingY + 1 < 8)
+            {
+                if (currentBoard[kingX, kingY + 1] != null && currentBoard[kingX, kingY + 1].Color == kingColor)
+                {
+                    kingMoves[kingX, kingY + 1] = false;
+                }
+                else if (currentBoard[kingX, kingY + 1] != null && currentBoard[kingX, kingY + 1].Color != kingColor)
+                {
+                    kingMoves[kingX, kingY + 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX, kingY + 1] = true;
+                }
+            }
+
+            //top right
+
+            if (kingX + 1 < 8 && kingY + 1 < 8)
+            {
+                if (currentBoard[kingX + 1, kingY + 1] != null && currentBoard[kingX + 1, kingY + 1].Color == kingColor)
+                {
+                    kingMoves[kingX + 1, kingY + 1] = false;
+                }
+                else if (currentBoard[kingX + 1, kingY + 1] != null && currentBoard[kingX + 1, kingY + 1].Color != kingColor)
+                {
+                    kingMoves[kingX + 1, kingY + 1] = true;
+                }
+                else
+                {
+                    kingMoves[kingX + 1, kingY + 1] = true;
+                }
+            }
+
+            
 
 
             return kingMoves;
