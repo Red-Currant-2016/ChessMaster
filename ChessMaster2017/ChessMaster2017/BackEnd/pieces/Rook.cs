@@ -11,7 +11,7 @@ namespace ChessMaster2017.BackEnd
     /// Special move is not included in the logic.
     /// </summary>
     /// /// <param name="currentBoard"></param>
-    /// <returns> bool[,] rockMoves </returns>
+    /// <returns> bool[,] rookMoves </returns>
 
     class Rook : ChessPiece
     {
@@ -136,7 +136,7 @@ namespace ChessMaster2017.BackEnd
 
 
 
-            //return bool rockMoves matrix
+            //return bool rookMoves matrix
             return rookMoves;
         }
     }
