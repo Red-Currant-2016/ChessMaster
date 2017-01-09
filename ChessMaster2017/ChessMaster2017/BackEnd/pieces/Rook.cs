@@ -36,21 +36,17 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
                     rookMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
                     rookMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     rookMoves[movesX, movesY] = true;
                 }
-
             }
 
             // bottom
@@ -62,21 +58,17 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
                     rookMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
                     rookMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     rookMoves[movesX, movesY] = true;
                 }
-
             }
 
             // left
@@ -87,14 +79,12 @@ namespace ChessMaster2017.BackEnd
                 
                     if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                     {
-                        rookMoves[movesX, movesY] = false;
-                        
+                        rookMoves[movesX, movesY] = false;                       
                         break;
                     }
                     else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                     {
-                        rookMoves[movesX, movesY] = true;
-                        
+                        rookMoves[movesX, movesY] = true;                       
                         break;
                     }
 
@@ -102,10 +92,7 @@ namespace ChessMaster2017.BackEnd
                     {
                         rookMoves[movesX, movesY] = true;
                     }
-
                 }
-
-            
 
             // top
             
@@ -115,14 +102,12 @@ namespace ChessMaster2017.BackEnd
 
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == rookColor)
                 {
-                    rookMoves[movesX, movesY] = false;
-                    
+                    rookMoves[movesX, movesY] = false;                    
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != rookColor)
                 {
-                    rookMoves[movesX, movesY] = true;
-                    
+                    rookMoves[movesX, movesY] = true;                
                     break;
                 }
 
@@ -130,12 +115,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     rookMoves[movesX, movesY] = true;
                 }
-
             }
-
-
-
-
             //return bool rookMoves matrix
             return rookMoves;
         }

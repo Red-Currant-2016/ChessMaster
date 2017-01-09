@@ -112,15 +112,12 @@ namespace ChessMaster2017.BackEnd
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != queenColor)
                 {
                     queenMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     queenMoves[movesX, movesY] = true;
                 }
-
             }
 
             // bottom
@@ -132,21 +129,17 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
                 {
                     queenMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != queenColor)
                 {
                     queenMoves[movesX, movesY] = true;
-
                     break;
                 }
-
                 else
                 {
                     queenMoves[movesX, movesY] = true;
                 }
-
             }
 
             // left
@@ -158,13 +151,11 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
                 {
                     queenMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != queenColor)
                 {
                     queenMoves[movesX, movesY] = true;
-
                     break;
                 }
 
@@ -172,10 +163,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     queenMoves[movesX, movesY] = true;
                 }
-
             }
-
-
 
             // top
 
@@ -186,13 +174,11 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
                 {
                     queenMoves[movesX, movesY] = false;
-
                     break;
                 }
                 else if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color != queenColor)
                 {
                     queenMoves[movesX, movesY] = true;
-
                     break;
                 }
 
@@ -200,12 +186,8 @@ namespace ChessMaster2017.BackEnd
                 {
                     queenMoves[movesX, movesY] = true;
                 }
-
             }
-
-
-
             return queenMoves;
         }
-        }
+    }
 }
