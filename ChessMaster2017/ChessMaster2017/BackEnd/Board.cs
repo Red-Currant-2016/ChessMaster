@@ -21,6 +21,7 @@ namespace ChessMaster2017.BackEnd
         private List<ChessPiece> capturedChessPieces;
 
         private bool[,] highlightChessPieceMoves = new bool[BOARD_SIZE, BOARD_SIZE];
+        private bool checkMate;
 
         public Board()
         {
@@ -33,6 +34,7 @@ namespace ChessMaster2017.BackEnd
 
             playerTurn = ChessPieceColor.White;
             selectedChessPiece = null;
+            checkMate = false;
 
             capturedChessPieces = new List<ChessPiece>();
         }
@@ -183,6 +185,14 @@ namespace ChessMaster2017.BackEnd
             return false;
         }
 
+        public bool isCheckMate()
+        {
+            if (checkMate == true)
+            {
+                return true;
+            }
+            return false;
+        }
 
         public bool MoveChessPiece(int x, int y)
         {
@@ -200,6 +210,7 @@ namespace ChessMaster2017.BackEnd
                     //selected piece can move to x,y coordinates
                     if (highlightChessPieceMoves[x, y] == true)
                     {
+                        // NOT TESTED
                         if(selectedChessPiece.Type == ChessPieceType.King)
                         {
                             King currentKing = getCurrentKing();
@@ -210,12 +221,17 @@ namespace ChessMaster2017.BackEnd
                             }
                         }
 
-
+                        //TODO if king is checked
                         
 
                         //capture enemy piece
                         if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
                         {
+
+                            if(chessBoard[x,y].Type == ChessPieceType.King)
+                            {
+                                checkMate = true;
+                            }
                             capturedChessPieces.Add(chessBoard[x, y]);// add enemy piece to captured pieces List
                             activeChessPieces.Remove(chessBoard[x, y]);// remove enemy piece from activetChessPieces List
                             chessBoard[x, y].isCaptured = true;
