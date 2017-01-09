@@ -156,24 +156,24 @@ namespace ChessMaster2017.BackEnd
             return (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
         }
 
-        public bool isKingCheck()
-        {
-            //not tested!!!
-            try
-            {
-                King currentPlayerKing = (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
-                if (currentPlayerKing.isCheck == true)
-                {
-                    return true;
-                }
-            }
-            catch (InvalidCastException ex)
-            {
-                throw new Exception("activeChessPieces didn't return king /r/n" + ex.Message);
-            }
-            
-            return false;
-        }
+        //public bool isKingCheck()
+        //{
+        //    //not tested!!!
+        //    try
+        //    {
+        //        King currentPlayerKing = (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
+        //        if (currentPlayerKing.isCheck == true)
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    catch (InvalidCastException ex)
+        //    {
+        //        throw new Exception("activeChessPieces didn't return king /r/n" + ex.Message);
+        //    }
+
+        //    return false;
+        //}
 
         public bool isValidMove(int x, int y)
         {
@@ -210,16 +210,16 @@ namespace ChessMaster2017.BackEnd
                     //selected piece can move to x,y coordinates
                     if (highlightChessPieceMoves[x, y] == true)
                     {
-                        // NOT TESTED
-                        if(selectedChessPiece.Type == ChessPieceType.King)
-                        {
-                            King currentKing = getCurrentKing();
-                            if (currentKing.hasMoved == false)
-                            {
-                                // if a valid move - king hasMoved property is set to true
-                                currentKing.hasMoved = true;
-                            }
-                        }
+                        //// NOT TESTED
+                        //if(selectedChessPiece.Type == ChessPieceType.King)
+                        //{
+                        //    King currentKing = getCurrentKing();
+                        //    if (currentKing.hasMoved == false)
+                        //    {
+                        //        // if a valid move - king hasMoved property is set to true
+                        //        currentKing.hasMoved = true;
+                        //    }
+                        //}
 
                         //TODO if king is checked
                         
