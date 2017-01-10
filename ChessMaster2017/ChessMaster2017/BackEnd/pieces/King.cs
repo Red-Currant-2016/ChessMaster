@@ -10,7 +10,7 @@ namespace ChessMaster2017.BackEnd
     {
         public bool hasMoved { get; set; }
 
-        public King(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public King(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
             this.hasMoved = false;
         }
@@ -27,7 +27,7 @@ namespace ChessMaster2017.BackEnd
                 if (currentBoard[currentX + 1, currentY + 2] != null)
                 {
                     // enemy knight
-                    if (currentBoard[currentX + 1, currentY + 2].Color != this.Color && currentBoard[currentX + 1, currentY + 2].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX + 1, currentY + 2].Color != this.Color && currentBoard[currentX + 1, currentY + 2].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -38,7 +38,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX + 2, currentY + 1] != null)
                 {
-                    if (currentBoard[currentX + 2, currentY + 1].Color != this.Color && currentBoard[currentX + 2, currentY + 1].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX + 2, currentY + 1].Color != this.Color && currentBoard[currentX + 2, currentY + 1].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -49,7 +49,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX + 2, currentY - 1] != null)
                 {
-                    if (currentBoard[currentX + 2, currentY - 1].Color != this.Color && currentBoard[currentX + 2, currentY - 1].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX + 2, currentY - 1].Color != this.Color && currentBoard[currentX + 2, currentY - 1].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -60,7 +60,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX + 1, currentY - 2] != null)
                 {
-                    if (currentBoard[currentX + 1, currentY - 2].Color != this.Color && currentBoard[currentX + 1, currentY - 2].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX + 1, currentY - 2].Color != this.Color && currentBoard[currentX + 1, currentY - 2].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -71,7 +71,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX - 1, currentY - 2] != null)
                 {
-                    if (currentBoard[currentX - 1, currentY - 2].Color != this.Color && currentBoard[currentX - 1, currentY - 2].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX - 1, currentY - 2].Color != this.Color && currentBoard[currentX - 1, currentY - 2].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -82,7 +82,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX - 2, currentY - 1] != null)
                 {
-                    if (currentBoard[currentX - 2, currentY - 1].Color != this.Color && currentBoard[currentX - 2, currentY - 1].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX - 2, currentY - 1].Color != this.Color && currentBoard[currentX - 2, currentY - 1].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -93,7 +93,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX - 2, currentY + 1] != null)
                 {
-                    if (currentBoard[currentX - 2, currentY + 1].Color != this.Color && currentBoard[currentX - 2, currentY + 1].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX - 2, currentY + 1].Color != this.Color && currentBoard[currentX - 2, currentY + 1].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -104,7 +104,7 @@ namespace ChessMaster2017.BackEnd
             {
                 if (currentBoard[currentX - 1, currentY + 2] != null)
                 {
-                    if (currentBoard[currentX - 1, currentY + 2].Color != this.Color && currentBoard[currentX - 1, currentY + 2].Type == ChessPieceType.Knight)
+                    if (currentBoard[currentX - 1, currentY + 2].Color != this.Color && currentBoard[currentX - 1, currentY + 2].Type == EnumType.Knight)
                     {
                         return true;
                     }
@@ -119,7 +119,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX, rightLine].Color != this.Color)
                     {
-                        if (currentBoard[currentX, rightLine].Type == ChessPieceType.Queen || currentBoard[currentX, rightLine].Type == ChessPieceType.Rook)
+                        if (currentBoard[currentX, rightLine].Type == EnumType.Queen || currentBoard[currentX, rightLine].Type == EnumType.Rook)
                         {
                             return true;
                         }
@@ -141,7 +141,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[upLine, currentY].Color != this.Color)
                     {
-                        if (currentBoard[upLine, currentY].Type == ChessPieceType.Queen || currentBoard[upLine, currentY].Type == ChessPieceType.Rook)
+                        if (currentBoard[upLine, currentY].Type == EnumType.Queen || currentBoard[upLine, currentY].Type == EnumType.Rook)
                         {
                             return true;
                         }
@@ -163,7 +163,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX, leftLine].Color != this.Color)
                     {
-                        if (currentBoard[currentX, leftLine].Type == ChessPieceType.Queen || currentBoard[currentX, leftLine].Type == ChessPieceType.Rook)
+                        if (currentBoard[currentX, leftLine].Type == EnumType.Queen || currentBoard[currentX, leftLine].Type == EnumType.Rook)
                         {
                             return true;
                         }
@@ -185,7 +185,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[downLine, currentY].Color != this.Color)
                     {
-                        if (currentBoard[downLine, currentY].Type == ChessPieceType.Queen || currentBoard[downLine, currentY].Type == ChessPieceType.Rook)
+                        if (currentBoard[downLine, currentY].Type == EnumType.Queen || currentBoard[downLine, currentY].Type == EnumType.Rook)
                         {
                             return true;
                         }
@@ -209,7 +209,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if(currentBoard[x,y].Color != this.Color)
                     {
-                        if(currentBoard[x,y].Type == ChessPieceType.Queen || currentBoard[x,y].Type == ChessPieceType.Bishop)
+                        if(currentBoard[x,y].Type == EnumType.Queen || currentBoard[x,y].Type == EnumType.Bishop)
                         {
                             return true;
                         }
@@ -231,7 +231,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == ChessPieceType.Queen || currentBoard[x, y].Type == ChessPieceType.Bishop)
+                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
                         {
                             return true;
                         }
@@ -253,7 +253,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == ChessPieceType.Queen || currentBoard[x, y].Type == ChessPieceType.Bishop)
+                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
                         {
                             return true;
                         }
@@ -275,7 +275,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == ChessPieceType.Queen || currentBoard[x, y].Type == ChessPieceType.Bishop)
+                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
                         {
                             return true;
                         }
@@ -301,7 +301,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX + 1, currentY + 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX + 1, currentY + 1].Type == ChessPieceType.Pawn)
+                        if (currentBoard[currentX + 1, currentY + 1].Type == EnumType.Pawn)
                         {
                             return true;
                         }
@@ -315,7 +315,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX + 1, currentY - 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX + 1, currentY - 1].Type == ChessPieceType.Pawn)
+                        if (currentBoard[currentX + 1, currentY - 1].Type == EnumType.Pawn)
                         {
                             return true;
                         }
@@ -329,7 +329,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX - 1, currentY - 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX - 1, currentY - 1].Type == ChessPieceType.Pawn)
+                        if (currentBoard[currentX - 1, currentY - 1].Type == EnumType.Pawn)
                         {
                             return true;
                         }
@@ -343,7 +343,7 @@ namespace ChessMaster2017.BackEnd
                 {
                     if (currentBoard[currentX - 1, currentY + 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX - 1, currentY + 1].Type == ChessPieceType.Pawn)
+                        if (currentBoard[currentX - 1, currentY + 1].Type == EnumType.Pawn)
                         {
                             return true;
                         }
@@ -364,7 +364,7 @@ namespace ChessMaster2017.BackEnd
             int kingX = this.CurrentX;
             int kingY = this.CurrentY;
             bool[,] kingMoves = new bool[8, 8];
-            ChessPieceColor kingColor = this.Color;
+            EnumColor kingColor = this.Color;
 
             //top
             if (kingX + 1 < 8)

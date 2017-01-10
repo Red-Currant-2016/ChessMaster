@@ -15,7 +15,7 @@ namespace ChessMaster2017.BackEnd
  *    6---3
  *    -5-4-
  */
-        public Knight(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public Knight(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
         }
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
@@ -24,7 +24,7 @@ namespace ChessMaster2017.BackEnd
             int knightY = this.CurrentY;
 
             bool[,] knightMoves = new bool[8, 8];
-            ChessPieceColor knightColor = this.Color;
+            EnumColor knightColor = this.Color;
 
             //8 = top left
             if (knightX + 2 < 8 && knightX + 2 >= 0 && knightY - 1 >= 0 && knightY - 1 < 8)

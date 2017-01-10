@@ -15,7 +15,7 @@ namespace ChessMaster2017.BackEnd
 
     class Rook : ChessPiece
     {
-        public Rook(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public Rook(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
 
         }
@@ -25,7 +25,7 @@ namespace ChessMaster2017.BackEnd
             int rookY = this.CurrentY;
 
             bool[,] rookMoves = new bool[8, 8];
-            ChessPieceColor rookColor = this.Color;
+            EnumColor rookColor = this.Color;
 
 
             // right

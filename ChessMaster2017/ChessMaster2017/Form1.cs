@@ -16,7 +16,7 @@ namespace ChessMaster2017
     {
         bool[,] Board = new bool[8, 8];
         bool Action = false;
-        Board testBoard = new Board();
+        BoardManager testBoard = new BoardManager();
         PictureBox oldControl = null;
         Color oldColor = default(Color);
         public MainForm()
@@ -75,8 +75,8 @@ namespace ChessMaster2017
                 if (testBoard.isValidMove(x, y))
                 {
                     testBoard.MoveChessPiece(x, y);
-                    ChessPieceColor turn = testBoard.GetPlayerTurn();
-                    if (turn == ChessPieceColor.White)
+                    EnumColor turn = testBoard.GetPlayerTurn();
+                    if (turn == EnumColor.White)
                     {
                         WhitePlayerTurn.Checked = true;
                         BlackPlayerTurn.Checked = false;

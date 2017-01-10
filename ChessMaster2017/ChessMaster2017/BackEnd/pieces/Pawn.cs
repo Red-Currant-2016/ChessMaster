@@ -22,7 +22,7 @@ namespace ChessMaster2017.BackEnd
 
        
 
-        public Pawn(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public Pawn(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
           
         }
@@ -34,11 +34,11 @@ namespace ChessMaster2017.BackEnd
             
 
             bool[,] pawnMoves = new bool[8, 8];
-            ChessPieceColor pawnColor = this.Color;
+            EnumColor pawnColor = this.Color;
 
             bool whitePawn = false;
 
-            if (this.Color == ChessPieceColor.White)
+            if (this.Color == EnumColor.White)
             {
                 whitePawn = true;
             }

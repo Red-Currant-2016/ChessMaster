@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    public class Board
+    public class BoardManager
     {
         private const int BOARD_SIZE = 8;
         private const int TOTAL_CHESS_PIECE_COUNT = 32;
 
-        private ChessPieceColor playerTurn;
+        private EnumColor playerTurn;
 
         public ChessPiece[,] chessBoard;
         public ChessPiece selectedChessPiece;// contains a copy of a single chessBoard cell
@@ -23,7 +23,7 @@ namespace ChessMaster2017.BackEnd
         private bool[,] highlightChessPieceMoves = new bool[BOARD_SIZE, BOARD_SIZE];
         private bool checkMate;
 
-        public Board()
+        public BoardManager()
         {
             chessBoard = new ChessPiece[BOARD_SIZE, BOARD_SIZE];
             chessPiecePrefab = new List<ChessPiece>(TOTAL_CHESS_PIECE_COUNT);
@@ -32,7 +32,7 @@ namespace ChessMaster2017.BackEnd
 
             SpawnAllChessPieces();
 
-            playerTurn = ChessPieceColor.White;
+            playerTurn = EnumColor.White;
             selectedChessPiece = null;
             checkMate = false;
 
@@ -48,43 +48,43 @@ namespace ChessMaster2017.BackEnd
         {
             //WHITE PLAYER
             //Rooks
-            chessPiecePrefab.Add(new Rook(0, 0, ChessPieceColor.White, ChessPieceType.Rook));
-            chessPiecePrefab.Add(new Rook(0, 7, ChessPieceColor.White, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 0, EnumColor.White, EnumType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 7, EnumColor.White, EnumType.Rook));
             //Knights
-            chessPiecePrefab.Add(new Knight(0, 1, ChessPieceColor.White, ChessPieceType.Knight));
-            chessPiecePrefab.Add(new Knight(0, 6, ChessPieceColor.White, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 1, EnumColor.White, EnumType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 6, EnumColor.White, EnumType.Knight));
             //Bishops
-            chessPiecePrefab.Add(new Bishop(0, 2, ChessPieceColor.White, ChessPieceType.Bishop));
-            chessPiecePrefab.Add(new Bishop(0, 5, ChessPieceColor.White, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 2, EnumColor.White, EnumType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 5, EnumColor.White, EnumType.Bishop));
             //Queen
-            chessPiecePrefab.Add(new Queen(0, 3, ChessPieceColor.White, ChessPieceType.Queen));// white queen => white squar
+            chessPiecePrefab.Add(new Queen(0, 3, EnumColor.White, EnumType.Queen));// white queen => white squar
             //King
-            chessPiecePrefab.Add(new King(0, 4, ChessPieceColor.White, ChessPieceType.King));
+            chessPiecePrefab.Add(new King(0, 4, EnumColor.White, EnumType.King));
             //Pawns
             for(int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(1, y, ChessPieceColor.White, ChessPieceType.Pawn));
+                chessPiecePrefab.Add(new Pawn(1, y, EnumColor.White, EnumType.Pawn));
             }
 
             //BLACK PLAYER
             //Rooks
-            chessPiecePrefab.Add(new Rook(7, 0, ChessPieceColor.Black, ChessPieceType.Rook));
-            chessPiecePrefab.Add(new Rook(7, 7, ChessPieceColor.Black, ChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 0, EnumColor.Black, EnumType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 7, EnumColor.Black, EnumType.Rook));
             //Knights
-            chessPiecePrefab.Add(new Knight(7, 1, ChessPieceColor.Black, ChessPieceType.Knight));
-            chessPiecePrefab.Add(new Knight(7, 6, ChessPieceColor.Black, ChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 1, EnumColor.Black, EnumType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 6, EnumColor.Black, EnumType.Knight));
             //Bishops
-            chessPiecePrefab.Add(new Bishop(7, 2, ChessPieceColor.Black, ChessPieceType.Bishop));
-            chessPiecePrefab.Add(new Bishop(7, 5, ChessPieceColor.Black, ChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 2, EnumColor.Black, EnumType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 5, EnumColor.Black, EnumType.Bishop));
             //King
-            chessPiecePrefab.Add(new King(7, 4, ChessPieceColor.Black, ChessPieceType.King));
+            chessPiecePrefab.Add(new King(7, 4, EnumColor.Black, EnumType.King));
             //Queen
-            chessPiecePrefab.Add(new Queen(7, 3, ChessPieceColor.Black, ChessPieceType.Queen));// black queen => black squar
+            chessPiecePrefab.Add(new Queen(7, 3, EnumColor.Black, EnumType.Queen));// black queen => black squar
             
             //Pawns
             for (int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(6, y, ChessPieceColor.Black, ChessPieceType.Pawn));
+                chessPiecePrefab.Add(new Pawn(6, y, EnumColor.Black, EnumType.Pawn));
             }
         }
 
@@ -116,13 +116,13 @@ namespace ChessMaster2017.BackEnd
         private void changePlayerTurn()
         {
 
-            if (playerTurn == ChessPieceColor.White)
+            if (playerTurn == EnumColor.White)
             {
-                playerTurn = ChessPieceColor.Black;
+                playerTurn = EnumColor.Black;
             }
             else
             {
-                playerTurn = ChessPieceColor.White;
+                playerTurn = EnumColor.White;
             }
         }
 
@@ -141,7 +141,7 @@ namespace ChessMaster2017.BackEnd
             return true;
         }
 
-        public ChessPieceColor GetPlayerTurn()
+        public EnumColor GetPlayerTurn()
         {
             return playerTurn;
         }
@@ -153,7 +153,7 @@ namespace ChessMaster2017.BackEnd
 
         private King getCurrentKing()
         {
-            return (King)activeChessPieces.Find(x => x.Type == ChessPieceType.King && x.Color == playerTurn);
+            return (King)activeChessPieces.Find(x => x.Type == EnumType.King && x.Color == playerTurn);
         }
 
         public bool isKingCheck()
@@ -185,7 +185,7 @@ namespace ChessMaster2017.BackEnd
             return false;
         }
 
-        public bool isCheckMate()
+        public bool isPlayerCheckmate()
         {
             if (checkMate == true)
             {
@@ -215,7 +215,7 @@ namespace ChessMaster2017.BackEnd
                         if (chessBoard[x,y] != null && chessBoard[x,y].Color != playerTurn)
                         {
 
-                            if(chessBoard[x,y].Type == ChessPieceType.King)
+                            if(chessBoard[x,y].Type == EnumType.King)
                             {
                                 checkMate = true;
                             }
@@ -252,7 +252,7 @@ namespace ChessMaster2017.BackEnd
             }
             else
             {
-                throw new Exception("Board.cs->MoveChessPiece() line:195 -> selectedChessPiece is null OR selectedChessPiece is one of the enemy player pieces(.color is wrong)!");
+                throw new Exception("BoardManager.cs->MoveChessPiece() line:195 -> selectedChessPiece is null OR selectedChessPiece is one of the enemy player pieces(.color is wrong)!");
                 //return false;// case something goes horrably wrong;
             }
         }

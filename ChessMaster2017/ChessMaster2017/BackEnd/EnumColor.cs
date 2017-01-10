@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    public enum ChessPieceColor
+    public enum EnumColor
     {
         White,
         Black

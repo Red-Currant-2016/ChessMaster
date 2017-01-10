@@ -14,11 +14,11 @@ namespace ChessMaster2017.BackEnd
         public int CurrentX { get; private set; }
         public int CurrentY { get; private set; }
 
-        public ChessPieceColor Color { get; private set; }
-        public ChessPieceType Type { get; private set; }
+        public EnumColor Color { get; private set; }
+        public EnumType Type { get; private set; }
         public bool isCaptured { get; set; }
 
-        public ChessPiece(int x, int y, ChessPieceColor color, ChessPieceType type)
+        public ChessPiece(int x, int y, EnumColor color, EnumType type)
         {
             SetPosition(x, y);
 

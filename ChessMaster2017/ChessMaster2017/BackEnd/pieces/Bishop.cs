@@ -8,7 +8,7 @@ namespace ChessMaster2017.BackEnd
 {
     class Bishop : ChessPiece
     {
-        public Bishop(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public Bishop(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
         }
 
@@ -18,7 +18,7 @@ namespace ChessMaster2017.BackEnd
         /// 
         /// The logic
         /// 
-        /// Lets assume that bishop is white ( ChessPieceColor BishopColor = this.Color; ). 
+        /// Lets assume that bishop is white ( EnumColor BishopColor = this.Color; ). 
         /// The Bishop can only move to its diagonals. The logic is the same for all four.
         /// Diagonal 1 up left diagonal - x increases and y increases
         /// we have 3 conditions :
@@ -41,7 +41,7 @@ namespace ChessMaster2017.BackEnd
             int bishopY = this.CurrentY;
 
             bool[,] bishopMoves = new bool[8, 8];
-            ChessPieceColor BishopColor = this.Color;
+            EnumColor BishopColor = this.Color;
 
 
             // bottom right diagonal

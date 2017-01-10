@@ -8,7 +8,7 @@ namespace ChessMaster2017.BackEnd
 {
     class Queen : ChessPiece
     {
-        public Queen(int x, int y, ChessPieceColor color, ChessPieceType type) : base(x, y, color, type)
+        public Queen(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
         }
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
@@ -17,7 +17,7 @@ namespace ChessMaster2017.BackEnd
             int queenY = this.CurrentY;
 
             bool[,] queenMoves = new bool[8, 8];
-            ChessPieceColor queenColor = this.Color;
+            EnumColor queenColor = this.Color;
 
             // bottom right diagonal
             for (int movesX = queenX - 1, movesY = queenY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)

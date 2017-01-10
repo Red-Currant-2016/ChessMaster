@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessMaster2017.BackEnd
 {
-    public enum ChessPieceType
+    public enum EnumType
     {
         Pawn,
         Rook,
