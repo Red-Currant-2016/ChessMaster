@@ -113,7 +113,7 @@ namespace ChessMaster2017.BackEnd
             activeChessPieces = new List<ChessPiece>(chessPiecePrefab);
         }
 
-        private void changePlayerTurn()
+        public void changePlayerTurn()
         {
 
             if (playerTurn == EnumColor.White)
