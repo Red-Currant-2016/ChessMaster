@@ -1,9 +1,9 @@
-﻿namespace ChessMaster2017.BackEnd
+﻿namespace ChessMaster2017.Engine
 {
     using System;
     using System.Collections.Generic;
-    using ChessMaster2017.BackEnd.Enums;
-    using ChessMaster2017.BackEnd.Contracts;
+    using ChessMaster2017.Engine.Enums;
+    using ChessMaster2017.Engine.Contracts;
 
     public class BoardManager : IBoardManger
     {

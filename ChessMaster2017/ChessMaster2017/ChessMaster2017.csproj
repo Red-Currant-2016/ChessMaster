@@ -50,24 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackEnd\BoardManager.cs" />
-    <Compile Include="BackEnd\Contracts\IBishop.cs" />
-    <Compile Include="BackEnd\Contracts\IBoardManger.cs" />
-    <Compile Include="BackEnd\Contracts\IChessPiece.cs" />
-    <Compile Include="BackEnd\Contracts\IKnight.cs" />
-    <Compile Include="BackEnd\Contracts\IPawn.cs" />
-    <Compile Include="BackEnd\Contracts\IQueen.cs" />
-    <Compile Include="BackEnd\Enums\EnumColor.cs" />
-    <Compile Include="BackEnd\ChessPieces.cs" />
-    <Compile Include="BackEnd\Contracts\IRook.cs" />
-    <Compile Include="BackEnd\Contracts\IKing.cs" />
-    <Compile Include="BackEnd\ChessPieces\Bishop.cs" />
-    <Compile Include="BackEnd\ChessPieces\King.cs" />
-    <Compile Include="BackEnd\ChessPieces\Knight.cs" />
-    <Compile Include="BackEnd\ChessPieces\Pawn.cs" />
-    <Compile Include="BackEnd\ChessPieces\Queen.cs" />
-    <Compile Include="BackEnd\Enums\EnumType.cs" />
-    <Compile Include="BackEnd\ChessPieces\Rook.cs" />
+    <Compile Include="Engine\Contracts\IBishop.cs" />
+    <Compile Include="Engine\Contracts\IBoardManger.cs" />
+    <Compile Include="Engine\Contracts\IChessPiece.cs" />
+    <Compile Include="Engine\Contracts\IKnight.cs" />
+    <Compile Include="Engine\Contracts\IPawn.cs" />
+    <Compile Include="Engine\Contracts\IQueen.cs" />
+    <Compile Include="Engine\Enums\EnumColor.cs" />
+    <Compile Include="Engine\Contracts\IRook.cs" />
+    <Compile Include="Engine\Contracts\IKing.cs" />
+    <Compile Include="Engine\ChessPieces\Bishop.cs" />
+    <Compile Include="Engine\ChessPieces\King.cs" />
+    <Compile Include="Engine\ChessPieces\Knight.cs" />
+    <Compile Include="Engine\ChessPieces\Pawn.cs" />
+    <Compile Include="Engine\ChessPieces\Queen.cs" />
+    <Compile Include="Engine\Enums\EnumType.cs" />
+    <Compile Include="Engine\ChessPieces\Rook.cs" />
+    <Compile Include="Engine\BoardManager.cs" />
+    <Compile Include="Engine\ChessPieces.cs" />
     <Compile Include="Form.cs">
       <SubType>Form</SubType>
     </Compile>

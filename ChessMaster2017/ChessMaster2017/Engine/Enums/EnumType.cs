@@ -1,4 +1,4 @@
-﻿namespace ChessMaster2017.BackEnd.Enums
+﻿namespace ChessMaster2017.Engine.Enums
 {
     public enum EnumType
     {

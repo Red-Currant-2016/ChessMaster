@@ -1,4 +1,4 @@
-﻿namespace ChessMaster2017.BackEnd.Contracts
+﻿namespace ChessMaster2017.Engine.Contracts
 {
     interface IQueen
     {

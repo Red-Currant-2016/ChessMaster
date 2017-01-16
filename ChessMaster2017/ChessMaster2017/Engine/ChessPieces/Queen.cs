@@ -1,7 +1,7 @@
-﻿namespace ChessMaster2017.BackEnd
+﻿namespace ChessMaster2017.Engine
 {
-    using ChessMaster2017.BackEnd.Enums;
-    using ChessMaster2017.BackEnd.Contracts;
+    using ChessMaster2017.Engine.Enums;
+    using ChessMaster2017.Engine.Contracts;
 
     class Queen : ChessPiece, IQueen
     {

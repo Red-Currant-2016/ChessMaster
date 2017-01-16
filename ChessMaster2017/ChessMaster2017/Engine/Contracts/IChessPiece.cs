@@ -1,6 +1,6 @@
-﻿namespace ChessMaster2017.BackEnd.Contracts
+﻿namespace ChessMaster2017.Engine.Contracts
 {
-    using ChessMaster2017.BackEnd.Enums;
+    using ChessMaster2017.Engine.Enums;
 
     public interface IChessPiece
     {
