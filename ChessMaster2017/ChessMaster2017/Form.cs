@@ -1,17 +1,10 @@
-﻿using ChessMaster2017.Engine;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using ChessMaster2017.BackEnd.Enums;
-
-namespace ChessMaster2017
+﻿namespace ChessMaster2017
 {
+    using ChessMaster2017.Engine;
+    using System;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using ChessMaster2017.Engine.Enums;
 
     public partial class MainForm : Form
     {
@@ -24,12 +17,10 @@ namespace ChessMaster2017
         {
             InitializeComponent();
 
-
             /*e5.Image = Properties.Resources.black_pawn;
             e7.Image = null;
             b2.Image = e5.Image;*/
         }
-
 
         private void Selector(object sender, EventArgs e)
         {
@@ -42,7 +33,6 @@ namespace ChessMaster2017
             {
                 isSelected = testBoard.SelectChessPiece(x, y);
             }
-
 
             PictureBox secondControl = (PictureBox)sender;
             if (isSelected)
@@ -57,10 +47,8 @@ namespace ChessMaster2017
 
             if (!Action)
             {
-
                 /*Control control = (Control)sender;
                 MessageBox.Show(control.Name);*/
-
 
                 if (isSelected)
                 {
@@ -104,7 +92,5 @@ namespace ChessMaster2017
                 }
             }
         }
-
-
     }
 }
