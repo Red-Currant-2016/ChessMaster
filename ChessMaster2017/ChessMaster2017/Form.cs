@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChessMaster2017.BackEnd.Enums;
 
 namespace ChessMaster2017
 {

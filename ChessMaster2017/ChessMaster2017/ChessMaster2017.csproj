@@ -50,26 +50,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="backend\BoardManager.cs" />
-    <Compile Include="backend\EnumColor.cs" />
-    <Compile Include="backend\ChessPieces.cs" />
-    <Compile Include="backend\pieces\Bishop.cs" />
-    <Compile Include="backend\pieces\King.cs" />
-    <Compile Include="backend\pieces\Knight.cs" />
-    <Compile Include="backend\pieces\Pawn.cs" />
-    <Compile Include="backend\pieces\Queen.cs" />
-    <Compile Include="backend\EnumType.cs" />
-    <Compile Include="backend\pieces\Rook.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="BackEnd\BoardManager.cs" />
+    <Compile Include="BackEnd\Contracts\IBishop.cs" />
+    <Compile Include="BackEnd\Contracts\IBoardManger.cs" />
+    <Compile Include="BackEnd\Contracts\IChessPiece.cs" />
+    <Compile Include="BackEnd\Contracts\IKnight.cs" />
+    <Compile Include="BackEnd\Contracts\IPawn.cs" />
+    <Compile Include="BackEnd\Contracts\IQueen.cs" />
+    <Compile Include="BackEnd\Enums\EnumColor.cs" />
+    <Compile Include="BackEnd\ChessPieces.cs" />
+    <Compile Include="BackEnd\Contracts\IRook.cs" />
+    <Compile Include="BackEnd\Contracts\IKing.cs" />
+    <Compile Include="BackEnd\ChessPieces\Bishop.cs" />
+    <Compile Include="BackEnd\ChessPieces\King.cs" />
+    <Compile Include="BackEnd\ChessPieces\Knight.cs" />
+    <Compile Include="BackEnd\ChessPieces\Pawn.cs" />
+    <Compile Include="BackEnd\ChessPieces\Queen.cs" />
+    <Compile Include="BackEnd\Enums\EnumType.cs" />
+    <Compile Include="BackEnd\ChessPieces\Rook.cs" />
+    <Compile Include="Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,43 +104,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\chess_black_pawn.png" />
+    <None Include="Assets\black_bishop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_bishop.png" />
+    <None Include="Assets\black_king.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_king.png" />
+    <None Include="Assets\black_knight.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_knight.png" />
+    <None Include="Assets\black_pawn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_pawn.png" />
+    <None Include="Assets\black_queen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_queen.png" />
+    <None Include="Assets\black_rook.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\black_rook.png" />
+    <None Include="Assets\white_bishop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\white_bishop.png" />
+    <None Include="Assets\white_king.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\white_king.png" />
+    <None Include="Assets\white_knight.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\white_knight.png" />
+    <None Include="Assets\white_pawn.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\white_pawn.png" />
+    <None Include="Assets\white_queen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\white_queen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\white_rook.png" />
+    <None Include="Assets\white_rook.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App chess.ico" />

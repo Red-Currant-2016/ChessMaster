@@ -1,30 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.BackEnd
+﻿namespace ChessMaster2017.BackEnd
 {
+    using ChessMaster2017.BackEnd.Enums;
+    using ChessMaster2017.BackEnd.Contracts;
+
     /// <summary>
     /// Serves as a base class for all the different pieces. 
     /// </summary>
-    public abstract class ChessPiece
+    public abstract class ChessPiece : IChessPiece
     {
-        public int CurrentX { get; private set; }
-        public int CurrentY { get; private set; }
-
-        public EnumColor Color { get; private set; }
-        public EnumType Type { get; private set; }
-        public bool isCaptured { get; set; }
+        private int currentX;
+        private int currentY;
+        private bool isCaptured;
+        private EnumType type;
+        private EnumColor color;
 
         public ChessPiece(int x, int y, EnumColor color, EnumType type)
         {
             SetPosition(x, y);
+            this.Color = color;
+            this.Type = type;
+            this.IsCaptured = false;
+        }
 
-            Color = color;
-            Type = type;
-            isCaptured = false;
+        public int CurrentX
+        {
+            get { return this.currentX; }
+            private set { this.currentX = value; }
+        }
+        public int CurrentY
+        {
+            get { return this.currentY; }
+            private set { this.currentY = value; }
+        }
+
+        public EnumColor Color
+        {
+            get { return this.color; }
+            private set { this.color = value; }
+        }
+
+        public EnumType Type
+        {
+            get { return this.type; }
+            private set { this.type = value; }
+        }
+
+        public bool IsCaptured
+        {
+            get { return this.isCaptured; }
+            set { this.isCaptured = value; }
         }
 
         public void SetPosition(int x, int y)
@@ -33,7 +57,7 @@ namespace ChessMaster2017.BackEnd
             CurrentY = y;
         }
 
-        public virtual bool[,] PossibleMove(ChessPiece[,] currentBoard)
+        public virtual bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             return new bool[8, 8];
         }

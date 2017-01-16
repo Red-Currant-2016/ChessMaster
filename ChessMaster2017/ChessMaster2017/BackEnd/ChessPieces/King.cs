@@ -1,39 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.BackEnd
+﻿namespace ChessMaster2017.BackEnd
 {
-    class King : ChessPiece
+    using ChessMaster2017.BackEnd.Enums;
+    using ChessMaster2017.BackEnd.Contracts;
+
+    class King : ChessPiece, IKing
     {
-        public bool hasMoved { get; set; }
+        private bool hasMoved;
 
         public King(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
-            this.hasMoved = false;
+            this.HasMoved = false;
         }
 
-        public bool isKingChecked(ChessPiece[,] currentBoard)
+        public bool HasMoved
+        {
+            get { return this.hasMoved; }
+            set { this.hasMoved = value; }
+        }
+
+        public bool isKingChecked(IChessPiece[,] currentBoard)
         {
             int currentX = this.CurrentX;
             int currentY = this.CurrentY;
 
-            //check from a KNIGHT
-            //1 - right up
+            // Check from a KNIGHT.
+            // 1 - right up.
             if (currentX + 1 < 8 && currentY + 2 < 8)
             {
                 if (currentBoard[currentX + 1, currentY + 2] != null)
                 {
-                    // enemy knight
+                    // Enemy knight.
                     if (currentBoard[currentX + 1, currentY + 2].Color != this.Color && currentBoard[currentX + 1, currentY + 2].Type == EnumType.Knight)
                     {
                         return true;
                     }
                 }
             }
-            //2 - up right
+            // 2 - up right.
             if (currentX + 2 < 8 && currentY + 1 < 8)
             {
                 if (currentBoard[currentX + 2, currentY + 1] != null)
@@ -44,7 +47,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //3 - up left
+            // 3 - up left.
             if (currentX + 2 < 8 && currentY - 1 >= 0)
             {
                 if (currentBoard[currentX + 2, currentY - 1] != null)
@@ -55,7 +58,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //4 - left up
+            // 4 - left up.
             if (currentX + 1 < 8 && currentY - 2 >= 0)
             {
                 if (currentBoard[currentX + 1, currentY - 2] != null)
@@ -66,7 +69,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //5 - left dowm
+            // 5 - left dowm.
             if (currentX - 1 >= 0 && currentY - 2 >= 0)
             {
                 if (currentBoard[currentX - 1, currentY - 2] != null)
@@ -77,7 +80,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //6 - down left
+            // 6 - down left.
             if (currentX - 2 >= 0 && currentY - 1 >= 0)
             {
                 if (currentBoard[currentX - 2, currentY - 1] != null)
@@ -88,7 +91,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            // 7 - down right
+            // 7 - down right.
             if (currentX - 2 >= 0 && currentY + 1 < 8)
             {
                 if (currentBoard[currentX - 2, currentY + 1] != null)
@@ -99,7 +102,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            // 8 - right down
+            // 8 - right down.
             if (currentX - 1 >= 0 && currentY + 2 < 8)
             {
                 if (currentBoard[currentX - 1, currentY + 2] != null)
@@ -112,7 +115,7 @@ namespace ChessMaster2017.BackEnd
             }
 
             // QUEEN AND ROOK
-            //right check by queen and rook
+            // Right check by queen and rook.
             for (int rightLine = currentY + 1; rightLine < 8; rightLine++)
             {
                 if (currentBoard[currentX, rightLine] != null)
@@ -125,16 +128,16 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/rook
+                            break; // Enemy piece found, but isn't queen/rook.
                         }
                     }
                     else
                     {
-                        break;// same color pieces as king
+                        break; // Same color pieces as king.
                     }
                 }
             }
-            //up check by queen and rook
+            // Up check by queen and rook.
             for (int upLine = currentX + 1; upLine < 8; upLine++)
             {
                 if (currentBoard[upLine, currentY] != null)
@@ -147,16 +150,16 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/rook
+                            break; // Enemy piece found, but isn't queen/rook.
                         }
                     }
                     else
                     {
-                        break;// same color pieces as king
+                        break; // Same color pieces as king.
                     }
                 }
             }
-            //left check by queen and rook
+            // Left check by queen and rook.
             for (int leftLine = currentY - 1; leftLine >= 0; leftLine--)
             {
                 if (currentBoard[currentX, leftLine] != null)
@@ -169,16 +172,16 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/rook
+                            break; // Enemy piece found, but isn't queen/rook.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
-            //down check by queen and rook
+            // Down check by queen and rook.
             for (int downLine = currentX - 1; currentX >= 0; downLine--)
             {
                 if (currentBoard[downLine, currentY] != null)
@@ -191,40 +194,40 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/rook
+                            break; // Enemy piece found, but isn't queen/rook.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
 
-            //check by QUEEN and BISHOP
-            //1 up right diagonal
+            // Check by QUEEN and BISHOP.
+            // 1 up right diagonal.
             for (int x = currentX + 1, y = currentY + 1; x < 8 && y < 8; x++, y++)
             {
-                if(currentBoard[x,y] != null)
+                if (currentBoard[x, y] != null)
                 {
-                    if(currentBoard[x,y].Color != this.Color)
+                    if (currentBoard[x, y].Color != this.Color)
                     {
-                        if(currentBoard[x,y].Type == EnumType.Queen || currentBoard[x,y].Type == EnumType.Bishop)
+                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
                         {
                             return true;
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/bishop
+                            break; // Enemy piece found, but isn't queen/bishop.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
-            //2 up left diagonal
+            // 2 up left diagonal.
             for (int x = currentX + 1, y = currentY - 1; x < 8 && y >= 0; x++, y--)
             {
                 if (currentBoard[x, y] != null)
@@ -237,16 +240,16 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/bishop
+                            break; // Enemy piece found, but isn't queen/bishop.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
-            //3 down right diagonal
+            // 3 down right diagonal.
             for (int x = currentX - 1, y = currentY - 1; x >= 0 && y >= 0; x--, y--)
             {
                 if (currentBoard[x, y] != null)
@@ -259,16 +262,16 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/bishop
+                            break; // Enemy piece found, but isn't queen/bishop.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
-            //4 down left diagonal
+            // 4 down left diagonal.
             for (int x = currentX - 1, y = currentY + 1; x >= 0 && y < 8; x--, y++)
             {
                 if (currentBoard[x, y] != null)
@@ -281,20 +284,18 @@ namespace ChessMaster2017.BackEnd
                         }
                         else
                         {
-                            break;// enemy piece found, but isn't queen/bishop
+                            break; // Enemy piece found, but isn't queen/bishop.
                         }
                     }
                     else
                     {
-                        break;// same color piece as king
+                        break; // Same color piece as king.
                     }
                 }
             }
-            
 
-
-            //check by PAWN
-            //1 right up diagonal
+            // Check by PAWN.
+            // 1 right up diagonal.
             if (currentX + 1 < 8 && currentY + 1 < 8)
             {
                 if (currentBoard[currentX + 1, currentY + 1] != null)
@@ -308,7 +309,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //2 left up diagonal
+            // 2 left up diagonal.
             if (currentX + 1 < 8 && currentY - 1 >= 0)
             {
                 if (currentBoard[currentX + 1, currentY - 1] != null)
@@ -322,7 +323,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //3 left down diagonal
+            // 3 left down diagonal.
             if (currentX - 1 >= 0 && currentY - 1 >= 0)
             {
                 if (currentBoard[currentX - 1, currentY - 1] != null)
@@ -336,7 +337,7 @@ namespace ChessMaster2017.BackEnd
                     }
                 }
             }
-            //4 right down diagonal
+            // 4 right down diagonal.
             if (currentX - 1 >= 0 && currentY + 1 < 8)
             {
                 if (currentBoard[currentX - 1, currentY + 1] != null)
@@ -359,14 +360,14 @@ namespace ChessMaster2017.BackEnd
         /// </summary>
         /// <param name="currentBoard"></param>
         /// <returns></returns>
-        public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
+        public override bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             int kingX = this.CurrentX;
             int kingY = this.CurrentY;
             bool[,] kingMoves = new bool[8, 8];
             EnumColor kingColor = this.Color;
 
-            //top
+            // Top.
             if (kingX + 1 < 8)
             {
                 if (currentBoard[kingX + 1, kingY] != null && currentBoard[kingX + 1, kingY].Color == kingColor)
@@ -383,8 +384,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // top left
-
+            // Top left.
             if (kingX + 1 < 8 && kingY - 1 >= 0)
             {
                 if (currentBoard[kingX + 1, kingY - 1] != null && currentBoard[kingX + 1, kingY - 1].Color == kingColor)
@@ -401,8 +401,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //left
-
+            // Left.
             if (kingY - 1 >= 0)
             {
                 if (currentBoard[kingX, kingY - 1] != null && currentBoard[kingX, kingY - 1].Color == kingColor)
@@ -419,8 +418,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //bottom left
-
+            // Bottom left.
             if (kingX - 1 >= 0 && kingY - 1 >= 0)
             {
                 if (currentBoard[kingX - 1, kingY - 1] != null && currentBoard[kingX - 1, kingY - 1].Color == kingColor)
@@ -437,8 +435,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //bottom
-
+            // Bottom.
             if (kingX - 1 >= 0)
             {
                 if (currentBoard[kingX - 1, kingY] != null && currentBoard[kingX - 1, kingY].Color == kingColor)
@@ -455,8 +452,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //bottom right
-
+            // Bottom right.
             if (kingX - 1 >= 0 && kingY + 1 < 8)
             {
                 if (currentBoard[kingX - 1, kingY + 1] != null && currentBoard[kingX - 1, kingY + 1].Color == kingColor)
@@ -473,8 +469,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //right
-
+            // Right.
             if (kingY + 1 < 8)
             {
                 if (currentBoard[kingX, kingY + 1] != null && currentBoard[kingX, kingY + 1].Color == kingColor)
@@ -491,8 +486,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            //top right
-
+            // Top right.
             if (kingX + 1 < 8 && kingY + 1 < 8)
             {
                 if (currentBoard[kingX + 1, kingY + 1] != null && currentBoard[kingX + 1, kingY + 1].Color == kingColor)

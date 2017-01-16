@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.BackEnd
+﻿namespace ChessMaster2017.BackEnd
 {
-    class Queen : ChessPiece
+    using ChessMaster2017.BackEnd.Enums;
+    using ChessMaster2017.BackEnd.Contracts;
+
+    class Queen : ChessPiece, IQueen
     {
         public Queen(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
         }
-        public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
+
+        public override bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             int queenX = this.CurrentX;
             int queenY = this.CurrentY;
@@ -19,10 +17,9 @@ namespace ChessMaster2017.BackEnd
             bool[,] queenMoves = new bool[8, 8];
             EnumColor queenColor = this.Color;
 
-            // bottom right diagonal
+            // Bottom right diagonal.
             for (int movesX = queenX - 1, movesY = queenY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)
             {
-
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
                 {
                     queenMoves[movesX, movesY] = false;
@@ -37,10 +34,9 @@ namespace ChessMaster2017.BackEnd
                 {
                     queenMoves[movesX, movesY] = true;
                 }
-
             }
 
-            // top right
+            // Top right.
             for (int movesX = queenX + 1, movesY = queenY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY++)
             {
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
@@ -59,7 +55,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // Top Left
+            // Top left.
             for (int movesX = queenX + 1, movesY = queenY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX++, movesY--)
             {
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
@@ -72,14 +68,13 @@ namespace ChessMaster2017.BackEnd
                     queenMoves[movesX, movesY] = true;
                     break;
                 }
-
                 else
                 {
                     queenMoves[movesX, movesY] = true;
                 }
             }
 
-            // bottom right
+            // Bottom right.
             for (int movesX = queenX - 1, movesY = queenY - 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY--)
             {
                 if (currentBoard[movesX, movesY] != null && currentBoard[movesX, movesY].Color == queenColor)
@@ -98,7 +93,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // right
+            // Right.
             for (int movesY = queenY + 1; movesY >= 0 && movesY < 8; movesY++)
             {
                 int movesX = queenX;
@@ -120,8 +115,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // bottom
-
+            // Bottom.
             for (int movesX = queenX - 1; movesX >= 0 && movesX < 8; movesX--)
             {
                 int movesY = queenY;
@@ -142,8 +136,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // left
-
+            // Left.
             for (int movesY = queenY - 1; movesY >= 0 && movesY < 8; movesY--)
             {
                 int movesX = queenX;
@@ -165,8 +158,7 @@ namespace ChessMaster2017.BackEnd
                 }
             }
 
-            // top
-
+            // Top.
             for (int movesX = queenX + 1; movesX >= 0 && movesX < 8; movesX++)
             {
                 int movesY = queenY;
@@ -181,7 +173,6 @@ namespace ChessMaster2017.BackEnd
                     queenMoves[movesX, movesY] = true;
                     break;
                 }
-
                 else
                 {
                     queenMoves[movesX, movesY] = true;
