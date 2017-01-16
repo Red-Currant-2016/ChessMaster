@@ -50,16 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="backend\BoardManager.cs" />
-    <Compile Include="backend\EnumColor.cs" />
-    <Compile Include="backend\ChessPieces.cs" />
-    <Compile Include="backend\pieces\Bishop.cs" />
-    <Compile Include="backend\pieces\King.cs" />
-    <Compile Include="backend\pieces\Knight.cs" />
-    <Compile Include="backend\pieces\Pawn.cs" />
-    <Compile Include="backend\pieces\Queen.cs" />
-    <Compile Include="backend\EnumType.cs" />
-    <Compile Include="backend\pieces\Rook.cs" />
+    <Compile Include="Engine\BoardManager.cs" />
+    <Compile Include="Engine\EnumColor.cs" />
+    <Compile Include="Engine\ChessPieces.cs" />
+    <Compile Include="Engine\pieces\Bishop.cs" />
+    <Compile Include="Engine\pieces\King.cs" />
+    <Compile Include="Engine\pieces\Knight.cs" />
+    <Compile Include="Engine\pieces\Pawn.cs" />
+    <Compile Include="Engine\pieces\Queen.cs" />
+    <Compile Include="Engine\EnumType.cs" />
+    <Compile Include="Engine\pieces\Rook.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

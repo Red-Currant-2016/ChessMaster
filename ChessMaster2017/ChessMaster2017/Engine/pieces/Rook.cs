@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster2017.BackEnd
+namespace ChessMaster2017.Engine
 {
     /// <summary>
     /// Logic is the same as Bishop ; Check Bishop Summery. 

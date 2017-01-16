@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster2017.BackEnd
+namespace ChessMaster2017.Engine
 {
     /// <summary>
     /// Serves as a base class for all the different pieces. 

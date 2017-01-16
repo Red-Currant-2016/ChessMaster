@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster2017.BackEnd
+namespace ChessMaster2017.Engine
 {
     public class BoardManager
     {
@@ -239,6 +239,7 @@ namespace ChessMaster2017.BackEnd
                             chessBoard[x, y].SetPosition(x, y);// set piece new coordinates
 
                             selectedChessPiece = null; //de-select
+                            changePlayerTurn();// next turn
                         }
 
                         return true;
