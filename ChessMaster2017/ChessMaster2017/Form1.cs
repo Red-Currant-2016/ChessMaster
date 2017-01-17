@@ -1,5 +1,6 @@
 ﻿using ChessMaster2017.Engine;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,8 +68,8 @@ namespace ChessMaster2017
                     oldControl = (PictureBox)sender;
                     oldColor = oldControl.BackColor;
                     oldControl.BackColor = Color.Aqua;
+                    HightLight();
                 }
-                //control.BackColor = Color.Aqua;
             }
             else
             {
@@ -94,12 +95,71 @@ namespace ChessMaster2017
                     oldControl.BackColor = oldColor;
                     secondControl.Image = newFigure;
                     Action = false;
+                    ReturnBoardToNormal();
                 }
                 else
                 {
                     testBoard.selectedChessPiece = null;
                     oldControl.BackColor = oldColor;
                     Action = false;
+                    ReturnBoardToNormal();
+                }
+            }
+        }
+
+        private void ReturnBoardToNormal()
+        {
+            int count = 0;
+            bool flag = false;
+            foreach (Control ctr in this.Controls)
+            {
+                if (ctr is PictureBox)
+                {
+                    if (count % 2 == 0)
+                    {
+                        ((PictureBox)ctr).BackColor = Color.Moccasin;
+                    }
+                    else
+                    {
+                        ((PictureBox)ctr).BackColor = Color.Sienna;
+                    }
+                    count++;
+                    if (count % 9 == 0 && flag)
+                    {
+                        count = 0;
+                        flag = false;
+                    }
+                    else if ((count) % 8 == 0 && !flag)
+                    {
+                        count = 1;
+                        flag = true;
+                    }
+
+                }
+            }
+        }
+
+        private void HightLight()
+        {
+            bool[,] highlightChessPieceMoves = new bool[8, 8];
+            highlightChessPieceMoves = testBoard.GetHighlightedMoves();
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (highlightChessPieceMoves[i, j])
+                    {
+                        StringBuilder controlName = new StringBuilder();
+                        controlName.Append((char)(j + 'a'));
+                        controlName.Append((char)(i + '1'));
+                        foreach (Control ctr in this.Controls)
+                        {
+                            if (ctr.Name == controlName.ToString())
+                            {
+                                ((PictureBox)ctr).BackColor = Color.SkyBlue;
+                            }
+                        }
+                    }
                 }
             }
         }
