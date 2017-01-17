@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChessMaster2017.Engine.BoardManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAQQAAABAAAAIQIAAMAiAIAIACBCCAAAAAAAgQQ=</HashCode>
+      <FileName>Engine\BoardManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.Bishop" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\Bishop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.King" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAABAAABAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\King.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.Knight" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\Knight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.Pawn" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\Pawn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.Queen" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\Queen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.Rook" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces\Rook.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.Engine.ChessPiece" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAQAAAAAQAAAAEAAAABAiCAAQAAgAAAAAA=</HashCode>
+      <FileName>Engine\ChessPieces.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChessMaster2017.MainForm" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sI8AAAAAACCk+yAAACDAAAAC36L9PhCAb5BgHyDAN0w=</HashCode>
+      <FileName>Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.Program" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.Properties.Resources" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAQCAACAAAAAAEABEAAAAUAAAAMAEIAAgCAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChessMaster2017.Properties.Settings" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IBishop" Collapsed="true">
+    <Position X="17.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IBishop.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IBoardManger" Collapsed="true">
+    <Position X="19.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAQAAAAAAAAAQIAAIACAAAAAAAACAAAAAAAgAA=</HashCode>
+      <FileName>Engine\Contracts\IBoardManger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IChessPiece" Collapsed="true">
+    <Position X="21.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAQAAAAAAAAAAAiCAAQAAgAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IChessPiece.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IKing" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAABAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IKing.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IKnight" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IKnight.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IPawn" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IPawn.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IQueen" Collapsed="true">
+    <Position X="17.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IQueen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChessMaster2017.Engine.Contracts.IRook" Collapsed="true">
+    <Position X="19.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Contracts\IRook.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ChessMaster2017.Engine.Enums.EnumColor" Collapsed="true">
+    <Position X="17.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Enums\EnumColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ChessMaster2017.Engine.Enums.EnumType" Collapsed="true">
+    <Position X="19.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAEggAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Enums\EnumType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
