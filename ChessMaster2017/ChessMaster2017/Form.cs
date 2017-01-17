@@ -1,4 +1,5 @@
 ﻿using ChessMaster2017.Engine;
+using ChessMaster2017.Engine.Enums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+namespace ChessMaster2017
+{
     public partial class MainForm : Form
     {
         bool[,] Board = new bool[8, 8];
@@ -20,10 +23,6 @@ using System.Windows.Forms;
         public MainForm()
         {
             InitializeComponent();
-
-            /*e5.Image = Properties.Resources.black_pawn;
-            e7.Image = null;
-            b2.Image = e5.Image;*/
         }
 
         private void Selector(object sender, EventArgs e)
@@ -51,9 +50,6 @@ using System.Windows.Forms;
 
             if (!Action)
             {
-                /*Control control = (Control)sender;
-                MessageBox.Show(control.Name);*/
-
                 if (isSelected)
                 {
                     Action = true;
@@ -79,7 +75,6 @@ using System.Windows.Forms;
                         BlackPlayerTurn.Checked = true;
                         WhitePlayerTurn.Checked = false;
                     }
-                    //control.Image = null;
                     Image newFigure = null;
                     newFigure = oldControl.Image;
                     testBoard.selectedChessPiece = null;
