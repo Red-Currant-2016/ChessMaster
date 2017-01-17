@@ -1,4 +1,7 @@
-﻿namespace ChessMaster2017
+﻿using System.Data;
+using System.Windows.Forms;
+
+namespace ChessMaster2017
 {
     partial class MainForm
     {
@@ -33,71 +36,71 @@
             this.WhitePlayerTurn = new System.Windows.Forms.RadioButton();
             this.BlackPlayerTurn = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.h1 = new System.Windows.Forms.PictureBox();
-            this.g1 = new System.Windows.Forms.PictureBox();
-            this.f1 = new System.Windows.Forms.PictureBox();
-            this.e1 = new System.Windows.Forms.PictureBox();
-            this.d1 = new System.Windows.Forms.PictureBox();
-            this.c1 = new System.Windows.Forms.PictureBox();
-            this.b1 = new System.Windows.Forms.PictureBox();
-            this.a1 = new System.Windows.Forms.PictureBox();
-            this.h2 = new System.Windows.Forms.PictureBox();
-            this.g2 = new System.Windows.Forms.PictureBox();
-            this.f2 = new System.Windows.Forms.PictureBox();
-            this.e2 = new System.Windows.Forms.PictureBox();
-            this.d2 = new System.Windows.Forms.PictureBox();
-            this.c2 = new System.Windows.Forms.PictureBox();
-            this.b2 = new System.Windows.Forms.PictureBox();
-            this.a2 = new System.Windows.Forms.PictureBox();
-            this.h3 = new System.Windows.Forms.PictureBox();
-            this.g3 = new System.Windows.Forms.PictureBox();
-            this.f3 = new System.Windows.Forms.PictureBox();
-            this.e3 = new System.Windows.Forms.PictureBox();
-            this.d3 = new System.Windows.Forms.PictureBox();
-            this.c3 = new System.Windows.Forms.PictureBox();
-            this.b3 = new System.Windows.Forms.PictureBox();
-            this.a3 = new System.Windows.Forms.PictureBox();
-            this.h4 = new System.Windows.Forms.PictureBox();
-            this.g4 = new System.Windows.Forms.PictureBox();
-            this.f4 = new System.Windows.Forms.PictureBox();
-            this.e4 = new System.Windows.Forms.PictureBox();
-            this.d4 = new System.Windows.Forms.PictureBox();
-            this.c4 = new System.Windows.Forms.PictureBox();
-            this.b4 = new System.Windows.Forms.PictureBox();
-            this.a4 = new System.Windows.Forms.PictureBox();
-            this.h5 = new System.Windows.Forms.PictureBox();
-            this.g5 = new System.Windows.Forms.PictureBox();
-            this.f5 = new System.Windows.Forms.PictureBox();
-            this.e5 = new System.Windows.Forms.PictureBox();
-            this.d5 = new System.Windows.Forms.PictureBox();
-            this.c5 = new System.Windows.Forms.PictureBox();
-            this.b5 = new System.Windows.Forms.PictureBox();
-            this.a5 = new System.Windows.Forms.PictureBox();
-            this.h6 = new System.Windows.Forms.PictureBox();
-            this.g6 = new System.Windows.Forms.PictureBox();
-            this.f6 = new System.Windows.Forms.PictureBox();
-            this.e6 = new System.Windows.Forms.PictureBox();
-            this.d6 = new System.Windows.Forms.PictureBox();
-            this.c6 = new System.Windows.Forms.PictureBox();
-            this.b6 = new System.Windows.Forms.PictureBox();
-            this.a6 = new System.Windows.Forms.PictureBox();
-            this.h7 = new System.Windows.Forms.PictureBox();
-            this.g7 = new System.Windows.Forms.PictureBox();
-            this.f7 = new System.Windows.Forms.PictureBox();
-            this.e7 = new System.Windows.Forms.PictureBox();
-            this.d7 = new System.Windows.Forms.PictureBox();
-            this.c7 = new System.Windows.Forms.PictureBox();
-            this.b7 = new System.Windows.Forms.PictureBox();
-            this.a7 = new System.Windows.Forms.PictureBox();
-            this.h8 = new System.Windows.Forms.PictureBox();
-            this.g8 = new System.Windows.Forms.PictureBox();
-            this.f8 = new System.Windows.Forms.PictureBox();
-            this.e8 = new System.Windows.Forms.PictureBox();
-            this.d8 = new System.Windows.Forms.PictureBox();
-            this.c8 = new System.Windows.Forms.PictureBox();
-            this.b8 = new System.Windows.Forms.PictureBox();
-            this.a8 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.h1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a1 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a2 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a3 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a4 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a5 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a6 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a7 = new ChessMaster2017.PictureBoxWithPosition();
+            this.h8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.g8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.f8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.e8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.d8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.c8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.b8 = new ChessMaster2017.PictureBoxWithPosition();
+            this.a8 = new ChessMaster2017.PictureBoxWithPosition();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.h1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.g1)).BeginInit();
@@ -205,6 +208,15 @@
             this.panel1.Size = new System.Drawing.Size(102, 73);
             this.panel1.TabIndex = 66;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label13.Location = new System.Drawing.Point(-4, 284);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 79;
+            // 
             // h1
             // 
             this.h1.BackColor = System.Drawing.Color.Moccasin;
@@ -214,10 +226,11 @@
             this.h1.Location = new System.Drawing.Point(637, 480);
             this.h1.Margin = new System.Windows.Forms.Padding(0);
             this.h1.Name = "h1";
+            this.h1.Position = "h1";
             this.h1.Size = new System.Drawing.Size(50, 50);
             this.h1.TabIndex = 63;
             this.h1.TabStop = false;
-            this.h1.Click += new System.EventHandler(this.Selector);
+            this.h1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g1
             // 
@@ -227,10 +240,11 @@
             this.g1.Location = new System.Drawing.Point(587, 480);
             this.g1.Margin = new System.Windows.Forms.Padding(0);
             this.g1.Name = "g1";
+            this.g1.Position = "g1";
             this.g1.Size = new System.Drawing.Size(50, 50);
             this.g1.TabIndex = 62;
             this.g1.TabStop = false;
-            this.g1.Click += new System.EventHandler(this.Selector);
+            this.g1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f1
             // 
@@ -241,10 +255,11 @@
             this.f1.Location = new System.Drawing.Point(537, 480);
             this.f1.Margin = new System.Windows.Forms.Padding(0);
             this.f1.Name = "f1";
+            this.f1.Position = "f1";
             this.f1.Size = new System.Drawing.Size(50, 50);
             this.f1.TabIndex = 61;
             this.f1.TabStop = false;
-            this.f1.Click += new System.EventHandler(this.Selector);
+            this.f1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e1
             // 
@@ -254,10 +269,11 @@
             this.e1.Location = new System.Drawing.Point(487, 480);
             this.e1.Margin = new System.Windows.Forms.Padding(0);
             this.e1.Name = "e1";
+            this.e1.Position = "e1";
             this.e1.Size = new System.Drawing.Size(50, 50);
             this.e1.TabIndex = 60;
             this.e1.TabStop = false;
-            this.e1.Click += new System.EventHandler(this.Selector);
+            this.e1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d1
             // 
@@ -268,10 +284,11 @@
             this.d1.Location = new System.Drawing.Point(437, 480);
             this.d1.Margin = new System.Windows.Forms.Padding(0);
             this.d1.Name = "d1";
+            this.d1.Position = "d1";
             this.d1.Size = new System.Drawing.Size(50, 50);
             this.d1.TabIndex = 59;
             this.d1.TabStop = false;
-            this.d1.Click += new System.EventHandler(this.Selector);
+            this.d1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c1
             // 
@@ -281,10 +298,11 @@
             this.c1.Location = new System.Drawing.Point(387, 480);
             this.c1.Margin = new System.Windows.Forms.Padding(0);
             this.c1.Name = "c1";
+            this.c1.Position = "c1";
             this.c1.Size = new System.Drawing.Size(50, 50);
             this.c1.TabIndex = 58;
             this.c1.TabStop = false;
-            this.c1.Click += new System.EventHandler(this.Selector);
+            this.c1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b1
             // 
@@ -295,10 +313,11 @@
             this.b1.Location = new System.Drawing.Point(337, 480);
             this.b1.Margin = new System.Windows.Forms.Padding(0);
             this.b1.Name = "b1";
+            this.b1.Position = "b1";
             this.b1.Size = new System.Drawing.Size(50, 50);
             this.b1.TabIndex = 57;
             this.b1.TabStop = false;
-            this.b1.Click += new System.EventHandler(this.Selector);
+            this.b1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a1
             // 
@@ -308,10 +327,11 @@
             this.a1.Location = new System.Drawing.Point(287, 480);
             this.a1.Margin = new System.Windows.Forms.Padding(0);
             this.a1.Name = "a1";
+            this.a1.Position = "a1";
             this.a1.Size = new System.Drawing.Size(50, 50);
             this.a1.TabIndex = 56;
             this.a1.TabStop = false;
-            this.a1.Click += new System.EventHandler(this.Selector);
+            this.a1.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h2
             // 
@@ -321,10 +341,11 @@
             this.h2.Location = new System.Drawing.Point(637, 430);
             this.h2.Margin = new System.Windows.Forms.Padding(0);
             this.h2.Name = "h2";
+            this.h2.Position = "h2";
             this.h2.Size = new System.Drawing.Size(50, 50);
             this.h2.TabIndex = 55;
             this.h2.TabStop = false;
-            this.h2.Click += new System.EventHandler(this.Selector);
+            this.h2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g2
             // 
@@ -335,10 +356,11 @@
             this.g2.Location = new System.Drawing.Point(587, 430);
             this.g2.Margin = new System.Windows.Forms.Padding(0);
             this.g2.Name = "g2";
+            this.g2.Position = "g2";
             this.g2.Size = new System.Drawing.Size(50, 50);
             this.g2.TabIndex = 54;
             this.g2.TabStop = false;
-            this.g2.Click += new System.EventHandler(this.Selector);
+            this.g2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f2
             // 
@@ -348,10 +370,11 @@
             this.f2.Location = new System.Drawing.Point(537, 430);
             this.f2.Margin = new System.Windows.Forms.Padding(0);
             this.f2.Name = "f2";
+            this.f2.Position = "f2";
             this.f2.Size = new System.Drawing.Size(50, 50);
             this.f2.TabIndex = 53;
             this.f2.TabStop = false;
-            this.f2.Click += new System.EventHandler(this.Selector);
+            this.f2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e2
             // 
@@ -362,10 +385,11 @@
             this.e2.Location = new System.Drawing.Point(487, 430);
             this.e2.Margin = new System.Windows.Forms.Padding(0);
             this.e2.Name = "e2";
+            this.e2.Position = "e2";
             this.e2.Size = new System.Drawing.Size(50, 50);
             this.e2.TabIndex = 52;
             this.e2.TabStop = false;
-            this.e2.Click += new System.EventHandler(this.Selector);
+            this.e2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d2
             // 
@@ -375,10 +399,11 @@
             this.d2.Location = new System.Drawing.Point(437, 430);
             this.d2.Margin = new System.Windows.Forms.Padding(0);
             this.d2.Name = "d2";
+            this.d2.Position = "d2";
             this.d2.Size = new System.Drawing.Size(50, 50);
             this.d2.TabIndex = 51;
             this.d2.TabStop = false;
-            this.d2.Click += new System.EventHandler(this.Selector);
+            this.d2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c2
             // 
@@ -389,10 +414,11 @@
             this.c2.Location = new System.Drawing.Point(387, 430);
             this.c2.Margin = new System.Windows.Forms.Padding(0);
             this.c2.Name = "c2";
+            this.c2.Position = "c2";
             this.c2.Size = new System.Drawing.Size(50, 50);
             this.c2.TabIndex = 50;
             this.c2.TabStop = false;
-            this.c2.Click += new System.EventHandler(this.Selector);
+            this.c2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b2
             // 
@@ -402,10 +428,11 @@
             this.b2.Location = new System.Drawing.Point(337, 430);
             this.b2.Margin = new System.Windows.Forms.Padding(0);
             this.b2.Name = "b2";
+            this.b2.Position = "b2";
             this.b2.Size = new System.Drawing.Size(50, 50);
             this.b2.TabIndex = 49;
             this.b2.TabStop = false;
-            this.b2.Click += new System.EventHandler(this.Selector);
+            this.b2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a2
             // 
@@ -416,10 +443,11 @@
             this.a2.Location = new System.Drawing.Point(287, 430);
             this.a2.Margin = new System.Windows.Forms.Padding(0);
             this.a2.Name = "a2";
+            this.a2.Position = "a2";
             this.a2.Size = new System.Drawing.Size(50, 50);
             this.a2.TabIndex = 48;
             this.a2.TabStop = false;
-            this.a2.Click += new System.EventHandler(this.Selector);
+            this.a2.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h3
             // 
@@ -429,10 +457,11 @@
             this.h3.Location = new System.Drawing.Point(637, 380);
             this.h3.Margin = new System.Windows.Forms.Padding(0);
             this.h3.Name = "h3";
+            this.h3.Position = "h3";
             this.h3.Size = new System.Drawing.Size(50, 50);
             this.h3.TabIndex = 47;
             this.h3.TabStop = false;
-            this.h3.Click += new System.EventHandler(this.Selector);
+            this.h3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g3
             // 
@@ -441,10 +470,11 @@
             this.g3.Location = new System.Drawing.Point(587, 380);
             this.g3.Margin = new System.Windows.Forms.Padding(0);
             this.g3.Name = "g3";
+            this.g3.Position = "g3";
             this.g3.Size = new System.Drawing.Size(50, 50);
             this.g3.TabIndex = 46;
             this.g3.TabStop = false;
-            this.g3.Click += new System.EventHandler(this.Selector);
+            this.g3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f3
             // 
@@ -454,10 +484,11 @@
             this.f3.Location = new System.Drawing.Point(537, 380);
             this.f3.Margin = new System.Windows.Forms.Padding(0);
             this.f3.Name = "f3";
+            this.f3.Position = "f3";
             this.f3.Size = new System.Drawing.Size(50, 50);
             this.f3.TabIndex = 45;
             this.f3.TabStop = false;
-            this.f3.Click += new System.EventHandler(this.Selector);
+            this.f3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e3
             // 
@@ -466,10 +497,11 @@
             this.e3.Location = new System.Drawing.Point(487, 380);
             this.e3.Margin = new System.Windows.Forms.Padding(0);
             this.e3.Name = "e3";
+            this.e3.Position = "e3";
             this.e3.Size = new System.Drawing.Size(50, 50);
             this.e3.TabIndex = 44;
             this.e3.TabStop = false;
-            this.e3.Click += new System.EventHandler(this.Selector);
+            this.e3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d3
             // 
@@ -479,10 +511,11 @@
             this.d3.Location = new System.Drawing.Point(437, 380);
             this.d3.Margin = new System.Windows.Forms.Padding(0);
             this.d3.Name = "d3";
+            this.d3.Position = "d3";
             this.d3.Size = new System.Drawing.Size(50, 50);
             this.d3.TabIndex = 43;
             this.d3.TabStop = false;
-            this.d3.Click += new System.EventHandler(this.Selector);
+            this.d3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c3
             // 
@@ -491,10 +524,11 @@
             this.c3.Location = new System.Drawing.Point(387, 380);
             this.c3.Margin = new System.Windows.Forms.Padding(0);
             this.c3.Name = "c3";
+            this.c3.Position = "c3";
             this.c3.Size = new System.Drawing.Size(50, 50);
             this.c3.TabIndex = 42;
             this.c3.TabStop = false;
-            this.c3.Click += new System.EventHandler(this.Selector);
+            this.c3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b3
             // 
@@ -504,10 +538,11 @@
             this.b3.Location = new System.Drawing.Point(337, 380);
             this.b3.Margin = new System.Windows.Forms.Padding(0);
             this.b3.Name = "b3";
+            this.b3.Position = "b3";
             this.b3.Size = new System.Drawing.Size(50, 50);
             this.b3.TabIndex = 41;
             this.b3.TabStop = false;
-            this.b3.Click += new System.EventHandler(this.Selector);
+            this.b3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a3
             // 
@@ -516,10 +551,11 @@
             this.a3.Location = new System.Drawing.Point(287, 380);
             this.a3.Margin = new System.Windows.Forms.Padding(0);
             this.a3.Name = "a3";
+            this.a3.Position = "a3";
             this.a3.Size = new System.Drawing.Size(50, 50);
             this.a3.TabIndex = 40;
             this.a3.TabStop = false;
-            this.a3.Click += new System.EventHandler(this.Selector);
+            this.a3.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h4
             // 
@@ -528,10 +564,11 @@
             this.h4.Location = new System.Drawing.Point(637, 330);
             this.h4.Margin = new System.Windows.Forms.Padding(0);
             this.h4.Name = "h4";
+            this.h4.Position = "h4";
             this.h4.Size = new System.Drawing.Size(50, 50);
             this.h4.TabIndex = 39;
             this.h4.TabStop = false;
-            this.h4.Click += new System.EventHandler(this.Selector);
+            this.h4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g4
             // 
@@ -541,10 +578,11 @@
             this.g4.Location = new System.Drawing.Point(587, 330);
             this.g4.Margin = new System.Windows.Forms.Padding(0);
             this.g4.Name = "g4";
+            this.g4.Position = "g4";
             this.g4.Size = new System.Drawing.Size(50, 50);
             this.g4.TabIndex = 38;
             this.g4.TabStop = false;
-            this.g4.Click += new System.EventHandler(this.Selector);
+            this.g4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f4
             // 
@@ -553,10 +591,11 @@
             this.f4.Location = new System.Drawing.Point(537, 330);
             this.f4.Margin = new System.Windows.Forms.Padding(0);
             this.f4.Name = "f4";
+            this.f4.Position = "f4";
             this.f4.Size = new System.Drawing.Size(50, 50);
             this.f4.TabIndex = 37;
             this.f4.TabStop = false;
-            this.f4.Click += new System.EventHandler(this.Selector);
+            this.f4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e4
             // 
@@ -566,10 +605,11 @@
             this.e4.Location = new System.Drawing.Point(487, 330);
             this.e4.Margin = new System.Windows.Forms.Padding(0);
             this.e4.Name = "e4";
+            this.e4.Position = "e4";
             this.e4.Size = new System.Drawing.Size(50, 50);
             this.e4.TabIndex = 36;
             this.e4.TabStop = false;
-            this.e4.Click += new System.EventHandler(this.Selector);
+            this.e4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d4
             // 
@@ -578,10 +618,11 @@
             this.d4.Location = new System.Drawing.Point(437, 330);
             this.d4.Margin = new System.Windows.Forms.Padding(0);
             this.d4.Name = "d4";
+            this.d4.Position = "d4";
             this.d4.Size = new System.Drawing.Size(50, 50);
             this.d4.TabIndex = 35;
             this.d4.TabStop = false;
-            this.d4.Click += new System.EventHandler(this.Selector);
+            this.d4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c4
             // 
@@ -591,10 +632,11 @@
             this.c4.Location = new System.Drawing.Point(387, 330);
             this.c4.Margin = new System.Windows.Forms.Padding(0);
             this.c4.Name = "c4";
+            this.c4.Position = "c4";
             this.c4.Size = new System.Drawing.Size(50, 50);
             this.c4.TabIndex = 34;
             this.c4.TabStop = false;
-            this.c4.Click += new System.EventHandler(this.Selector);
+            this.c4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b4
             // 
@@ -603,10 +645,11 @@
             this.b4.Location = new System.Drawing.Point(337, 330);
             this.b4.Margin = new System.Windows.Forms.Padding(0);
             this.b4.Name = "b4";
+            this.b4.Position = "b4";
             this.b4.Size = new System.Drawing.Size(50, 50);
             this.b4.TabIndex = 33;
             this.b4.TabStop = false;
-            this.b4.Click += new System.EventHandler(this.Selector);
+            this.b4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a4
             // 
@@ -616,10 +659,11 @@
             this.a4.Location = new System.Drawing.Point(287, 330);
             this.a4.Margin = new System.Windows.Forms.Padding(0);
             this.a4.Name = "a4";
+            this.a4.Position = "a4";
             this.a4.Size = new System.Drawing.Size(50, 50);
             this.a4.TabIndex = 32;
             this.a4.TabStop = false;
-            this.a4.Click += new System.EventHandler(this.Selector);
+            this.a4.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h5
             // 
@@ -629,10 +673,11 @@
             this.h5.Location = new System.Drawing.Point(637, 280);
             this.h5.Margin = new System.Windows.Forms.Padding(0);
             this.h5.Name = "h5";
+            this.h5.Position = "h5";
             this.h5.Size = new System.Drawing.Size(50, 50);
             this.h5.TabIndex = 31;
             this.h5.TabStop = false;
-            this.h5.Click += new System.EventHandler(this.Selector);
+            this.h5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g5
             // 
@@ -641,10 +686,11 @@
             this.g5.Location = new System.Drawing.Point(587, 280);
             this.g5.Margin = new System.Windows.Forms.Padding(0);
             this.g5.Name = "g5";
+            this.g5.Position = "g5";
             this.g5.Size = new System.Drawing.Size(50, 50);
             this.g5.TabIndex = 30;
             this.g5.TabStop = false;
-            this.g5.Click += new System.EventHandler(this.Selector);
+            this.g5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f5
             // 
@@ -654,10 +700,11 @@
             this.f5.Location = new System.Drawing.Point(537, 280);
             this.f5.Margin = new System.Windows.Forms.Padding(0);
             this.f5.Name = "f5";
+            this.f5.Position = "f5";
             this.f5.Size = new System.Drawing.Size(50, 50);
             this.f5.TabIndex = 29;
             this.f5.TabStop = false;
-            this.f5.Click += new System.EventHandler(this.Selector);
+            this.f5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e5
             // 
@@ -666,10 +713,11 @@
             this.e5.Location = new System.Drawing.Point(487, 280);
             this.e5.Margin = new System.Windows.Forms.Padding(0);
             this.e5.Name = "e5";
+            this.e5.Position = "e5";
             this.e5.Size = new System.Drawing.Size(50, 50);
             this.e5.TabIndex = 28;
             this.e5.TabStop = false;
-            this.e5.Click += new System.EventHandler(this.Selector);
+            this.e5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d5
             // 
@@ -679,10 +727,11 @@
             this.d5.Location = new System.Drawing.Point(437, 280);
             this.d5.Margin = new System.Windows.Forms.Padding(0);
             this.d5.Name = "d5";
+            this.d5.Position = "d5";
             this.d5.Size = new System.Drawing.Size(50, 50);
             this.d5.TabIndex = 27;
             this.d5.TabStop = false;
-            this.d5.Click += new System.EventHandler(this.Selector);
+            this.d5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c5
             // 
@@ -691,10 +740,11 @@
             this.c5.Location = new System.Drawing.Point(387, 280);
             this.c5.Margin = new System.Windows.Forms.Padding(0);
             this.c5.Name = "c5";
+            this.c5.Position = "c5";
             this.c5.Size = new System.Drawing.Size(50, 50);
             this.c5.TabIndex = 26;
             this.c5.TabStop = false;
-            this.c5.Click += new System.EventHandler(this.Selector);
+            this.c5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b5
             // 
@@ -704,10 +754,11 @@
             this.b5.Location = new System.Drawing.Point(337, 280);
             this.b5.Margin = new System.Windows.Forms.Padding(0);
             this.b5.Name = "b5";
+            this.b5.Position = "b5";
             this.b5.Size = new System.Drawing.Size(50, 50);
             this.b5.TabIndex = 25;
             this.b5.TabStop = false;
-            this.b5.Click += new System.EventHandler(this.Selector);
+            this.b5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a5
             // 
@@ -716,10 +767,11 @@
             this.a5.Location = new System.Drawing.Point(287, 280);
             this.a5.Margin = new System.Windows.Forms.Padding(0);
             this.a5.Name = "a5";
+            this.a5.Position = "a5";
             this.a5.Size = new System.Drawing.Size(50, 50);
             this.a5.TabIndex = 24;
             this.a5.TabStop = false;
-            this.a5.Click += new System.EventHandler(this.Selector);
+            this.a5.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h6
             // 
@@ -728,10 +780,11 @@
             this.h6.Location = new System.Drawing.Point(637, 230);
             this.h6.Margin = new System.Windows.Forms.Padding(0);
             this.h6.Name = "h6";
+            this.h6.Position = "h6";
             this.h6.Size = new System.Drawing.Size(50, 50);
             this.h6.TabIndex = 23;
             this.h6.TabStop = false;
-            this.h6.Click += new System.EventHandler(this.Selector);
+            this.h6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g6
             // 
@@ -741,10 +794,11 @@
             this.g6.Location = new System.Drawing.Point(587, 230);
             this.g6.Margin = new System.Windows.Forms.Padding(0);
             this.g6.Name = "g6";
+            this.g6.Position = "g6";
             this.g6.Size = new System.Drawing.Size(50, 50);
             this.g6.TabIndex = 22;
             this.g6.TabStop = false;
-            this.g6.Click += new System.EventHandler(this.Selector);
+            this.g6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f6
             // 
@@ -753,10 +807,11 @@
             this.f6.Location = new System.Drawing.Point(537, 230);
             this.f6.Margin = new System.Windows.Forms.Padding(0);
             this.f6.Name = "f6";
+            this.f6.Position = "f6";
             this.f6.Size = new System.Drawing.Size(50, 50);
             this.f6.TabIndex = 21;
             this.f6.TabStop = false;
-            this.f6.Click += new System.EventHandler(this.Selector);
+            this.f6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e6
             // 
@@ -766,10 +821,11 @@
             this.e6.Location = new System.Drawing.Point(487, 230);
             this.e6.Margin = new System.Windows.Forms.Padding(0);
             this.e6.Name = "e6";
+            this.e6.Position = "e6";
             this.e6.Size = new System.Drawing.Size(50, 50);
             this.e6.TabIndex = 20;
             this.e6.TabStop = false;
-            this.e6.Click += new System.EventHandler(this.Selector);
+            this.e6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d6
             // 
@@ -778,10 +834,11 @@
             this.d6.Location = new System.Drawing.Point(437, 230);
             this.d6.Margin = new System.Windows.Forms.Padding(0);
             this.d6.Name = "d6";
+            this.d6.Position = "d6";
             this.d6.Size = new System.Drawing.Size(50, 50);
             this.d6.TabIndex = 19;
             this.d6.TabStop = false;
-            this.d6.Click += new System.EventHandler(this.Selector);
+            this.d6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c6
             // 
@@ -791,10 +848,11 @@
             this.c6.Location = new System.Drawing.Point(387, 230);
             this.c6.Margin = new System.Windows.Forms.Padding(0);
             this.c6.Name = "c6";
+            this.c6.Position = "c6";
             this.c6.Size = new System.Drawing.Size(50, 50);
             this.c6.TabIndex = 18;
             this.c6.TabStop = false;
-            this.c6.Click += new System.EventHandler(this.Selector);
+            this.c6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b6
             // 
@@ -803,10 +861,11 @@
             this.b6.Location = new System.Drawing.Point(337, 230);
             this.b6.Margin = new System.Windows.Forms.Padding(0);
             this.b6.Name = "b6";
+            this.b6.Position = "b6";
             this.b6.Size = new System.Drawing.Size(50, 50);
             this.b6.TabIndex = 17;
             this.b6.TabStop = false;
-            this.b6.Click += new System.EventHandler(this.Selector);
+            this.b6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a6
             // 
@@ -816,10 +875,11 @@
             this.a6.Location = new System.Drawing.Point(287, 230);
             this.a6.Margin = new System.Windows.Forms.Padding(0);
             this.a6.Name = "a6";
+            this.a6.Position = "a6";
             this.a6.Size = new System.Drawing.Size(50, 50);
             this.a6.TabIndex = 16;
             this.a6.TabStop = false;
-            this.a6.Click += new System.EventHandler(this.Selector);
+            this.a6.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h7
             // 
@@ -830,10 +890,11 @@
             this.h7.Location = new System.Drawing.Point(637, 180);
             this.h7.Margin = new System.Windows.Forms.Padding(0);
             this.h7.Name = "h7";
+            this.h7.Position = "h7";
             this.h7.Size = new System.Drawing.Size(50, 50);
             this.h7.TabIndex = 15;
             this.h7.TabStop = false;
-            this.h7.Click += new System.EventHandler(this.Selector);
+            this.h7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g7
             // 
@@ -843,10 +904,11 @@
             this.g7.Location = new System.Drawing.Point(587, 180);
             this.g7.Margin = new System.Windows.Forms.Padding(0);
             this.g7.Name = "g7";
+            this.g7.Position = "g7";
             this.g7.Size = new System.Drawing.Size(50, 50);
             this.g7.TabIndex = 14;
             this.g7.TabStop = false;
-            this.g7.Click += new System.EventHandler(this.Selector);
+            this.g7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f7
             // 
@@ -857,10 +919,11 @@
             this.f7.Location = new System.Drawing.Point(537, 180);
             this.f7.Margin = new System.Windows.Forms.Padding(0);
             this.f7.Name = "f7";
+            this.f7.Position = "f7";
             this.f7.Size = new System.Drawing.Size(50, 50);
             this.f7.TabIndex = 13;
             this.f7.TabStop = false;
-            this.f7.Click += new System.EventHandler(this.Selector);
+            this.f7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e7
             // 
@@ -870,10 +933,11 @@
             this.e7.Location = new System.Drawing.Point(487, 180);
             this.e7.Margin = new System.Windows.Forms.Padding(0);
             this.e7.Name = "e7";
+            this.e7.Position = "e7";
             this.e7.Size = new System.Drawing.Size(50, 50);
             this.e7.TabIndex = 12;
             this.e7.TabStop = false;
-            this.e7.Click += new System.EventHandler(this.Selector);
+            this.e7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d7
             // 
@@ -884,10 +948,11 @@
             this.d7.Location = new System.Drawing.Point(437, 180);
             this.d7.Margin = new System.Windows.Forms.Padding(0);
             this.d7.Name = "d7";
+            this.d7.Position = "d7";
             this.d7.Size = new System.Drawing.Size(50, 50);
             this.d7.TabIndex = 11;
             this.d7.TabStop = false;
-            this.d7.Click += new System.EventHandler(this.Selector);
+            this.d7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c7
             // 
@@ -897,10 +962,11 @@
             this.c7.Location = new System.Drawing.Point(387, 180);
             this.c7.Margin = new System.Windows.Forms.Padding(0);
             this.c7.Name = "c7";
+            this.c7.Position = "c7";
             this.c7.Size = new System.Drawing.Size(50, 50);
             this.c7.TabIndex = 10;
             this.c7.TabStop = false;
-            this.c7.Click += new System.EventHandler(this.Selector);
+            this.c7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b7
             // 
@@ -911,10 +977,11 @@
             this.b7.Location = new System.Drawing.Point(337, 180);
             this.b7.Margin = new System.Windows.Forms.Padding(0);
             this.b7.Name = "b7";
+            this.b7.Position = "b7";
             this.b7.Size = new System.Drawing.Size(50, 50);
             this.b7.TabIndex = 9;
             this.b7.TabStop = false;
-            this.b7.Click += new System.EventHandler(this.Selector);
+            this.b7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a7
             // 
@@ -924,10 +991,11 @@
             this.a7.Location = new System.Drawing.Point(287, 180);
             this.a7.Margin = new System.Windows.Forms.Padding(0);
             this.a7.Name = "a7";
+            this.a7.Position = "a7";
             this.a7.Size = new System.Drawing.Size(50, 50);
             this.a7.TabIndex = 8;
             this.a7.TabStop = false;
-            this.a7.Click += new System.EventHandler(this.Selector);
+            this.a7.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // h8
             // 
@@ -937,10 +1005,11 @@
             this.h8.Location = new System.Drawing.Point(637, 130);
             this.h8.Margin = new System.Windows.Forms.Padding(0);
             this.h8.Name = "h8";
+            this.h8.Position = "h8";
             this.h8.Size = new System.Drawing.Size(50, 50);
             this.h8.TabIndex = 7;
             this.h8.TabStop = false;
-            this.h8.Click += new System.EventHandler(this.Selector);
+            this.h8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // g8
             // 
@@ -951,10 +1020,11 @@
             this.g8.Location = new System.Drawing.Point(587, 130);
             this.g8.Margin = new System.Windows.Forms.Padding(0);
             this.g8.Name = "g8";
+            this.g8.Position = "g8";
             this.g8.Size = new System.Drawing.Size(50, 50);
             this.g8.TabIndex = 6;
             this.g8.TabStop = false;
-            this.g8.Click += new System.EventHandler(this.Selector);
+            this.g8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // f8
             // 
@@ -964,10 +1034,11 @@
             this.f8.Location = new System.Drawing.Point(537, 130);
             this.f8.Margin = new System.Windows.Forms.Padding(0);
             this.f8.Name = "f8";
+            this.f8.Position = "f8";
             this.f8.Size = new System.Drawing.Size(50, 50);
             this.f8.TabIndex = 5;
             this.f8.TabStop = false;
-            this.f8.Click += new System.EventHandler(this.Selector);
+            this.f8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // e8
             // 
@@ -978,10 +1049,11 @@
             this.e8.Location = new System.Drawing.Point(487, 130);
             this.e8.Margin = new System.Windows.Forms.Padding(0);
             this.e8.Name = "e8";
+            this.e8.Position = "e8";
             this.e8.Size = new System.Drawing.Size(50, 50);
             this.e8.TabIndex = 4;
             this.e8.TabStop = false;
-            this.e8.Click += new System.EventHandler(this.Selector);
+            this.e8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // d8
             // 
@@ -991,10 +1063,11 @@
             this.d8.Location = new System.Drawing.Point(437, 130);
             this.d8.Margin = new System.Windows.Forms.Padding(0);
             this.d8.Name = "d8";
+            this.d8.Position = "d8";
             this.d8.Size = new System.Drawing.Size(50, 50);
             this.d8.TabIndex = 3;
             this.d8.TabStop = false;
-            this.d8.Click += new System.EventHandler(this.Selector);
+            this.d8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // c8
             // 
@@ -1005,10 +1078,11 @@
             this.c8.Location = new System.Drawing.Point(387, 130);
             this.c8.Margin = new System.Windows.Forms.Padding(0);
             this.c8.Name = "c8";
+            this.c8.Position = "c8";
             this.c8.Size = new System.Drawing.Size(50, 50);
             this.c8.TabIndex = 2;
             this.c8.TabStop = false;
-            this.c8.Click += new System.EventHandler(this.Selector);
+            this.c8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // b8
             // 
@@ -1018,10 +1092,11 @@
             this.b8.Location = new System.Drawing.Point(337, 130);
             this.b8.Margin = new System.Windows.Forms.Padding(0);
             this.b8.Name = "b8";
+            this.b8.Position = "b8";
             this.b8.Size = new System.Drawing.Size(50, 50);
             this.b8.TabIndex = 1;
             this.b8.TabStop = false;
-            this.b8.Click += new System.EventHandler(this.Selector);
+            this.b8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // a8
             // 
@@ -1032,19 +1107,11 @@
             this.a8.Location = new System.Drawing.Point(287, 130);
             this.a8.Margin = new System.Windows.Forms.Padding(0);
             this.a8.Name = "a8";
+            this.a8.Position = "a8";
             this.a8.Size = new System.Drawing.Size(50, 50);
             this.a8.TabIndex = 0;
             this.a8.TabStop = false;
-            this.a8.Click += new System.EventHandler(this.Selector);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label13.Location = new System.Drawing.Point(-4, 284);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 13);
-            this.label13.TabIndex = 79;
+            this.a8.Click += new System.EventHandler(this.PlayerSelectSquare);
             // 
             // MainForm
             // 
@@ -1200,70 +1267,70 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox a8;
-        private System.Windows.Forms.PictureBox b8;
-        private System.Windows.Forms.PictureBox c8;
-        private System.Windows.Forms.PictureBox d8;
-        private System.Windows.Forms.PictureBox e8;
-        private System.Windows.Forms.PictureBox f8;
-        private System.Windows.Forms.PictureBox g8;
-        private System.Windows.Forms.PictureBox h8;
-        private System.Windows.Forms.PictureBox a7;
-        private System.Windows.Forms.PictureBox b7;
-        private System.Windows.Forms.PictureBox c7;
-        private System.Windows.Forms.PictureBox d7;
-        private System.Windows.Forms.PictureBox e7;
-        private System.Windows.Forms.PictureBox f7;
-        private System.Windows.Forms.PictureBox g7;
-        private System.Windows.Forms.PictureBox h7;
-        private System.Windows.Forms.PictureBox h5;
-        private System.Windows.Forms.PictureBox g5;
-        private System.Windows.Forms.PictureBox f5;
-        private System.Windows.Forms.PictureBox e5;
-        private System.Windows.Forms.PictureBox d5;
-        private System.Windows.Forms.PictureBox c5;
-        private System.Windows.Forms.PictureBox b5;
-        private System.Windows.Forms.PictureBox a5;
-        private System.Windows.Forms.PictureBox h6;
-        private System.Windows.Forms.PictureBox g6;
-        private System.Windows.Forms.PictureBox f6;
-        private System.Windows.Forms.PictureBox e6;
-        private System.Windows.Forms.PictureBox d6;
-        private System.Windows.Forms.PictureBox c6;
-        private System.Windows.Forms.PictureBox b6;
-        private System.Windows.Forms.PictureBox a6;
-        private System.Windows.Forms.PictureBox h3;
-        private System.Windows.Forms.PictureBox g3;
-        private System.Windows.Forms.PictureBox f3;
-        private System.Windows.Forms.PictureBox e3;
-        private System.Windows.Forms.PictureBox d3;
-        private System.Windows.Forms.PictureBox c3;
-        private System.Windows.Forms.PictureBox b3;
-        private System.Windows.Forms.PictureBox a3;
-        private System.Windows.Forms.PictureBox h4;
-        private System.Windows.Forms.PictureBox g4;
-        private System.Windows.Forms.PictureBox f4;
-        private System.Windows.Forms.PictureBox e4;
-        private System.Windows.Forms.PictureBox d4;
-        private System.Windows.Forms.PictureBox c4;
-        private System.Windows.Forms.PictureBox b4;
-        private System.Windows.Forms.PictureBox a4;
-        private System.Windows.Forms.PictureBox h1;
-        private System.Windows.Forms.PictureBox g1;
-        private System.Windows.Forms.PictureBox f1;
-        private System.Windows.Forms.PictureBox e1;
-        private System.Windows.Forms.PictureBox d1;
-        private System.Windows.Forms.PictureBox c1;
-        private System.Windows.Forms.PictureBox b1;
-        private System.Windows.Forms.PictureBox a1;
-        private System.Windows.Forms.PictureBox h2;
-        private System.Windows.Forms.PictureBox g2;
-        private System.Windows.Forms.PictureBox f2;
-        private System.Windows.Forms.PictureBox e2;
-        private System.Windows.Forms.PictureBox d2;
-        private System.Windows.Forms.PictureBox c2;
-        private System.Windows.Forms.PictureBox b2;
-        private System.Windows.Forms.PictureBox a2;
+        private PictureBoxWithPosition a8;
+        private PictureBoxWithPosition b8;
+        private PictureBoxWithPosition c8;
+        private PictureBoxWithPosition d8;
+        private PictureBoxWithPosition e8;
+        private PictureBoxWithPosition f8;
+        private PictureBoxWithPosition g8;
+        private PictureBoxWithPosition h8;
+        private PictureBoxWithPosition a7;
+        private PictureBoxWithPosition b7;
+        private PictureBoxWithPosition c7;
+        private PictureBoxWithPosition d7;
+        private PictureBoxWithPosition e7;
+        private PictureBoxWithPosition f7;
+        private PictureBoxWithPosition g7;
+        private PictureBoxWithPosition h7;
+        private PictureBoxWithPosition h5;
+        private PictureBoxWithPosition g5;
+        private PictureBoxWithPosition f5;
+        private PictureBoxWithPosition e5;
+        private PictureBoxWithPosition d5;
+        private PictureBoxWithPosition c5;
+        private PictureBoxWithPosition b5;
+        private PictureBoxWithPosition a5;
+        private PictureBoxWithPosition h6;
+        private PictureBoxWithPosition g6;
+        private PictureBoxWithPosition f6;
+        private PictureBoxWithPosition e6;
+        private PictureBoxWithPosition d6;
+        private PictureBoxWithPosition c6;
+        private PictureBoxWithPosition b6;
+        private PictureBoxWithPosition a6;
+        private PictureBoxWithPosition h3;
+        private PictureBoxWithPosition g3;
+        private PictureBoxWithPosition f3;
+        private PictureBoxWithPosition e3;
+        private PictureBoxWithPosition d3;
+        private PictureBoxWithPosition c3;
+        private PictureBoxWithPosition b3;
+        private PictureBoxWithPosition a3;
+        private PictureBoxWithPosition h4;
+        private PictureBoxWithPosition g4;
+        private PictureBoxWithPosition f4;
+        private PictureBoxWithPosition e4;
+        private PictureBoxWithPosition d4;
+        private PictureBoxWithPosition c4;
+        private PictureBoxWithPosition b4;
+        private PictureBoxWithPosition a4;
+        private PictureBoxWithPosition h1;
+        private PictureBoxWithPosition g1;
+        private PictureBoxWithPosition f1;
+        private PictureBoxWithPosition e1;
+        private PictureBoxWithPosition d1;
+        private PictureBoxWithPosition c1;
+        private PictureBoxWithPosition b1;
+        private PictureBoxWithPosition a1;
+        private PictureBoxWithPosition h2;
+        private PictureBoxWithPosition g2;
+        private PictureBoxWithPosition f2;
+        private PictureBoxWithPosition e2;
+        private PictureBoxWithPosition d2;
+        private PictureBoxWithPosition c2;
+        private PictureBoxWithPosition b2;
+        private PictureBoxWithPosition a2;
         private System.Windows.Forms.RadioButton WhitePlayerTurn;
         private System.Windows.Forms.RadioButton BlackPlayerTurn;
         private System.Windows.Forms.Panel panel1;

@@ -50,26 +50,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="backend\BoardManager.cs" />
-    <Compile Include="backend\EnumColor.cs" />
-    <Compile Include="backend\ChessPieces.cs" />
-    <Compile Include="backend\pieces\Bishop.cs" />
-    <Compile Include="backend\pieces\King.cs" />
-    <Compile Include="backend\pieces\Knight.cs" />
-    <Compile Include="backend\pieces\Pawn.cs" />
-    <Compile Include="backend\pieces\Queen.cs" />
-    <Compile Include="backend\EnumType.cs" />
-    <Compile Include="backend\pieces\Rook.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Engine\BoardManager.cs" />
+    <Compile Include="Engine\Comman\EnumChessPieceColor.cs" />
+    <Compile Include="Engine\ChessPiece.cs" />
+    <Compile Include="Engine\Comman\EnumPlayerTurn.cs" />
+    <Compile Include="Engine\Pieces\Bishop.cs" />
+    <Compile Include="Engine\Pieces\King.cs" />
+    <Compile Include="Engine\Pieces\Knight.cs" />
+    <Compile Include="Engine\Pieces\Pawn.cs" />
+    <Compile Include="Engine\Pieces\Queen.cs" />
+    <Compile Include="Engine\Comman\EnumChessPieceType.cs" />
+    <Compile Include="Engine\Pieces\Rook.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PictureBoxWithPosition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Engine\Comman\Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

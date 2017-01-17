@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessMaster2017.BackEnd
+namespace ChessMaster2017.Engine
 {
     class Queen : ChessPiece
     {
-        public Queen(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Queen(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
         }
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
@@ -17,7 +17,7 @@ namespace ChessMaster2017.BackEnd
             int queenY = this.CurrentY;
 
             bool[,] queenMoves = new bool[8, 8];
-            EnumColor queenColor = this.Color;
+            EnumChessPieceColor queenColor = this.Color;
 
             // bottom right diagonal
             for (int movesX = queenX - 1, movesY = queenY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)

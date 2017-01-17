@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.BackEnd
+namespace ChessMaster2017.Engine
 {
     /// <summary>
     /// Logic is the same as Bishop ; Check Bishop Summery. 
@@ -15,17 +12,17 @@ namespace ChessMaster2017.BackEnd
 
     class Rook : ChessPiece
     {
-        public Rook(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Rook(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
-
         }
+
         public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
         {
             int rookX = this.CurrentX;
             int rookY = this.CurrentY;
 
             bool[,] rookMoves = new bool[8, 8];
-            EnumColor rookColor = this.Color;
+            EnumChessPieceColor rookColor = this.Color;
 
 
             // right
