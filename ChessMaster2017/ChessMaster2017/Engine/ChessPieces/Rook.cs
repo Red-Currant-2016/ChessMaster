@@ -6,6 +6,8 @@
     /// <summary>
     /// Logic is the same as Bishop ; Check Bishop Summery. 
     /// Special move is not included in the logic.
+    /// Rook uses the same logic as Bishop but it can only move in a straight line.
+    /// Rook + Bishop can create the Queen.
     /// </summary>
     /// /// <param name="currentBoard"></param>
     /// <returns> bool[,] rookMoves </returns>

@@ -27,7 +27,7 @@
         /// 
         /// 3-the space is free, the cycle will continue to mark spots as free unless it meets condition 1 or 2.
         ///
-        /// 
+        ///Bishop moves can be replicated elsewhere. 
         /// </summary>
         /// <param name="currentBoard"></param>
         /// <returns> bool[,] bishopMoves </returns>
