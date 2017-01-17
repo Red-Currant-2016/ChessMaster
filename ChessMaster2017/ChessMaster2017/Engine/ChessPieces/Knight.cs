@@ -11,7 +11,7 @@
              //    6---3
              //    -5-4-
 
-        public Knight(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Knight(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
         }
 
@@ -21,7 +21,7 @@
             int knightY = this.CurrentY;
 
             bool[,] knightMoves = new bool[8, 8];
-            EnumColor knightColor = this.Color;
+            EnumChessPieceColor knightColor = this.Color;
 
             // 8 = top left.
             if (knightX + 2 < 8 && knightX + 2 >= 0 && knightY - 1 >= 0 && knightY - 1 < 8)

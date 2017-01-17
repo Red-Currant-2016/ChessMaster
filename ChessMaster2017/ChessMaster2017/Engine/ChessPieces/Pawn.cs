@@ -17,7 +17,7 @@
         /// 
         /// </summary>
 
-        public Pawn(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Pawn(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
 
         }
@@ -28,11 +28,11 @@
             int pawnY = this.CurrentY;
 
             bool[,] pawnMoves = new bool[8, 8];
-            EnumColor pawnColor = this.Color;
+            EnumChessPieceColor pawnColor = this.Color;
 
             bool whitePawn = false;
 
-            if (this.Color == EnumColor.White)
+            if (this.Color == EnumChessPieceColor.White)
             {
                 whitePawn = true;
             }

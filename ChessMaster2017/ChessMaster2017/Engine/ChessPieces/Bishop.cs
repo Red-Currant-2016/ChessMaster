@@ -5,7 +5,7 @@
 
     class Bishop : ChessPiece, IBishop
     {
-        public Bishop(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Bishop(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
         }
 
@@ -38,7 +38,7 @@
             int bishopY = this.CurrentY;
 
             bool[,] bishopMoves = new bool[8, 8];
-            EnumColor BishopColor = this.Color;
+            EnumChessPieceColor BishopColor = this.Color;
 
 
             // bottom right diagonal

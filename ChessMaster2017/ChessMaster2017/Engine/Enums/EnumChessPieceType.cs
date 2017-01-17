@@ -1,6 +1,6 @@
 ﻿namespace ChessMaster2017.Engine.Enums
 {
-    public enum EnumType
+    public enum EnumChessPieceType
     {
         Pawn,
         Rook,

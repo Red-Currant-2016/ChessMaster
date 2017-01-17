@@ -13,7 +13,7 @@
         public IChessPiece[,] chessBoard;
         public IChessPiece selectedChessPiece; // Contains a copy of a single chessBoard cell.
 
-        private EnumColor playerTurn;
+        private EnumChessPieceColor playerTurn;
 
         private List<IChessPiece> chessPiecePrefab; // Used to create all the chess pieces object and set there initial position.
         private List<IChessPiece> activeChessPieces;
@@ -31,7 +31,7 @@
 
             SpawnAllChessPieces();
 
-            playerTurn = EnumColor.White;
+            playerTurn = EnumChessPieceColor.White;
             selectedChessPiece = null;
             checkMate = false;
 
@@ -40,13 +40,13 @@
 
         public void changePlayerTurn()
         {
-            if (playerTurn == EnumColor.White)
+            if (playerTurn == EnumChessPieceColor.White)
             {
-                playerTurn = EnumColor.Black;
+                playerTurn = EnumChessPieceColor.Black;
             }
             else
             {
-                playerTurn = EnumColor.White;
+                playerTurn = EnumChessPieceColor.White;
             }
         }
 
@@ -128,7 +128,7 @@
                         if (chessBoard[x, y] != null && chessBoard[x, y].Color != playerTurn)
                         {
 
-                            if (chessBoard[x, y].Type == EnumType.King)
+                            if (chessBoard[x, y].Type == EnumChessPieceType.King)
                             {
                                 checkMate = true;
                             }
@@ -171,7 +171,7 @@
             }
         }
 
-        public EnumColor GetPlayerTurn()
+        public EnumChessPieceColor GetPlayerTurn()
         {
             return playerTurn;
         }
@@ -185,42 +185,42 @@
         {
             // WHITE PLAYER
             // Rooks:
-            chessPiecePrefab.Add(new Rook(0, 0, EnumColor.White, EnumType.Rook));
-            chessPiecePrefab.Add(new Rook(0, 7, EnumColor.White, EnumType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 0, EnumChessPieceColor.White, EnumChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(0, 7, EnumChessPieceColor.White, EnumChessPieceType.Rook));
             // Knights:
-            chessPiecePrefab.Add(new Knight(0, 1, EnumColor.White, EnumType.Knight));
-            chessPiecePrefab.Add(new Knight(0, 6, EnumColor.White, EnumType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 1, EnumChessPieceColor.White, EnumChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(0, 6, EnumChessPieceColor.White, EnumChessPieceType.Knight));
             // Bishops:
-            chessPiecePrefab.Add(new Bishop(0, 2, EnumColor.White, EnumType.Bishop));
-            chessPiecePrefab.Add(new Bishop(0, 5, EnumColor.White, EnumType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 2, EnumChessPieceColor.White, EnumChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(0, 5, EnumChessPieceColor.White, EnumChessPieceType.Bishop));
             // Queen:
-            chessPiecePrefab.Add(new Queen(0, 3, EnumColor.White, EnumType.Queen)); // White queen => white square.
+            chessPiecePrefab.Add(new Queen(0, 3, EnumChessPieceColor.White, EnumChessPieceType.Queen)); // White queen => white square.
             // King:
-            chessPiecePrefab.Add(new King(0, 4, EnumColor.White, EnumType.King));
+            chessPiecePrefab.Add(new King(0, 4, EnumChessPieceColor.White, EnumChessPieceType.King));
             // Pawns:
             for (int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(1, y, EnumColor.White, EnumType.Pawn));
+                chessPiecePrefab.Add(new Pawn(1, y, EnumChessPieceColor.White, EnumChessPieceType.Pawn));
             }
 
             // BLACK PLAYER
             // Rooks:
-            chessPiecePrefab.Add(new Rook(7, 0, EnumColor.Black, EnumType.Rook));
-            chessPiecePrefab.Add(new Rook(7, 7, EnumColor.Black, EnumType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 0, EnumChessPieceColor.Black, EnumChessPieceType.Rook));
+            chessPiecePrefab.Add(new Rook(7, 7, EnumChessPieceColor.Black, EnumChessPieceType.Rook));
             // Knights:
-            chessPiecePrefab.Add(new Knight(7, 1, EnumColor.Black, EnumType.Knight));
-            chessPiecePrefab.Add(new Knight(7, 6, EnumColor.Black, EnumType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 1, EnumChessPieceColor.Black, EnumChessPieceType.Knight));
+            chessPiecePrefab.Add(new Knight(7, 6, EnumChessPieceColor.Black, EnumChessPieceType.Knight));
             // Bishops:
-            chessPiecePrefab.Add(new Bishop(7, 2, EnumColor.Black, EnumType.Bishop));
-            chessPiecePrefab.Add(new Bishop(7, 5, EnumColor.Black, EnumType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 2, EnumChessPieceColor.Black, EnumChessPieceType.Bishop));
+            chessPiecePrefab.Add(new Bishop(7, 5, EnumChessPieceColor.Black, EnumChessPieceType.Bishop));
             // King:
-            chessPiecePrefab.Add(new King(7, 4, EnumColor.Black, EnumType.King));
+            chessPiecePrefab.Add(new King(7, 4, EnumChessPieceColor.Black, EnumChessPieceType.King));
             // Queen:
-            chessPiecePrefab.Add(new Queen(7, 3, EnumColor.Black, EnumType.Queen)); // black queen => black square
+            chessPiecePrefab.Add(new Queen(7, 3, EnumChessPieceColor.Black, EnumChessPieceType.Queen)); // black queen => black square
             // Pawns:
             for (int y = 0; y < 8; y++)
             {
-                chessPiecePrefab.Add(new Pawn(6, y, EnumColor.Black, EnumType.Pawn));
+                chessPiecePrefab.Add(new Pawn(6, y, EnumChessPieceColor.Black, EnumChessPieceType.Pawn));
             }
         }
 
@@ -251,7 +251,7 @@
 
         private King getCurrentKing()
         {
-            return (King)activeChessPieces.Find(x => x.Type == EnumType.King && x.Color == playerTurn);
+            return (King)activeChessPieces.Find(x => x.Type == EnumChessPieceType.King && x.Color == playerTurn);
         }
     }
 }

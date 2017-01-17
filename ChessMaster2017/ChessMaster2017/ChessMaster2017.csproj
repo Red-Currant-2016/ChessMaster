@@ -56,7 +56,7 @@
     <Compile Include="Engine\Contracts\IKnight.cs" />
     <Compile Include="Engine\Contracts\IPawn.cs" />
     <Compile Include="Engine\Contracts\IQueen.cs" />
-    <Compile Include="Engine\Enums\EnumColor.cs" />
+    <Compile Include="Engine\Enums\EnumChessPieceColor.cs" />
     <Compile Include="Engine\Contracts\IRook.cs" />
     <Compile Include="Engine\Contracts\IKing.cs" />
     <Compile Include="Engine\ChessPieces\Bishop.cs" />
@@ -64,7 +64,7 @@
     <Compile Include="Engine\ChessPieces\Knight.cs" />
     <Compile Include="Engine\ChessPieces\Pawn.cs" />
     <Compile Include="Engine\ChessPieces\Queen.cs" />
-    <Compile Include="Engine\Enums\EnumType.cs" />
+    <Compile Include="Engine\Enums\EnumChessPieceType.cs" />
     <Compile Include="Engine\ChessPieces\Rook.cs" />
     <Compile Include="Engine\BoardManager.cs" />
     <Compile Include="Engine\ChessPieces.cs" />

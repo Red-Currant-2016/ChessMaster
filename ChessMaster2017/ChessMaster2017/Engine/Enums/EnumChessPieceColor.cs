@@ -1,6 +1,6 @@
 ﻿namespace ChessMaster2017.Engine.Enums
 {
-    public enum EnumColor
+    public enum EnumChessPieceColor
     {
         White,
         Black

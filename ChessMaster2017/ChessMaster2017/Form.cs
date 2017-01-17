@@ -64,8 +64,8 @@ namespace ChessMaster2017
                 if (testBoard.isValidMove(x, y))
                 {
                     testBoard.MoveChessPiece(x, y);
-                    EnumColor turn = testBoard.GetPlayerTurn();
-                    if (turn == EnumColor.White)
+                    EnumChessPieceColor turn = testBoard.GetPlayerTurn();
+                    if (turn == EnumChessPieceColor.White)
                     {
                         WhitePlayerTurn.Checked = true;
                         BlackPlayerTurn.Checked = false;

@@ -5,7 +5,7 @@
 
     class Queen : ChessPiece, IQueen
     {
-        public Queen(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Queen(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
         }
 
@@ -15,7 +15,7 @@
             int queenY = this.CurrentY;
 
             bool[,] queenMoves = new bool[8, 8];
-            EnumColor queenColor = this.Color;
+            EnumChessPieceColor queenColor = this.Color;
 
             // Bottom right diagonal.
             for (int movesX = queenX - 1, movesY = queenY + 1; movesX < 8 && movesX >= 0 && movesY < 8 && movesY >= 0; movesX--, movesY++)

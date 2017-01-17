@@ -14,7 +14,7 @@
 
     class Rook : ChessPiece, IRook
     {
-        public Rook(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public Rook(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
         }
 
@@ -24,7 +24,7 @@
             int rookY = this.CurrentY;
 
             bool[,] rookMoves = new bool[8, 8];
-            EnumColor rookColor = this.Color;
+            EnumChessPieceColor rookColor = this.Color;
 
             // Right.
             for (int movesY = rookY + 1; movesY >= 0 && movesY < 8; movesY++)

@@ -7,7 +7,7 @@
     {
         private bool hasMoved;
 
-        public King(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
+        public King(int x, int y, EnumChessPieceColor color, EnumChessPieceType type) : base(x, y, color, type)
         {
             this.HasMoved = false;
         }
@@ -30,7 +30,7 @@
                 if (currentBoard[currentX + 1, currentY + 2] != null)
                 {
                     // Enemy knight.
-                    if (currentBoard[currentX + 1, currentY + 2].Color != this.Color && currentBoard[currentX + 1, currentY + 2].Type == EnumType.Knight)
+                    if (currentBoard[currentX + 1, currentY + 2].Color != this.Color && currentBoard[currentX + 1, currentY + 2].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -41,7 +41,7 @@
             {
                 if (currentBoard[currentX + 2, currentY + 1] != null)
                 {
-                    if (currentBoard[currentX + 2, currentY + 1].Color != this.Color && currentBoard[currentX + 2, currentY + 1].Type == EnumType.Knight)
+                    if (currentBoard[currentX + 2, currentY + 1].Color != this.Color && currentBoard[currentX + 2, currentY + 1].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -52,7 +52,7 @@
             {
                 if (currentBoard[currentX + 2, currentY - 1] != null)
                 {
-                    if (currentBoard[currentX + 2, currentY - 1].Color != this.Color && currentBoard[currentX + 2, currentY - 1].Type == EnumType.Knight)
+                    if (currentBoard[currentX + 2, currentY - 1].Color != this.Color && currentBoard[currentX + 2, currentY - 1].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -63,7 +63,7 @@
             {
                 if (currentBoard[currentX + 1, currentY - 2] != null)
                 {
-                    if (currentBoard[currentX + 1, currentY - 2].Color != this.Color && currentBoard[currentX + 1, currentY - 2].Type == EnumType.Knight)
+                    if (currentBoard[currentX + 1, currentY - 2].Color != this.Color && currentBoard[currentX + 1, currentY - 2].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -74,7 +74,7 @@
             {
                 if (currentBoard[currentX - 1, currentY - 2] != null)
                 {
-                    if (currentBoard[currentX - 1, currentY - 2].Color != this.Color && currentBoard[currentX - 1, currentY - 2].Type == EnumType.Knight)
+                    if (currentBoard[currentX - 1, currentY - 2].Color != this.Color && currentBoard[currentX - 1, currentY - 2].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -85,7 +85,7 @@
             {
                 if (currentBoard[currentX - 2, currentY - 1] != null)
                 {
-                    if (currentBoard[currentX - 2, currentY - 1].Color != this.Color && currentBoard[currentX - 2, currentY - 1].Type == EnumType.Knight)
+                    if (currentBoard[currentX - 2, currentY - 1].Color != this.Color && currentBoard[currentX - 2, currentY - 1].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -96,7 +96,7 @@
             {
                 if (currentBoard[currentX - 2, currentY + 1] != null)
                 {
-                    if (currentBoard[currentX - 2, currentY + 1].Color != this.Color && currentBoard[currentX - 2, currentY + 1].Type == EnumType.Knight)
+                    if (currentBoard[currentX - 2, currentY + 1].Color != this.Color && currentBoard[currentX - 2, currentY + 1].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -107,7 +107,7 @@
             {
                 if (currentBoard[currentX - 1, currentY + 2] != null)
                 {
-                    if (currentBoard[currentX - 1, currentY + 2].Color != this.Color && currentBoard[currentX - 1, currentY + 2].Type == EnumType.Knight)
+                    if (currentBoard[currentX - 1, currentY + 2].Color != this.Color && currentBoard[currentX - 1, currentY + 2].Type == EnumChessPieceType.Knight)
                     {
                         return true;
                     }
@@ -122,7 +122,7 @@
                 {
                     if (currentBoard[currentX, rightLine].Color != this.Color)
                     {
-                        if (currentBoard[currentX, rightLine].Type == EnumType.Queen || currentBoard[currentX, rightLine].Type == EnumType.Rook)
+                        if (currentBoard[currentX, rightLine].Type == EnumChessPieceType.Queen || currentBoard[currentX, rightLine].Type == EnumChessPieceType.Rook)
                         {
                             return true;
                         }
@@ -144,7 +144,7 @@
                 {
                     if (currentBoard[upLine, currentY].Color != this.Color)
                     {
-                        if (currentBoard[upLine, currentY].Type == EnumType.Queen || currentBoard[upLine, currentY].Type == EnumType.Rook)
+                        if (currentBoard[upLine, currentY].Type == EnumChessPieceType.Queen || currentBoard[upLine, currentY].Type == EnumChessPieceType.Rook)
                         {
                             return true;
                         }
@@ -166,7 +166,7 @@
                 {
                     if (currentBoard[currentX, leftLine].Color != this.Color)
                     {
-                        if (currentBoard[currentX, leftLine].Type == EnumType.Queen || currentBoard[currentX, leftLine].Type == EnumType.Rook)
+                        if (currentBoard[currentX, leftLine].Type == EnumChessPieceType.Queen || currentBoard[currentX, leftLine].Type == EnumChessPieceType.Rook)
                         {
                             return true;
                         }
@@ -188,7 +188,7 @@
                 {
                     if (currentBoard[downLine, currentY].Color != this.Color)
                     {
-                        if (currentBoard[downLine, currentY].Type == EnumType.Queen || currentBoard[downLine, currentY].Type == EnumType.Rook)
+                        if (currentBoard[downLine, currentY].Type == EnumChessPieceType.Queen || currentBoard[downLine, currentY].Type == EnumChessPieceType.Rook)
                         {
                             return true;
                         }
@@ -212,7 +212,7 @@
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
+                        if (currentBoard[x, y].Type == EnumChessPieceType.Queen || currentBoard[x, y].Type == EnumChessPieceType.Bishop)
                         {
                             return true;
                         }
@@ -234,7 +234,7 @@
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
+                        if (currentBoard[x, y].Type == EnumChessPieceType.Queen || currentBoard[x, y].Type == EnumChessPieceType.Bishop)
                         {
                             return true;
                         }
@@ -256,7 +256,7 @@
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
+                        if (currentBoard[x, y].Type == EnumChessPieceType.Queen || currentBoard[x, y].Type == EnumChessPieceType.Bishop)
                         {
                             return true;
                         }
@@ -278,7 +278,7 @@
                 {
                     if (currentBoard[x, y].Color != this.Color)
                     {
-                        if (currentBoard[x, y].Type == EnumType.Queen || currentBoard[x, y].Type == EnumType.Bishop)
+                        if (currentBoard[x, y].Type == EnumChessPieceType.Queen || currentBoard[x, y].Type == EnumChessPieceType.Bishop)
                         {
                             return true;
                         }
@@ -302,7 +302,7 @@
                 {
                     if (currentBoard[currentX + 1, currentY + 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX + 1, currentY + 1].Type == EnumType.Pawn)
+                        if (currentBoard[currentX + 1, currentY + 1].Type == EnumChessPieceType.Pawn)
                         {
                             return true;
                         }
@@ -316,7 +316,7 @@
                 {
                     if (currentBoard[currentX + 1, currentY - 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX + 1, currentY - 1].Type == EnumType.Pawn)
+                        if (currentBoard[currentX + 1, currentY - 1].Type == EnumChessPieceType.Pawn)
                         {
                             return true;
                         }
@@ -330,7 +330,7 @@
                 {
                     if (currentBoard[currentX - 1, currentY - 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX - 1, currentY - 1].Type == EnumType.Pawn)
+                        if (currentBoard[currentX - 1, currentY - 1].Type == EnumChessPieceType.Pawn)
                         {
                             return true;
                         }
@@ -344,7 +344,7 @@
                 {
                     if (currentBoard[currentX - 1, currentY + 1].Color != this.Color)
                     {
-                        if (currentBoard[currentX - 1, currentY + 1].Type == EnumType.Pawn)
+                        if (currentBoard[currentX - 1, currentY + 1].Type == EnumChessPieceType.Pawn)
                         {
                             return true;
                         }
@@ -365,7 +365,7 @@
             int kingX = this.CurrentX;
             int kingY = this.CurrentY;
             bool[,] kingMoves = new bool[8, 8];
-            EnumColor kingColor = this.Color;
+            EnumChessPieceColor kingColor = this.Color;
 
             // Top.
             if (kingX + 1 < 8)

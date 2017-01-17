@@ -13,7 +13,7 @@
 
         bool[,] PossibleMove(IChessPiece[,] currentBoard);
 
-        EnumColor Color { get; }
-        EnumType Type { get; }
+        EnumChessPieceColor Color { get; }
+        EnumChessPieceType Type { get; }
     }
 }

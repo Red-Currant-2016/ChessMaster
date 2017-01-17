@@ -11,10 +11,10 @@
         private int currentX;
         private int currentY;
         private bool isCaptured;
-        private EnumType type;
-        private EnumColor color;
+        private EnumChessPieceType type;
+        private EnumChessPieceColor color;
 
-        public ChessPiece(int x, int y, EnumColor color, EnumType type)
+        public ChessPiece(int x, int y, EnumChessPieceColor color, EnumChessPieceType type)
         {
             SetPosition(x, y);
             this.Color = color;
@@ -33,13 +33,13 @@
             private set { this.currentY = value; }
         }
 
-        public EnumColor Color
+        public EnumChessPieceColor Color
         {
             get { return this.color; }
             private set { this.color = value; }
         }
 
-        public EnumType Type
+        public EnumChessPieceType Type
         {
             get { return this.type; }
             private set { this.type = value; }

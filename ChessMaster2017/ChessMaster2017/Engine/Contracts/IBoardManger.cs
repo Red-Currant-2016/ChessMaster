@@ -18,6 +18,6 @@
 
         bool MoveChessPiece(int x, int y);
 
-        EnumColor GetPlayerTurn();
+        EnumChessPieceColor GetPlayerTurn();
     }
 }
