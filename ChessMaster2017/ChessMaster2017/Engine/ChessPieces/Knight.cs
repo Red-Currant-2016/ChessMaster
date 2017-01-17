@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.Engine
-
+﻿namespace ChessMaster2017.Engine
 {
-    class Knight : ChessPiece
+    using ChessMaster2017.Engine.Enums;
+    using ChessMaster2017.Engine.Contracts;
+
+    class Knight : ChessPiece, IKnight
     {
-/*    -8-1-
- *    7---2
- *    --k--
- *    6---3
- *    -5-4-
- */
+             //    -8-1-
+             //    7---2
+             //    --k--
+             //    6---3
+             //    -5-4-
+
         public Knight(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
         }
-        public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
+
+        public override bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             int knightX = this.CurrentX;
             int knightY = this.CurrentY;
@@ -26,7 +23,7 @@ namespace ChessMaster2017.Engine
             bool[,] knightMoves = new bool[8, 8];
             EnumColor knightColor = this.Color;
 
-            //8 = top left
+            // 8 = top left.
             if (knightX + 2 < 8 && knightX + 2 >= 0 && knightY - 1 >= 0 && knightY - 1 < 8)
             {
                 if (currentBoard[knightX + 2, knightY - 1] != null && currentBoard[knightX + 2, knightY - 1].Color == knightColor)
@@ -43,9 +40,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-
-            // 7 = left top
-
+            // 7 = left top.
             if (knightX + 1 < 8 && knightX + 1 >= 0 && knightY - 2 >= 0 && knightY - 2 < 8)
             {
                 if (currentBoard[knightX + 1, knightY - 2] != null && currentBoard[knightX +1, knightY - 2].Color == knightColor)
@@ -62,8 +57,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 6 = left bottom
-
+            // 6 = left bottom.
             if (knightX - 1 < 8 && knightX - 1 >= 0 && knightY - 2 >= 0 && knightY - 2 < 8)
             {
                 if (currentBoard[knightX - 1, knightY - 2] != null && currentBoard[knightX - 1, knightY - 2].Color == knightColor)
@@ -80,8 +74,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 5 = bottom left
-
+            // 5 = bottom left.
             if (knightX - 2 < 8 && knightX - 2 >= 0 && knightY - 1 >= 0 && knightY - 1 < 8)
             {
                 if (currentBoard[knightX - 2, knightY - 1] != null && currentBoard[knightX - 2, knightY - 1].Color == knightColor)
@@ -98,8 +91,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 4 = bottom right
-
+            // 4 = bottom right.
             if (knightX - 2 < 8 && knightX - 2 >= 0 && knightY + 1 >= 0 && knightY + 1 < 8)
             {
                 if (currentBoard[knightX - 2, knightY + 1] != null && currentBoard[knightX - 2, knightY + 1].Color == knightColor)
@@ -116,8 +108,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 3 = right bottom
-
+            // 3 = right bottom.
             if (knightX - 1 < 8 && knightX - 1 >= 0 && knightY + 2 >= 0 && knightY + 2 < 8)
             {
                 if (currentBoard[knightX - 1, knightY + 2] != null && currentBoard[knightX - 1, knightY + 2].Color == knightColor)
@@ -134,8 +125,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 2 = right top
-
+            // 2 = right top.
             if (knightX + 1 < 8 && knightX + 1 >= 0 && knightY + 2 >= 0 && knightY + 2 < 8)
             {
                 if (currentBoard[knightX + 1, knightY + 2] != null && currentBoard[knightX + 1, knightY + 2].Color == knightColor)
@@ -152,8 +142,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // 1 = top right
-
+            // 1 = top right.
             if (knightX + 2 < 8 && knightX + 2 >= 0 && knightY + 1 >= 0 && knightY + 1 < 8)
             {
                 if (currentBoard[knightX + 2, knightY + 1] != null && currentBoard[knightX + 2, knightY + 1].Color == knightColor)

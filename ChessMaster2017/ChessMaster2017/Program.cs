@@ -1,13 +1,14 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace ChessMaster2017
+﻿namespace ChessMaster2017
 {
+    using System;
+    using System.Windows.Forms;
+
     static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
         [STAThread]
         static void Main()
         {

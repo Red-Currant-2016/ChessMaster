@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.Engine
+﻿namespace ChessMaster2017.Engine
 {
+    using ChessMaster2017.Engine.Enums;
+    using ChessMaster2017.Engine.Contracts;
+
     /// <summary>
     /// Logic is the same as Bishop ; Check Bishop Summery. 
     /// Special move is not included in the logic.
@@ -13,13 +10,13 @@ namespace ChessMaster2017.Engine
     /// /// <param name="currentBoard"></param>
     /// <returns> bool[,] rookMoves </returns>
 
-    class Rook : ChessPiece
+    class Rook : ChessPiece, IRook
     {
         public Rook(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
-
         }
-        public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
+
+        public override bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             int rookX = this.CurrentX;
             int rookY = this.CurrentY;
@@ -27,8 +24,7 @@ namespace ChessMaster2017.Engine
             bool[,] rookMoves = new bool[8, 8];
             EnumColor rookColor = this.Color;
 
-
-            // right
+            // Right.
             for (int movesY = rookY + 1; movesY >= 0 && movesY < 8; movesY++)
             {
                 int movesX = rookX;
@@ -49,8 +45,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // bottom
-
+            // Bottom.
             for (int movesX = rookX - 1; movesX>=0 && movesX < 8; movesX--)
             {
                 int movesY = rookY;
@@ -71,8 +66,7 @@ namespace ChessMaster2017.Engine
                 }
             }
 
-            // left
-
+            // Left.
             for (int movesY = rookY-1; movesY>=0 && movesY < 8; movesY--)
             {
                 int movesX = rookX;
@@ -94,8 +88,7 @@ namespace ChessMaster2017.Engine
                     }
                 }
 
-            // top
-            
+            // Top.            
             for (int movesX = rookX+1; movesX>=0 && movesX < 8; movesX++)
             {
                 int movesY = rookY;
@@ -116,8 +109,8 @@ namespace ChessMaster2017.Engine
                     rookMoves[movesX, movesY] = true;
                 }
             }
-            //return bool rookMoves matrix
-            return rookMoves;
+
+            return rookMoves; // Return bool rookMoves matrix.
         }
     }
 }

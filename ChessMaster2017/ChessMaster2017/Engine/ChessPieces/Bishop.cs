@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessMaster2017.Engine
+﻿namespace ChessMaster2017.Engine
 {
-    class Bishop : ChessPiece
+    using ChessMaster2017.Engine.Enums;
+    using ChessMaster2017.Engine.Contracts;
+
+    class Bishop : ChessPiece, IBishop
     {
         public Bishop(int x, int y, EnumColor color, EnumType type) : base(x, y, color, type)
         {
@@ -35,7 +32,7 @@ namespace ChessMaster2017.Engine
         /// <param name="currentBoard"></param>
         /// <returns> bool[,] bishopMoves </returns>
         
-        public override bool[,] PossibleMove(ChessPiece[,] currentBoard)
+        public override bool[,] PossibleMove(IChessPiece[,] currentBoard)
         {
             int bishopX = this.CurrentX;
             int bishopY = this.CurrentY;
